@@ -1,0 +1,36 @@
+{
+    "name": "molajo/package",
+    "type": "molajo-package",
+    "description": "Molajo Package: Documents repo and renders README and other project help files",
+    "keywords": ["Molajo", "Document", "Molajito"],
+    "homepage": "http://github.com/Molajo/Project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amy Stephen",
+            "email": "AmyStephen@Molajo.org",
+            "homepage": "http://AmyStephen.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "commonapi/model": "dev-master",
+        "commonapi/exception": "dev-master",
+        "molajo/molajito": "dev-master"
+    },
+    "support": {
+        "event": "hello@molajo.org",
+        "irc": "irc://irc.freenode.org/molajo"
+    },
+    "autoload": {
+        "psr-4": {
+            "Molajo\\Project\\": "Source/"
+        }
+    },
+
+    "archive": {
+        "exclude": ["/.dev"]
+    },
+
+    "minimum-stability": "dev"
+}
