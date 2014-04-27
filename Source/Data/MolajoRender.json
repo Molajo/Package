@@ -1,0 +1,503 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Render",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Render\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Render\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Render\\RenderInterface"
+        ],
+        "comment": "Abstract Render Adapter",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "render_adapter",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Render Engine",
+                "data_type": "object  CommonApi\\Render\\RenderInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 42,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L42",
+                "parameters": [
+                    {
+                        "name": "render_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": {
+                            "name": "CommonApi\\Render\\RenderInterface"
+                        }
+                    }
+                ]
+            },
+            "render": {
+                "name": "render",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Render output for specified file and data",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 53,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L53",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L56",
+                "parameters": [
+                    {
+                        "name": "include_file",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Render",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Molajito",
+        "class_namespace": "Molajo\\Render\\Adapter\\Molajito",
+        "namespace": "Molajo\\Render\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Molajito.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/MolajitoTest.php",
+        "file_path": "Source\/Adapter\/Molajito.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Render\\RenderInterface"
+        ],
+        "comment": "Molajito Render Adapter",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "render_adapter",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Render Engine",
+                "data_type": "object  CommonApi\\Render\\RenderInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 42,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L42",
+                "parameters": [
+                    {
+                        "name": "render_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": {
+                            "name": "CommonApi\\Render\\RenderInterface"
+                        }
+                    }
+                ]
+            },
+            "render": {
+                "name": "render",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Render output for specified file and data",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 53,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L53",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L56",
+                "parameters": [
+                    {
+                        "name": "include_file",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Render",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Mustache",
+        "class_namespace": "Molajo\\Render\\Adapter\\Mustache",
+        "namespace": "Molajo\\Render\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Mustache.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/MustacheTest.php",
+        "file_path": "Source\/Adapter\/Mustache.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Render\\RenderInterface"
+        ],
+        "comment": "Mustache Render Adapter",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "render_adapter",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Render Engine",
+                "data_type": "object  CommonApi\\Render\\RenderInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 42,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L42",
+                "parameters": [
+                    {
+                        "name": "render_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": {
+                            "name": "CommonApi\\Render\\RenderInterface"
+                        }
+                    }
+                ]
+            },
+            "render": {
+                "name": "render",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Render output for specified file and data",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 53,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L53",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L56",
+                "parameters": [
+                    {
+                        "name": "include_file",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Render",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Twig",
+        "class_namespace": "Molajo\\Render\\Adapter\\Twig",
+        "namespace": "Molajo\\Render\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Twig.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/TwigTest.php",
+        "file_path": "Source\/Adapter\/Twig.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Render\\RenderInterface"
+        ],
+        "comment": "Twig Adapter for Render",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "render_adapter",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Render Engine",
+                "data_type": "object  CommonApi\\Render\\RenderInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 42,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L42",
+                "parameters": [
+                    {
+                        "name": "render_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": {
+                            "name": "CommonApi\\Render\\RenderInterface"
+                        }
+                    }
+                ]
+            },
+            "render": {
+                "name": "render",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Render\\Adapter\\AbstractAdapter",
+                "comment": "Render output for specified file and data",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 53,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L53",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L56",
+                "parameters": [
+                    {
+                        "name": "include_file",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Render",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Driver",
+        "class_namespace": "Molajo\\Render\\Driver",
+        "namespace": "Molajo\\Render",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Driver.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/DriverTest.php",
+        "file_path": "Source\/Driver.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Render\\RenderInterface"
+        ],
+        "comment": "Proxy Class for Render Engine Adapters",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "render_adapter",
+                "declaring_class": "Molajo\\Render\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Render Adapter",
+                "data_type": "object  CommonApi\\Render\\RenderInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Render\\Driver",
+                "comment": "Class Constructor",
+                "since": "1.0",
+                "get_start_line": 40,
+                "get_end_line": 44,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Driver.php#L40",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Driver.php#L44",
+                "parameters": [
+                    {
+                        "name": "render_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "RenderInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Render\\RenderInterface"
+                        }
+                    }
+                ]
+            },
+            "render": {
+                "name": "render",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Render\\Driver",
+                "comment": "Render output for specified view and data",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 56,
+                "get_end_line": 67,
+                "method_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Driver.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Driver.php#L67",
+                "parameters": [
+                    {
+                        "name": "include_file",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

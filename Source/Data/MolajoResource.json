@@ -1,0 +1,3277 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Resource",
+        "class_name": "ClassMap",
+        "class_namespace": "Molajo\\Resource\\ClassMap",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Tests\/ClassMapTest.php",
+        "file_path": "Source\/ClassMap.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\MapInterface"
+        ],
+        "comment": "Class Map",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "class_map_filename",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php",
+                "method_modifier": "default",
+                "comment": "Interface Map Filename",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "interface_classes_filename",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php",
+                "method_modifier": "default",
+                "comment": "Interfaces Filename",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "concrete_classes_filename",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php",
+                "method_modifier": "default",
+                "comment": "Class Dependencies",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "events_filename",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php",
+                "method_modifier": "default",
+                "comment": "Events",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 69,
+                "get_end_line": 79,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L69",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L79",
+                "parameters": [
+                    {
+                        "name": "class_map_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "interface_classes_filename",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "concrete_classes_filename",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "events_filename",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "createMap": {
+                "name": "createMap",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Create interface to concrete references",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 87,
+                "get_end_line": 160,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L87",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L160",
+                "parameters": [
+
+                ]
+            },
+            "setInterfaceClass": {
+                "name": "setInterfaceClass",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Process Interface for Metadata",
+                "since": "1.0",
+                "return": "array",
+                "get_start_line": 171,
+                "get_end_line": 200,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L171",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L200",
+                "parameters": [
+                    {
+                        "name": "fqns",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setAggregateInterfaceUsage": {
+                "name": "setAggregateInterfaceUsage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "For each Interface, determine Concrete Classes which Implement the Interface and\n       Requirements for a Concrete Class expressed by the Interface as a Type Hint in the Method Parameters",
+                "since": "1.0",
+                "return": "array",
+                "get_start_line": 212,
+                "get_end_line": 244,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L212",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L244",
+                "parameters": [
+                    {
+                        "name": "interfaces",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "interface_usage",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setConcreteClass": {
+                "name": "setConcreteClass",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Process Concrete Class for Dependencies and Metadata",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 256,
+                "get_end_line": 324,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L256",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L324",
+                "parameters": [
+                    {
+                        "name": "fqns",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "interface_usage",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "processDependencies": {
+                "name": "processDependencies",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Process Dependencies for the Class",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 335,
+                "get_end_line": 361,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L335",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L361",
+                "parameters": [
+                    {
+                        "name": "class_method_array",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "parameter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setConcreteInterfaceUsageImplementations": {
+                "name": "setConcreteInterfaceUsageImplementations",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Process Implemented Interfaces for the Class",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 373,
+                "get_end_line": 404,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L373",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L404",
+                "parameters": [
+                    {
+                        "name": "interface",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "interface_usage",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "concrete_fqns",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setConcreteInterfaceUsageDependencyTypeHints": {
+                "name": "setConcreteInterfaceUsageDependencyTypeHints",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Add to Dependency Interfaces List",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 416,
+                "get_end_line": 459,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L416",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L459",
+                "parameters": [
+                    {
+                        "name": "fqns",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "concretes",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "interface_usage",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setAggregateConcreteInterfaceUsage": {
+                "name": "setAggregateConcreteInterfaceUsage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "For each Interface, determine Concrete Classes which Implement the Interface and\n       Requirements for a Concrete Class expressed by the Interface as a Type Hint in the Method Parameters",
+                "since": "1.0",
+                "return": "array",
+                "get_start_line": 471,
+                "get_end_line": 547,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L471",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L547",
+                "parameters": [
+                    {
+                        "name": "concretes",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "concretes_all",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readFile": {
+                "name": "readFile",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ClassMap",
+                "comment": "Read File",
+                "return": "mixed|string",
+                "since": "1.0",
+                "get_start_line": 557,
+                "get_end_line": 567,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L557",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ClassMap.php#L567",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Resource",
+        "class_name": "ResourceMap",
+        "class_namespace": "Molajo\\Resource\\ResourceMap",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Tests\/ResourceMapTest.php",
+        "file_path": "Source\/ResourceMap.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\MapInterface"
+        ],
+        "comment": "Resource Map",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "resource_map_filename",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "Resource Map Filename",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "interface_map_filename",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "Interface Map Filename",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "base_path",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "Base Path - root of the website from which paths are defined",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "namespace_prefixes",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "Namespace Prefixes + Path",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "resource_map",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "Temporary Work File to accumulate Resource Map",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "php_files",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "Temporary Work File to accumulate PHP Class Files",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "exclude_folders",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php",
+                "method_modifier": "default",
+                "comment": "List of folders to exclude from resource mapping",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 92,
+                "get_end_line": 103,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L92",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L103",
+                "parameters": [
+                    {
+                        "name": "base_path",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "resource_map_filename",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "interface_map_filename",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "exclude_folders",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setNamespace": {
+                "name": "setNamespace",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Set a namespace prefix by mapping to the filesystem path",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 115,
+                "get_end_line": 141,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L115",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L141",
+                "parameters": [
+                    {
+                        "name": "namespace_prefix",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "namespace_base_directory",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "prepend",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "boolean",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "createMap": {
+                "name": "createMap",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Create resource map of folder\/file locations and Fully Qualified Namespaces",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 149,
+                "get_end_line": 221,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L149",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L221",
+                "parameters": [
+
+                ]
+            },
+            "testFileForNamespaceRules": {
+                "name": "testFileForNamespaceRules",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Test Path for this Namespace Prefix",
+                "return": "int|object",
+                "since": "1.0",
+                "get_start_line": 237,
+                "get_end_line": 319,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L237",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L319",
+                "parameters": [
+                    {
+                        "name": "namespace_prefix",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "base_directory",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "is_directory",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "file_path",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "file_name",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "file_extension",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "php_class",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "mergeFQNSPaths": {
+                "name": "mergeFQNSPaths",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Get Resource Map Tags",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 330,
+                "get_end_line": 359,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L330",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L359",
+                "parameters": [
+                    {
+                        "name": "nspath",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "fqns",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "processExcludeFolders": {
+                "name": "processExcludeFolders",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Process Exclude Folders Definitions",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 371,
+                "get_end_line": 400,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L371",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L400",
+                "parameters": [
+                    {
+                        "name": "file_path",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "base_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "skip",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": 1,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readFile": {
+                "name": "readFile",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\ResourceMap",
+                "comment": "Read File",
+                "since": "1.0",
+                "get_start_line": 410,
+                "get_end_line": 435,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L410",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/ResourceMap.php#L435",
+                "parameters": [
+                    {
+                        "name": "file_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "property_name_array",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Resource",
+        "class_name": "Driver",
+        "class_namespace": "Molajo\\Resource\\Driver",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Tests\/DriverTest.php",
+        "file_path": "Source\/Driver.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\ResourceInterface",
+            "CommonApi\\Resource\\SchemeInterface",
+            "CommonApi\\Resource\\NamespaceInterface",
+            "CommonApi\\Resource\\LocatorInterface",
+            "CommonApi\\Resource\\ClassLoaderInterface"
+        ],
+        "comment": "Resource Driver",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Scheme Instance",
+                "data_type": "object  CommonApi\\Resource\\SchemeInterface",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_instance_array",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Adapter Instances",
+                "data_type": "array  Contains set of CommonApi\\Resource\\AdapterInterface instances",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "scheme_value",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Scheme from Request",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "host",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Host",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "user",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "User",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "password",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Password",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "path",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Path",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "query",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Query",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "fragment",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Fragment",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "scheme_properties",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Scheme Properties",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_value",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Adapter Value",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 123,
+                "get_end_line": 135,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L123",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L135",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "SchemeInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Resource\\SchemeInterface"
+                        }
+                    },
+                    {
+                        "name": "adapter_instance_array",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setNamespace": {
+                "name": "setNamespace",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Map a namespace prefix to a filesystem path",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 147,
+                "get_end_line": 158,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L147",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L158",
+                "parameters": [
+                    {
+                        "name": "namespace_prefix",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "base_directory",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "prepend",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": true,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "boolean",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setAdapterInstance": {
+                "name": "setAdapterInstance",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Pass in the Adapter Instance for a Scheme Adapter\n      => For class construction or adding a new scheme\/adapter after instantiation",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 170,
+                "get_end_line": 177,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L170",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L177",
+                "parameters": [
+                    {
+                        "name": "adapter",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter_instance",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "register": {
+                "name": "register",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Registers Class Autoloader",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 187,
+                "get_end_line": 192,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L187",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L192",
+                "parameters": [
+                    {
+                        "name": "prepend",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": true,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "boolean",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "unregister": {
+                "name": "unregister",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Unregister Class Autoloader",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 200,
+                "get_end_line": 205,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L200",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L205",
+                "parameters": [
+
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 216,
+                "get_end_line": 248,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L216",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L248",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 261,
+                "get_end_line": 266,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L261",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L266",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "exists": {
+                "name": "exists",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Verify if the resource namespace has been defined or not",
+                "return": "boolean",
+                "since": "1.0",
+                "get_start_line": 276,
+                "get_end_line": 293,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L276",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L293",
+                "parameters": [
+                    {
+                        "name": "uri_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Locates folder\/file associated with URI Namespace for Resource",
+                "return": "void|mixed",
+                "since": "1.0",
+                "get_start_line": 304,
+                "get_end_line": 309,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L304",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L309",
+                "parameters": [
+                    {
+                        "name": "uri_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "locateNamespace": {
+                "name": "locateNamespace",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Locates a resource using only the namespace",
+                "return": "void|mixed",
+                "since": "1.0",
+                "get_start_line": 321,
+                "get_end_line": 342,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L321",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L342",
+                "parameters": [
+                    {
+                        "name": "namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "scheme",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "ClassLoader",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "handlePath": {
+                "name": "handlePath",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Handle located folder\/file associated with URI Namespace for Resource",
+                "return": "void|mixed",
+                "since": "1.0",
+                "get_start_line": 354,
+                "get_end_line": 370,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L354",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L370",
+                "parameters": [
+                    {
+                        "name": "scheme_value",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "located_path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getCollection": {
+                "name": "getCollection",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Retrieve a collection of a specific adapter",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 381,
+                "get_end_line": 386,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L386",
+                "parameters": [
+                    {
+                        "name": "scheme_value",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "parseUri": {
+                "name": "parseUri",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Driver",
+                "comment": "Parse the URL",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 396,
+                "get_end_line": 439,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L396",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Driver.php#L439",
+                "parameters": [
+                    {
+                        "name": "uri",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Resource",
+        "class_name": "Scheme",
+        "class_namespace": "Molajo\\Resource\\Scheme",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Resource\/blob\/master\/.dev\/Tests\/SchemeTest.php",
+        "file_path": "Source\/Scheme.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Render\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Asset",
+        "class_namespace": "Molajo\\Render\\Adapter\\Asset",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Asset.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/AssetTest.php",
+        "file_path": "Source\/Adapter\/Asset.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "ClassLoader",
+        "class_namespace": "Molajo\\Render\\Adapter\\ClassLoader",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/ClassLoader.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/ClassLoaderTest.php",
+        "file_path": "Source\/Adapter\/ClassLoader.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Css",
+        "class_namespace": "Molajo\\Render\\Adapter\\Css",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Css.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/CssTest.php",
+        "file_path": "Source\/Adapter\/Css.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Cssdeclarations",
+        "class_namespace": "Molajo\\Render\\Adapter\\Cssdeclarations",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Cssdeclarations.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/CssdeclarationsTest.php",
+        "file_path": "Source\/Adapter\/Cssdeclarations.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "File",
+        "class_namespace": "Molajo\\Render\\Adapter\\File",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/File.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/FileTest.php",
+        "file_path": "Source\/Adapter\/File.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Folder",
+        "class_namespace": "Molajo\\Render\\Adapter\\Folder",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Folder.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/FolderTest.php",
+        "file_path": "Source\/Adapter\/Folder.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Head",
+        "class_namespace": "Molajo\\Render\\Adapter\\Head",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Head.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/HeadTest.php",
+        "file_path": "Source\/Adapter\/Head.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Js",
+        "class_namespace": "Molajo\\Render\\Adapter\\Js",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Js.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/JsTest.php",
+        "file_path": "Source\/Adapter\/Js.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Resource",
+        "source_repository": "https:\/\/github.com\/Molajo\/Render",
+        "class_name": "Jsdeclarations",
+        "class_namespace": "Molajo\\Render\\Adapter\\Jsdeclarations",
+        "namespace": "Molajo\\Resource",
+        "class_url": "https:\/\/github.com\/Molajo\/Render\/tree\/master\/Source\/Adapter\/Jsdeclarations.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Render\/blob\/master\/.dev\/Tests\/JsdeclarationsTest.php",
+        "file_path": "Source\/Adapter\/Jsdeclarations.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\SchemeInterface"
+        ],
+        "comment": "Scheme",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "scheme_array",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "property_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php",
+                "method_modifier": "default",
+                "comment": "Scheme array =>\n         Scheme Name =>\n           Extensions list\n           Adapter",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L46",
+                "parameters": [
+                    {
+                        "name": "scheme_filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getScheme": {
+                "name": "getScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Get Scheme (or all schemes)",
+                "return": "object|array",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L65",
+                "parameters": [
+                    {
+                        "name": "scheme",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "readSchemes": {
+                "name": "readSchemes",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Read File and populate scheme array",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 76,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L136",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setScheme": {
+                "name": "setScheme",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Resource\\Scheme",
+                "comment": "Define Scheme, associated Adapter and allowable file extensions (empty array means any extension allowed)",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 173,
+                "method_url": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Resource\/tree\/master\/Source\/Scheme.php#L173",
+                "parameters": [
+                    {
+                        "name": "scheme_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "File",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extensions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "replace",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "bool",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

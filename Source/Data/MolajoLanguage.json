@@ -1,0 +1,1198 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Language",
+        "source_repository": "https:\/\/github.com\/Molajo\/Language",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Language\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Language\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "instantiable": false,
+        "final": false,
+        "abstract": true,
+        "interface_names": [
+            "CommonApi\\Language\\CaptureUntranslatedStringInterface",
+            "CommonApi\\Language\\LanguageInterface",
+            "CommonApi\\Language\\TranslateInterface"
+        ],
+        "comment": "Abstract Language Adapter",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+
+        ],
+        "methods": {
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\AbstractAdapter",
+                "comment": "Get Language Properties\n     \n      Specify null for key to have all language properties for current language\n      returned aas an object",
+                "return": "int  $this",
+                "since": "1.0.0",
+                "get_start_line": 38,
+                "get_end_line": 38,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L38",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "translate": {
+                "name": "translate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\AbstractAdapter",
+                "comment": "Translate String",
+                "return": "string",
+                "since": "1.0.0",
+                "get_start_line": 48,
+                "get_end_line": 48,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L48",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L48",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setString": {
+                "name": "setString",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\AbstractAdapter",
+                "comment": "Store Untranslated Language Strings",
+                "return": "$this",
+                "since": "1.0.0",
+                "get_start_line": 58,
+                "get_end_line": 58,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L58",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L58",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Language",
+        "source_repository": "https:\/\/github.com\/Molajo\/Language",
+        "class_name": "Database",
+        "class_namespace": "Molajo\\Language\\Adapter\\Database",
+        "namespace": "Molajo\\Language\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Tests\/DatabaseTest.php",
+        "file_path": "Source\/Adapter\/Database.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Language\\TranslateInterface",
+            "CommonApi\\Language\\LanguageInterface",
+            "CommonApi\\Language\\CaptureUntranslatedStringInterface"
+        ],
+        "comment": "Database Adapter for Language",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Language\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "language",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Language",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "extension_id",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Extension ID",
+                "data_type": "int",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "extension_instance_id",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Extension Instance ID",
+                "data_type": "int",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "title",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Title",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "tag",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Tag",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "locale",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Locale",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "rtl",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Rtl",
+                "data_type": "boolean",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "direction",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Direction",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "first_day",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "First Day",
+                "data_type": "int",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "language_utc_offset",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "UTC Offset",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "language_strings",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Language Strings for the language loaded in this instance",
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "model",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Model Instance - save untranslated strings",
+                "data_type": "object  CommonApi\\Language\\DatabaseModelInterface",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "default_language",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Default Language Instance",
+                "data_type": "null|object  CommonApi\\Language\\LanguageInterface",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "en_gb_instance",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Final Fallback en-GB Language Instance",
+                "data_type": "null|object  CommonApi\\Language\\LanguageInterface",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "property_array",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "List of Properties",
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "comment": "Constructor",
+                "since": "1.0.0",
+                "get_start_line": 182,
+                "get_end_line": 212,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L182",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L212",
+                "parameters": [
+                    {
+                        "name": "language",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "en-GB",
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extension_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "extension_instance_id",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "title",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "tag",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "locale",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "rtl",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "direction",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "first_day",
+                        "position": 8,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "language_utc_offset",
+                        "position": 9,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "model",
+                        "position": 10,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default_language",
+                        "position": 11,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "en_gb_instance",
+                        "position": 12,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "comment": "Get Language Properties\n     \n      Specify null for key to have all language properties for current language\n      returned aas an object",
+                "return": "int  $this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 227,
+                "get_end_line": 259,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L227",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L259",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "translate": {
+                "name": "translate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "comment": "Translate String",
+                "return": "string",
+                "since": "1.0.0",
+                "get_start_line": 269,
+                "get_end_line": 283,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L269",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L283",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "search": {
+                "name": "search",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "comment": "Search sequence for translation:\n     \n       - Current language\n       - Default language\n       - Final fallback en-GB\n       - Store as untranslated string - send back, as is",
+                "return": "string",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 299,
+                "get_end_line": 326,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L299",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L326",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setString": {
+                "name": "setString",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\Database",
+                "comment": "Store Untranslated Language Strings",
+                "return": "$this",
+                "since": "1.0.0",
+                "get_start_line": 336,
+                "get_end_line": 341,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L336",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/Database.php#L341",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Language",
+        "source_repository": "https:\/\/github.com\/Molajo\/Language",
+        "class_name": "DatabaseModel",
+        "class_namespace": "Molajo\\Language\\Adapter\\DatabaseModel",
+        "namespace": "Molajo\\Language\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Tests\/DatabaseModelTest.php",
+        "file_path": "Source\/Adapter\/DatabaseModel.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Language\\CaptureUntranslatedStringInterface"
+        ],
+        "comment": "Database Model",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "public_view_group_id",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Public View Group ID",
+                "data_type": "int",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "primary_category_id",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Primary Category ID",
+                "data_type": "int",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "applications",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Applications Array",
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "database",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Database Instance",
+                "data_type": "object   CommonApi\\Database\\DatabaseInterface",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "query",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Query Object",
+                "data_type": "object   CommonApi\\Query\\QueryInterface",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "null_date",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Used in queries to determine date validity",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "current_date",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Today's CCYY-MM-DD 00:00:00 formatted for query",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "model_registry",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Model Registry",
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "installed_languages",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Language List",
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "tag_array",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "Language List",
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "property_array",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php",
+                "method_modifier": "default",
+                "comment": "List of Properties",
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Construct",
+                "since": "1.0.0",
+                "get_start_line": 139,
+                "get_end_line": 160,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L139",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L160",
+                "parameters": [
+                    {
+                        "name": "application_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "database",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "DatabaseInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Database\\DatabaseInterface"
+                        }
+                    },
+                    {
+                        "name": "query",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "QueryInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Query\\QueryInterface"
+                        }
+                    },
+                    {
+                        "name": "null_date",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "current_date",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "model_registry",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    },
+                    {
+                        "name": "public_view_group_id",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": 1,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "integer",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "primary_category_id",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": 12,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "integer",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Get the current value (or default) of the specified key",
+                "return": "mixed",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 172,
+                "get_end_line": 187,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L172",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L187",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setInstalledLanguages": {
+                "name": "setInstalledLanguages",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Retrieve installed languages for this application",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 196,
+                "get_end_line": 268,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L196",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L268",
+                "parameters": [
+
+                ]
+            },
+            "getLanguageStrings": {
+                "name": "getLanguageStrings",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Get Primary Language Language Strings",
+                "return": "array",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 279,
+                "get_end_line": 315,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L279",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L315",
+                "parameters": [
+                    {
+                        "name": "language",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "en-GB",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setString": {
+                "name": "setString",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Save untranslated strings for use by translators",
+                "return": "$this",
+                "since": "1.0.0",
+                "get_start_line": 325,
+                "get_end_line": 343,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L325",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L343",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "exists": {
+                "name": "exists",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Determine if the language string exists for the language",
+                "return": "int",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 355,
+                "get_end_line": 376,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L355",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L376",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "language",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "saveLanguageString": {
+                "name": "saveLanguageString",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Retrieve the key for the base language string",
+                "return": "int",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 389,
+                "get_end_line": 454,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L389",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L454",
+                "parameters": [
+                    {
+                        "name": "language_string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "language",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "parent_id",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "insertCatalogEntry": {
+                "name": "insertCatalogEntry",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Insert into the Catalog Table",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 465,
+                "get_end_line": 499,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L465",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L499",
+                "parameters": [
+                    {
+                        "name": "language_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getSEFRequest": {
+                "name": "getSEFRequest",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Determine if the language string exists for the language",
+                "return": "int",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 510,
+                "get_end_line": 528,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L510",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L528",
+                "parameters": [
+                    {
+                        "name": "language_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getApplications": {
+                "name": "getApplications",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Language\\Adapter\\DatabaseModel",
+                "comment": "Determine if the language string exists for the language",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 537,
+                "get_end_line": 559,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L537",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Adapter\/DatabaseModel.php#L559",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Language",
+        "source_repository": "https:\/\/github.com\/Molajo\/Language",
+        "class_name": "Driver",
+        "class_namespace": "Molajo\\Language\\Driver",
+        "namespace": "Molajo\\Language",
+        "class_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Language\/blob\/master\/.dev\/Tests\/DriverTest.php",
+        "file_path": "Source\/Driver.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Language\\CaptureUntranslatedStringInterface",
+            "CommonApi\\Language\\LanguageInterface",
+            "CommonApi\\Language\\TranslateInterface"
+        ],
+        "comment": "Language Driver",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "adapter",
+                "declaring_class": "Molajo\\Language\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Language Adapter",
+                "data_type": "object CommonApi\\Language\\LanguageInterface",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "language",
+                "declaring_class": "Molajo\\Language\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Language",
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Language\\Driver",
+                "comment": "Constructor",
+                "since": "1.0.0",
+                "get_start_line": 47,
+                "get_end_line": 53,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L47",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L53",
+                "parameters": [
+                    {
+                        "name": "adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": {
+                            "name": "CommonApi\\Language\\LanguageInterface"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "LanguageInterface",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Driver",
+                "comment": "Get Language Properties\n     \n      Specify null for key to have all language properties for current language\n      returned aas an object",
+                "return": "int",
+                "since": "1.0.0",
+                "get_start_line": 67,
+                "get_end_line": 70,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L67",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L70",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "translate": {
+                "name": "translate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Driver",
+                "comment": "Translate String\n     \n       - Current language\n       - Default language\n       - Final fallback en-GB\n       - Store as untranslated string",
+                "return": "string",
+                "since": "1.0.0",
+                "get_start_line": 85,
+                "get_end_line": 88,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L85",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L88",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setString": {
+                "name": "setString",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Language\\Driver",
+                "comment": "Store Untranslated Language Strings",
+                "return": "$this",
+                "since": "1.0.0",
+                "get_start_line": 98,
+                "get_end_line": 101,
+                "method_url": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L98",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Language\/tree\/master\/Source\/Driver.php#L101",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

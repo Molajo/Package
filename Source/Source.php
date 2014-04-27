@@ -23,6 +23,15 @@ use stdClass;
 class Source
 {
     /**
+     * Output Data Folder
+     *
+     * @api
+     * @var    object
+     * @since  1.0.0
+     */
+    protected $data_folder = null;
+
+    /**
      * Base Path
      *
      * @api
@@ -150,7 +159,8 @@ class Source
         $source_repository = '',
         $class_url_path = '',
         $document_url_path = '',
-        $unit_tests_url_path = ''
+        $unit_tests_url_path = '',
+        $data_folder = ''
     ) {
         if ($source_repository === '') {
         } else {
@@ -171,16 +181,22 @@ class Source
         } else {
             $this->unit_tests_url_path = $unit_tests_url_path;
         }
+
+        if ($data_folder === '') {
+            $this->data_folder = __DIR__ . '/Data';
+        } else {
+            $this->data_folder = $data_folder;
+        }
     }
 
     /**
      * Using PHP Reflection and for the associative array of classes and namespaces, extract
      *  Class, Interface, Property, Method, and Parameter information
      *
-     * @param  string  $base_path
-     * @param  array   $classmap
-     * @param  string  $primary_project
-     * @param  string  $primary_repository
+     * @param  string $base_path
+     * @param  array  $classmap
+     * @param  string $primary_project
+     * @param  string $primary_repository
      *
      * ```php
      *
@@ -209,7 +225,8 @@ class Source
     ) {
         $this->base_path = $base_path;
         $this->classmap  = $classmap;
-
+        echo '<pre>';
+        var_dump($this->classmap);
         if ($primary_project === '') {
         } else {
             $this->primary_project = $primary_project;
@@ -225,7 +242,8 @@ class Source
             $this->class_url_array[$class_namespace]
                 = $this->preprocessClassLocations($class_namespace, $class_path);
         }
-
+        echo '<pre>';
+var_dump($this->class_url_array);
         $class_array = array();
         foreach ($this->classmap as $class_namespace => $class_path) {
 
@@ -233,10 +251,13 @@ class Source
                 && $this->class_url_array[$class_namespace]->primary_project === true
                 && $this->class_url_array[$class_namespace]->primary_repository === true
             ) {
-                $class_name     = $this->class_url_array[$class_namespace]->class_name;
+                $class_name = $this->class_url_array[$class_namespace]->class_name;
+
+                echo $class_name . ' ' . $class_namespace . '<br />';
                 $this->reflectClassNamespace($class_namespace);
 
-                if ($this->class_reflection_object === false) {
+                if ($this->class_reflection_object === null) {
+                    echo 'FAILED TO CREATE CLASS REFLECTION ' . $class_name . ' ' . $class_namespace . '<br />';
                 } else {
                     $this->class_data_object = new stdClass();
 
@@ -247,7 +268,8 @@ class Source
             }
         }
 
-        file_put_contents(__DIR__ . '/' . $this->primary_project . $this->primary_repository . '.json',
+        file_put_contents(
+            $this->data_folder . '/' . $this->primary_project . $this->primary_repository . '.json',
             json_encode($class_array, JSON_PRETTY_PRINT)
         );
 
@@ -285,21 +307,16 @@ class Source
             $class_location->primary_project = false;
         }
 
-        if ($repository == $this->primary_repository) {
-            $class_location->primary_repository = true;
-        } else {
+        if (substr($relative_path, 0, strlen('vendor')) === 'vendor') {
+            $class_location->relative_path      = null;
+            $class_location->class_url          = null;
+            $class_location->primary_project    = false;
             $class_location->primary_repository = false;
-        }
-
-        if ($class_location->primary_project === true
-            && $class_location->primary_repository === true
-        ) {
-            $class_location->relative_path = $relative_path;
-            $class_location->class_url     = $class_location->source_repository . $this->class_url_path . $relative_path;
         } else {
-            $class_location->relative_path = null;
-            $class_location->class_url     = null;
-
+            $class_location->relative_path      = $relative_path;
+            $class_location->class_url          = $class_location->source_repository . $this->class_url_path . $relative_path;
+            $class_location->primary_project    = true;
+            $class_location->primary_repository = true;
         }
 
         return $class_location;
@@ -411,13 +428,21 @@ class Source
         $temp = $this->class_reflection_object->getParentClass();
 
         if (is_object($temp)) {
-            $this->class_data_object->parent_class
-                = $temp->name;
-            $this->class_data_object->parent_class_url
-                = $this->class_url_array[$this->class_data_object->parent_class]->class_url;
         } else {
             $this->class_data_object->parent_class     = null;
             $this->class_data_object->parent_class_url = null;
+
+            return $this;
+        }
+
+        $this->class_data_object->parent_class
+            = $temp->name;
+
+        if (isset($this->class_url_array[$this->class_data_object->parent_class]->class_url)) {
+            $this->class_data_object->parent_class_url
+                = $this->class_url_array[$this->class_data_object->parent_class]->class_url;
+        } else {
+            $this->class_data_object->parent_class_url = null; // ex. DateTime
         }
 
         return $this;
@@ -463,7 +488,12 @@ class Source
 
         $row->name            = $property_name;
         $row->declaring_class = $reflectorProperty->getDeclaringClass()->name;
-        $row->property_url    = $this->class_url_array[$row->declaring_class]->class_url;
+
+        if (isset($this->class_url_array[$row->declaring_class])) { // ex. DateTime
+            $row->property_url = $this->class_url_array[$row->declaring_class]->class_url;
+        } else {
+            $row->property_url = null;
+        }
 
         if ($reflectorProperty->isDefault() === true) {
             $row->method_modifier = 'default';
@@ -541,10 +571,16 @@ class Source
         $row                  = $this->processComment($method->getDocComment(), $row);
         $row->get_start_line  = $method->getStartLine();
         $row->get_end_line    = $method->getEndLine();
-        $row->method_url      = $this->class_url_array[$row->declaring_class]->class_url
-            . '#L' . $row->get_start_line;
-        $row->method_url_end  = $this->class_url_array[$row->declaring_class]->class_url
-            . '#L' . $row->get_end_line;
+
+        if (isset($this->class_url_array[$row->declaring_class])) {  // ex. DateTime
+            $row->method_url      = $this->class_url_array[$row->declaring_class]->class_url
+                . '#L' . $row->get_start_line;
+            $row->method_url_end  = $this->class_url_array[$row->declaring_class]->class_url
+                . '#L' . $row->get_end_line;
+        } else {
+            $row->method_url      = null;
+            $row->method_url_end  = null;
+        }
 
         return $row;
     }

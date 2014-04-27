@@ -1,0 +1,946 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Route",
+        "source_repository": "https:\/\/github.com\/Molajo\/Route",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Route\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Route\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Route\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Route\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "instantiable": false,
+        "final": false,
+        "abstract": true,
+        "interface_names": [
+            "CommonApi\\Route\\RouteInterface"
+        ],
+        "comment": "Abstract Route Adapter",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "request",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Request Object",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "page_type",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Page Type",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "url_force_ssl",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Force SSL Indicator",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_home_catalog_id",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application Home Catalog ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_path",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application Path",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_id",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "base_url",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Base URL",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "task_to_action",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Task to Action",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "filters",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Filters",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "route",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Route",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 119,
+                "get_end_line": 156,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L119",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L156",
+                "parameters": [
+                    {
+                        "name": "request",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "url_force_ssl",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_home_catalog_id",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_path",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_id",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "base_url",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "task_to_action",
+                        "position": 6,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "filters",
+                        "position": 7,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "verifySecureProtocol": {
+                "name": "verifySecureProtocol",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Determine if secure protocol required and in use",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 165,
+                "get_end_line": 179,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L165",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L179",
+                "parameters": [
+
+                ]
+            },
+            "verifyHome": {
+                "name": "verifyHome",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Determine if request is for home page",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 188,
+                "get_end_line": 218,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L188",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L218",
+                "parameters": [
+
+                ]
+            },
+            "setRequest": {
+                "name": "setRequest",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Request",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 227,
+                "get_end_line": 235,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L227",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L235",
+                "parameters": [
+
+                ]
+            },
+            "setAction": {
+                "name": "setAction",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Action from HTTP Method",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 244,
+                "get_end_line": 264,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L244",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L264",
+                "parameters": [
+
+                ]
+            },
+            "setBaseUrl": {
+                "name": "setBaseUrl",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Path",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 273,
+                "get_end_line": 278,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L273",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L278",
+                "parameters": [
+
+                ]
+            },
+            "setRequestVariables": {
+                "name": "setRequestVariables",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Request Variables",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 287,
+                "get_end_line": 298,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L287",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L298",
+                "parameters": [
+
+                ]
+            },
+            "setReadVariables": {
+                "name": "setReadVariables",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Retrieve non-route values for SEF URLs:",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 306,
+                "get_end_line": 364,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L306",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L364",
+                "parameters": [
+
+                ]
+            },
+            "setTaskVariables": {
+                "name": "setTaskVariables",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "For non-read actions, retrieve task and values",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 372,
+                "get_end_line": 412,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L372",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L412",
+                "parameters": [
+
+                ]
+            },
+            "setPath": {
+                "name": "setPath",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Path",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 421,
+                "get_end_line": 441,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L441",
+                "parameters": [
+
+                ]
+            },
+            "setRoute": {
+                "name": "setRoute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Route",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 450,
+                "get_end_line": 453,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L450",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L453",
+                "parameters": [
+
+                ]
+            },
+            "setRedirect": {
+                "name": "setRedirect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Redirect page",
+                "return": "void",
+                "since": "1.0",
+                "get_start_line": 461,
+                "get_end_line": 478,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L461",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L478",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Route",
+        "source_repository": "https:\/\/github.com\/Molajo\/Route",
+        "class_name": "Database",
+        "class_namespace": "Molajo\\Route\\Adapter\\Database",
+        "namespace": "Molajo\\Route\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/Database.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Route\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Route\/blob\/master\/.dev\/Tests\/DatabaseTest.php",
+        "file_path": "Source\/Adapter\/Database.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Route\\RouteInterface"
+        ],
+        "comment": "Database Handler for Route",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "resource_query",
+                "declaring_class": "Molajo\\Route\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Resource Query",
+                "data_type": "object  Molajo\\Controller\\ReadController",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "request",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Request Object",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "page_type",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Page Type",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "url_force_ssl",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Force SSL Indicator",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_home_catalog_id",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application Home Catalog ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_path",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application Path",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_id",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "base_url",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Base URL",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "task_to_action",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Task to Action",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "filters",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Filters",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "route",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Route",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Route\\Adapter\\Database",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 49,
+                "get_end_line": 72,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/Database.php#L49",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/Database.php#L72",
+                "parameters": [
+                    {
+                        "name": "request",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "url_force_ssl",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_home_catalog_id",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_path",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_id",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "base_url",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "task_to_action",
+                        "position": 6,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "filters",
+                        "position": 7,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "resource_query",
+                        "position": 8,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "ReadController",
+                        "type_hint": {
+                            "name": "Molajo\\Controller\\ReadController"
+                        }
+                    }
+                ]
+            },
+            "setRoute": {
+                "name": "setRoute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\Database",
+                "comment": "For Route, retrieve Catalog Item, either for the SEF URL or the Catalog ID\n     \n      404 Error when no Catalog Item is found",
+                "return": "object",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 83,
+                "get_end_line": 202,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/Database.php#L83",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/Database.php#L202",
+                "parameters": [
+
+                ]
+            },
+            "verifySecureProtocol": {
+                "name": "verifySecureProtocol",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Determine if secure protocol required and in use",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 165,
+                "get_end_line": 179,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L165",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L179",
+                "parameters": [
+
+                ]
+            },
+            "verifyHome": {
+                "name": "verifyHome",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Determine if request is for home page",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 188,
+                "get_end_line": 218,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L188",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L218",
+                "parameters": [
+
+                ]
+            },
+            "setRequest": {
+                "name": "setRequest",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Request",
+                "return": "object",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 227,
+                "get_end_line": 235,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L227",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L235",
+                "parameters": [
+
+                ]
+            },
+            "setAction": {
+                "name": "setAction",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Action from HTTP Method",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 244,
+                "get_end_line": 264,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L244",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L264",
+                "parameters": [
+
+                ]
+            },
+            "setBaseUrl": {
+                "name": "setBaseUrl",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Path",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 273,
+                "get_end_line": 278,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L273",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L278",
+                "parameters": [
+
+                ]
+            },
+            "setRequestVariables": {
+                "name": "setRequestVariables",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Request Variables",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 287,
+                "get_end_line": 298,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L287",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L298",
+                "parameters": [
+
+                ]
+            },
+            "setReadVariables": {
+                "name": "setReadVariables",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Retrieve non-route values for SEF URLs:",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 306,
+                "get_end_line": 364,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L306",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L364",
+                "parameters": [
+
+                ]
+            },
+            "setTaskVariables": {
+                "name": "setTaskVariables",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "For non-read actions, retrieve task and values",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 372,
+                "get_end_line": 412,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L372",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L412",
+                "parameters": [
+
+                ]
+            },
+            "setPath": {
+                "name": "setPath",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Set Path",
+                "return": "$this",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 421,
+                "get_end_line": 441,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L441",
+                "parameters": [
+
+                ]
+            },
+            "setRedirect": {
+                "name": "setRedirect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Adapter\\AbstractAdapter",
+                "comment": "Redirect page",
+                "return": "void",
+                "since": "1.0",
+                "get_start_line": 461,
+                "get_end_line": 478,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L461",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L478",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Route",
+        "source_repository": "https:\/\/github.com\/Molajo\/Route",
+        "class_name": "Driver",
+        "class_namespace": "Molajo\\Route\\Driver",
+        "namespace": "Molajo\\Route",
+        "class_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Route\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Route\/blob\/master\/.dev\/Tests\/DriverTest.php",
+        "file_path": "Source\/Driver.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Route\\RouteInterface"
+        ],
+        "comment": "Route Driver",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "route",
+                "declaring_class": "Molajo\\Route\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Route Driver",
+                "data_type": "object  CommonApi\\Route\\RouteInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Route\\Driver",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 42,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L42",
+                "parameters": [
+                    {
+                        "name": "route",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "RouteInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Route\\RouteInterface"
+                        }
+                    }
+                ]
+            },
+            "verifySecureProtocol": {
+                "name": "verifySecureProtocol",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Driver",
+                "comment": "Determine if secure protocol required and in use",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 50,
+                "get_end_line": 53,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L50",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L53",
+                "parameters": [
+
+                ]
+            },
+            "verifyHome": {
+                "name": "verifyHome",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Driver",
+                "comment": "Determine if request is for home page",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 61,
+                "get_end_line": 64,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L61",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L64",
+                "parameters": [
+
+                ]
+            },
+            "setRequest": {
+                "name": "setRequest",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Driver",
+                "comment": "Set Action from HTTP Method",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 72,
+                "get_end_line": 75,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L72",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L75",
+                "parameters": [
+
+                ]
+            },
+            "setRoute": {
+                "name": "setRoute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Route\\Driver",
+                "comment": "Set Route",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 83,
+                "get_end_line": 86,
+                "method_url": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L83",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Route\/tree\/master\/Source\/Driver.php#L86",
+                "parameters": [
+
+                ]
+            }
+        }
+    }
+]

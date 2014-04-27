@@ -1,0 +1,2842 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/Reflection",
+        "class_name": "Source",
+        "class_namespace": "Molajo\\Reflection\\Source",
+        "namespace": "Molajo\\Reflection",
+        "class_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Reflection\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Reflection\/blob\/master\/.dev\/Tests\/SourceTest.php",
+        "file_path": "age\/\/Source\/Source.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+
+        ],
+        "comment": "Uses PHP Reflection Classes to extract documentation from PHP repository",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "api": true,
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "data_folder",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Output Data Folder",
+                "api": true,
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "base_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Base Path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "classmap",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Classmap",
+                "api": true,
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "primary_project",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Primary Project",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "primary_repository",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Primary Repository",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "source_repository",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Source Repository",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_url_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Source 'path' at root of repo\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $class_url_path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "document_url_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Document 'path' after repository and before individual class document files\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $document_url_path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "unit_tests_url_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Unit Testing 'path' after repository up individual test files\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $unit_tests_url_path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "relative_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Relative Path to install base",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_url_array",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "All Class URLs",
+                "api": true,
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_data_object",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Class Data Object",
+                "api": true,
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_reflection_object",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Class Reflection Object",
+                "api": true,
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Constructor",
+                "since": "1.0.0",
+                "get_start_line": 158,
+                "get_end_line": 190,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L158",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L190",
+                "parameters": [
+                    {
+                        "name": "source_repository",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_url_path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "document_url_path",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "unit_tests_url_path",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data_folder",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "process": {
+                "name": "process",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Using PHP Reflection and for the associative array of classes and namespaces, extract\n       Class, Interface, Property, Method, and Parameter information",
+                "api": true,
+                "return": "\\CommonApi\\Model\\ValidateResponseInterface",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 220,
+                "get_end_line": 276,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L220",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L276",
+                "parameters": [
+                    {
+                        "name": "base_path",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "classmap",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "primary_project",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "primary_repository",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "preprocessClassLocations": {
+                "name": "preprocessClassLocations",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Preprocess all class locations so that URL's and paths are available for parent classes",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 288,
+                "get_end_line": 322,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L288",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L322",
+                "parameters": [
+                    {
+                        "name": "class_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "processClass": {
+                "name": "processClass",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Extract information on class",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 334,
+                "get_end_line": 344,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L344",
+                "parameters": [
+                    {
+                        "name": "class_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_namespace",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "reflectClassNamespace": {
+                "name": "reflectClassNamespace",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get Class Reflection Object",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 355,
+                "get_end_line": 365,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L355",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L365",
+                "parameters": [
+                    {
+                        "name": "class_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getClassProject": {
+                "name": "getClassProject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Extract information on class",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 376,
+                "get_end_line": 383,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L376",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L383",
+                "parameters": [
+                    {
+                        "name": "class_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getClassMeta": {
+                "name": "getClassMeta",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get Class Meta Data",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 395,
+                "get_end_line": 416,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L395",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L416",
+                "parameters": [
+                    {
+                        "name": "class_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_namespace",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getParent": {
+                "name": "getParent",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Retrieve Parent Class information",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 425,
+                "get_end_line": 448,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L425",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L448",
+                "parameters": [
+
+                ]
+            },
+            "getProperties": {
+                "name": "getProperties",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Retrieve properties for class",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 457,
+                "get_end_line": 468,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L457",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L468",
+                "parameters": [
+
+                ]
+            },
+            "getProperty": {
+                "name": "getProperty",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get a specific property for the class\n     \n      Appears PHP does not support getStartLine() for class properties?",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 481,
+                "get_end_line": 513,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L481",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L513",
+                "parameters": [
+                    {
+                        "name": "property_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getMethods": {
+                "name": "getMethods",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Retrieve methods for class",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 522,
+                "get_end_line": 535,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L522",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L535",
+                "parameters": [
+
+                ]
+            },
+            "getMethod": {
+                "name": "getMethod",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get a specific method for the class",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 546,
+                "get_end_line": 585,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L546",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L585",
+                "parameters": [
+                    {
+                        "name": "method",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getParameters": {
+                "name": "getParameters",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get all parameters for specified method",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 597,
+                "get_end_line": 615,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L597",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L615",
+                "parameters": [
+                    {
+                        "name": "method",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "row",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getParameter": {
+                "name": "getParameter",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get a specific method parameter",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 627,
+                "get_end_line": 668,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L627",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L668",
+                "parameters": [
+                    {
+                        "name": "parameter",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "comment_param_array",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "searchCommentParamArray": {
+                "name": "searchCommentParamArray",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "For those parameters without type hints (array or callable), search the comments\n       for a matching parameter name and use the definition there",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 681,
+                "get_end_line": 708,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L681",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L708",
+                "parameters": [
+                    {
+                        "name": "parameter_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "comment_param_array",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "processComment": {
+                "name": "processComment",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Split comment into associative array",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 720,
+                "get_end_line": 765,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L720",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L765",
+                "parameters": [
+                    {
+                        "name": "comment",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "source_data_object",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "cleanItem": {
+                "name": "cleanItem",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Clean item of non-content data",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 776,
+                "get_end_line": 779,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L776",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/age\/\/Source\/Source.php#L779",
+                "parameters": [
+                    {
+                        "name": "item",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/IoC",
+        "class_name": "Container",
+        "class_namespace": "Molajo\\IoC\\Container",
+        "namespace": "Molajo\\IoC",
+        "class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php",
+        "document_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Tests\/ContainerTest.php",
+        "file_path": "Source\/Container.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\IoC\\ContainerInterface"
+        ],
+        "comment": "Inversion of Control Container",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "container_registry",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php",
+                "method_modifier": "default",
+                "comment": "Container Registry",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_aliases",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php",
+                "method_modifier": "default",
+                "comment": "Factory Method Aliases => Namespaces",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_namespaces",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php",
+                "method_modifier": "default",
+                "comment": "Factory Method Namespaces => Aliases",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 55,
+                "get_end_line": 66,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L55",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L66",
+                "parameters": [
+                    {
+                        "name": "adapter_aliases",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "has": {
+                "name": "has",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "comment": "Determines if the entry identified by the $key exists within the Container",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 76,
+                "get_end_line": 89,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L89",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "comment": "Get Contents from Container Entry associated with the key or return false",
+                "return": "mixed",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\InvalidArgumentException",
+                "get_start_line": 100,
+                "get_end_line": 114,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L100",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L114",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "comment": "Set the Container Entry with the associated value",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 125,
+                "get_end_line": 142,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L125",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L142",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "remove": {
+                "name": "remove",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\Container",
+                "comment": "Remove the existing container instance",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\InvalidArgumentException",
+                "get_start_line": 153,
+                "get_end_line": 169,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L153",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Container.php#L169",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/IoC",
+        "class_name": "FactoryMethodBase",
+        "class_namespace": "Molajo\\IoC\\FactoryMethodBase",
+        "namespace": "Molajo\\IoC",
+        "class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+        "document_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Tests\/FactoryMethodBaseTest.php",
+        "file_path": "Source\/FactoryMethodBase.php",
+        "instantiable": false,
+        "final": false,
+        "abstract": true,
+        "interface_names": [
+            "CommonApi\\IoC\\FactoryInterface",
+            "CommonApi\\IoC\\FactoryBatchInterface"
+        ],
+        "comment": "Base Factory Method",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "ioc_id",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "IoC ID from Controller",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product_name",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Product Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product_namespace",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Product Namespace",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "static_instance_indicator",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Static Instance Indicator",
+                "data_type": "boolean",
+                "since": "1.0",
+                "static": "",
+                "value": null
+            },
+            {
+                "name": "store_instance_indicator",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Store Instance Indicator",
+                "data_type": "boolean",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "store_properties_indicator",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Store Properties",
+                "data_type": "boolean",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "options",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Options",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "reflection",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Reflection Parameters",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "dependencies",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Dependencies",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product_result",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Product Result",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "static_product_result",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Static Product Result",
+                "static": "",
+                "data_type": "object  Services",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "remove_container_entries",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Container Entries to remove from IoCC",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "set_container_entries",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Services to update within the IoCC",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "schedule_factory_methods",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Services to schedule for Product Creation",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "factory_method_adapter_property_array",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "List of Property Array",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 171,
+                "get_end_line": 190,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L171",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L190",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getNamespace": {
+                "name": "getNamespace",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller requests Product Namespace from Factory Method",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 198,
+                "get_end_line": 201,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L198",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L201",
+                "parameters": [
+
+                ]
+            },
+            "getOptions": {
+                "name": "getOptions",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller requests Service Options from Factory Method",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 209,
+                "get_end_line": 212,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L209",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L212",
+                "parameters": [
+
+                ]
+            },
+            "getStoreContainerEntryIndicator": {
+                "name": "getStoreContainerEntryIndicator",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller retrieves \"store instance indicator\" from Factory Method",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 220,
+                "get_end_line": 223,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L220",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L223",
+                "parameters": [
+
+                ]
+            },
+            "setDependencies": {
+                "name": "setDependencies",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method can use this method to define Service Dependencies\n       or use the Service Dependencies automatically defined by Reflection processes",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 234,
+                "get_end_line": 280,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L234",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L280",
+                "parameters": [
+                    {
+                        "name": "reflection",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeInstantiation": {
+                "name": "onBeforeInstantiation",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Logic contained within this method is invoked after Dependencies Instances are available\n       and before the instantiateClass Method is invoked",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 291,
+                "get_end_line": 349,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L291",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L349",
+                "parameters": [
+                    {
+                        "name": "dependency_values",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "instantiateClass": {
+                "name": "instantiateClass",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Service instantiated automatically or within this method by the Factory Method",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 358,
+                "get_end_line": 417,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L358",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L417",
+                "parameters": [
+
+                ]
+            },
+            "instantiateStatic": {
+                "name": "instantiateStatic",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Instantiate Service Class Statically",
+                "static": "",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 430,
+                "get_end_line": 441,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L430",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L441",
+                "parameters": [
+                    {
+                        "name": "product_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onAfterInstantiation": {
+                "name": "onAfterInstantiation",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Logic contained within this method is invoked after the class construction\n       and can be used for setter logic or other post-construction processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 450,
+                "get_end_line": 453,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L450",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L453",
+                "parameters": [
+
+                ]
+            },
+            "getProductValue": {
+                "name": "getProductValue",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller requests Product Result for just created Class from Factory Method",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 461,
+                "get_end_line": 493,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L461",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L493",
+                "parameters": [
+
+                ]
+            },
+            "removeContainerEntries": {
+                "name": "removeContainerEntries",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Request for array of Products to be removed from the IoC Container",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 501,
+                "get_end_line": 504,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L501",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L504",
+                "parameters": [
+
+                ]
+            },
+            "setContainerEntries": {
+                "name": "setContainerEntries",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Request for array of Products and Values to be saved to the IoC Container",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 512,
+                "get_end_line": 515,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L512",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L515",
+                "parameters": [
+
+                ]
+            },
+            "scheduleFactories": {
+                "name": "scheduleFactories",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Request for array of Factory Methods to be Scheduled",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 523,
+                "get_end_line": 526,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L523",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L526",
+                "parameters": [
+
+                ]
+            },
+            "readFile": {
+                "name": "readFile",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Read File",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 536,
+                "get_end_line": 557,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L536",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L557",
+                "parameters": [
+                    {
+                        "name": "file_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "sortObject": {
+                "name": "sortObject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Sort Object",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 567,
+                "get_end_line": 588,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L567",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L588",
+                "parameters": [
+                    {
+                        "name": "input_object",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/IoC",
+        "class_name": "FactoryMethodController",
+        "class_namespace": "Molajo\\IoC\\FactoryMethodController",
+        "namespace": "Molajo\\IoC",
+        "class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+        "document_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Tests\/FactoryMethodControllerTest.php",
+        "file_path": "Source\/FactoryMethodController.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\IoC\\FactoryInterface",
+            "CommonApi\\IoC\\FactoryBatchInterface"
+        ],
+        "comment": "Factory Method Controller\n \n  Driven by the Factory Method Controller to interact with Factory Method Adapter\n   to resolve dependencies by constructing dependent classes and construct\n   the primary class, itself, once all dependencies are available",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "dependencies",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+                "method_modifier": "default",
+                "comment": "Dependencies",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "reflection",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+                "method_modifier": "default",
+                "comment": "Reflection Dependencies",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "dependency_values",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+                "method_modifier": "default",
+                "comment": "Dependencies that have been satisfied",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "factory_adapter",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+                "method_modifier": "default",
+                "comment": "Factory Method Adapter Instance",
+                "data_type": "object  CommonApi\\IoC\\FactoryInterface",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+                "method_modifier": "default",
+                "comment": "Product Result",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "container_key",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php",
+                "method_modifier": "default",
+                "comment": "Container Key\n     \n      Value is the Factory Method Namespace unless it is Standard Factory Method\n      in which case it is the Namespace for the Class, itself",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "The Constructor is invoked by Controller->setProductWorkObject for each request",
+                "since": "1.0",
+                "get_start_line": 85,
+                "get_end_line": 89,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L85",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L89",
+                "parameters": [
+                    {
+                        "name": "factory_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "FactoryInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\IoC\\FactoryInterface"
+                        }
+                    }
+                ]
+            },
+            "getNamespace": {
+                "name": "getNamespace",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller requests Product Namespace from Factory Method",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 97,
+                "get_end_line": 100,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L97",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L100",
+                "parameters": [
+
+                ]
+            },
+            "getOptions": {
+                "name": "getOptions",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller requests Service Options from Factory Method",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 108,
+                "get_end_line": 111,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L108",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L111",
+                "parameters": [
+
+                ]
+            },
+            "getStoreContainerEntryIndicator": {
+                "name": "getStoreContainerEntryIndicator",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller retrieves \"store instance indicator\" from Factory Method",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 119,
+                "get_end_line": 122,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L119",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L122",
+                "parameters": [
+
+                ]
+            },
+            "setDependencies": {
+                "name": "setDependencies",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller provides reflection values which the Factory Method\n       can use to set Dependencies. Alternatively, Dependencies can be specifically defined\n       by the Factory Method. In either case, Dependencies are returned to the IoC Service\n       Provider Controller.",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 135,
+                "get_end_line": 149,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L135",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L149",
+                "parameters": [
+                    {
+                        "name": "reflection",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "removeDependency": {
+                "name": "removeDependency",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller removes Dependency (Either itself or for if_exists)\n     \n      Note: no communication with the Factory Method in this method",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 161,
+                "get_end_line": 166,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L161",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L166",
+                "parameters": [
+                    {
+                        "name": "dependency",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setDependencyValue": {
+                "name": "setDependencyValue",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller provides an Instance for Dependency, not sent to the\n       Factory Method until all Dependencies in place. At that time, the Factory Method Controller\n       uses onBeforeInstantiation to send satisfied Dependencies to the Factory Method\n     \n      Note: no communication with the Factory Method in this method",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 181,
+                "get_end_line": 186,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L181",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L186",
+                "parameters": [
+                    {
+                        "name": "dependency",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "dependency_value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getRemainingDependencyCount": {
+                "name": "getRemainingDependencyCount",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller requests count of Dependencies not yet satisfied\n     \n      Note: no communication with the Factory Method in this method",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 196,
+                "get_end_line": 208,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L196",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L208",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeInstantiation": {
+                "name": "onBeforeInstantiation",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller shares Dependency Instances with Factory Method for final processing before Class creation",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 216,
+                "get_end_line": 221,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L216",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L221",
+                "parameters": [
+                    {
+                        "name": "values",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "instantiateClass": {
+                "name": "instantiateClass",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller triggers the Factory Method to create the Class for the Service",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 229,
+                "get_end_line": 234,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L229",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L234",
+                "parameters": [
+
+                ]
+            },
+            "onAfterInstantiation": {
+                "name": "onAfterInstantiation",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller triggers the Factory Method to execute logic that follows class instantiation,\n       Location for Setter Dependencies or any other actions that must follow Class Creation",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 243,
+                "get_end_line": 248,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L243",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L248",
+                "parameters": [
+
+                ]
+            },
+            "getProductValue": {
+                "name": "getProductValue",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Factory Method Controller requests Product Result for just created Class from Factory Method",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 256,
+                "get_end_line": 261,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L256",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L261",
+                "parameters": [
+
+                ]
+            },
+            "removeContainerEntries": {
+                "name": "removeContainerEntries",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Following Class creation, Factory Method requests the Factory Method Controller remove Services from the Container",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 269,
+                "get_end_line": 272,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L269",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L272",
+                "parameters": [
+
+                ]
+            },
+            "setContainerEntries": {
+                "name": "setContainerEntries",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Following Class creation, Factory Method requests the Factory Method Controller instantiate Services",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 280,
+                "get_end_line": 283,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L280",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L283",
+                "parameters": [
+
+                ]
+            },
+            "scheduleFactories": {
+                "name": "scheduleFactories",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodController",
+                "comment": "Following Class creation, Factory Method requests the Factory Method Controller instantiate Services",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 291,
+                "get_end_line": 294,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L291",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodController.php#L294",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/IoC",
+        "class_name": "MapFactories",
+        "class_namespace": "Molajo\\IoC\\MapFactories",
+        "namespace": "Molajo\\IoC",
+        "class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php",
+        "document_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Tests\/MapFactoriesTest.php",
+        "file_path": "Source\/MapFactories.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Resource\\MapInterface"
+        ],
+        "comment": "Map Factory Method Namespaces",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "folders",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php",
+                "method_modifier": "default",
+                "comment": "Factories Folders",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_namespace_prefix",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php",
+                "method_modifier": "default",
+                "comment": "IoC Factory Method Namespaces - lookup table",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_aliases",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php",
+                "method_modifier": "default",
+                "comment": "Service Aliases",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_alias_filename",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php",
+                "method_modifier": "default",
+                "comment": "Factory Method Alias Filename",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 65,
+                "get_end_line": 79,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L65",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L79",
+                "parameters": [
+                    {
+                        "name": "folders",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter_namespace_prefix",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "Molajo\\Factories",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter_alias_filename",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "createMap": {
+                "name": "createMap",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "comment": "Create resource map of folder\/file locations and Fully Qualified Namespaces",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 87,
+                "get_end_line": 109,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L87",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L109",
+                "parameters": [
+
+                ]
+            },
+            "MapFactories": {
+                "name": "MapFactories",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "comment": "Map IoCC Dependency Injection Handler Namespaces",
+                "since": "1.0",
+                "return": "$this",
+                "get_start_line": 119,
+                "get_end_line": 141,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L119",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L141",
+                "parameters": [
+
+                ]
+            },
+            "getFolders": {
+                "name": "getFolders",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\MapFactories",
+                "comment": "Get Folders",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "return": "array",
+                "get_start_line": 152,
+                "get_end_line": 171,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L152",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/MapFactories.php#L171",
+                "parameters": [
+                    {
+                        "name": "adapter_folder",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/IoC",
+        "class_name": "Schedule",
+        "class_namespace": "Molajo\\IoC\\Schedule",
+        "namespace": "Molajo\\IoC",
+        "class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+        "document_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Tests\/ScheduleTest.php",
+        "file_path": "Source\/Schedule.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\IoC\\ScheduleInterface"
+        ],
+        "comment": "Schedule for processing Factory Method Requests and Container Entries",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "container",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Container Registry",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_aliases",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Factory Method Aliases => Namespaces",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "adapter_namespaces",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Factory Method Namespaces => Aliases",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "class_dependencies",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Class Dependencies derived from Reflection",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "process_requests",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Process Request Queue",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "queue_id",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Request Queue",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "request_process_queue",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "New Requests Queue",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "dependency_of",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Dependency of Array",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "standard_adapter_namespaces",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php",
+                "method_modifier": "default",
+                "comment": "Standard IoC Factory Method (Used when no custom Factory Method is required)",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 110,
+                "get_end_line": 127,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L110",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L127",
+                "parameters": [
+                    {
+                        "name": "container",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "ContainerInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\IoC\\ContainerInterface"
+                        }
+                    },
+                    {
+                        "name": "adapter_aliases",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_dependencies_filename",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "standard_adapter_namespaces",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": "Molajo\\IoC\\StandardFactoryMethod",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "scheduleFactoryMethod": {
+                "name": "scheduleFactoryMethod",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Schedule Factory recursively resolving dependencies",
+                "return": "mixed",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 139,
+                "get_end_line": 249,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L139",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L249",
+                "parameters": [
+                    {
+                        "name": "product_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setWorkObject": {
+                "name": "setWorkObject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Set the Request Work Object used within this class",
+                "return": "object",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 261,
+                "get_end_line": 289,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L261",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L289",
+                "parameters": [
+                    {
+                        "name": "product_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "instantiateFactoryMethod": {
+                "name": "instantiateFactoryMethod",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Get Factory Method Namespace",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 300,
+                "get_end_line": 371,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L300",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L371",
+                "parameters": [
+                    {
+                        "name": "work_object",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setContainerKey": {
+                "name": "setContainerKey",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Get Factory Method Namespace",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 382,
+                "get_end_line": 474,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L382",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L474",
+                "parameters": [
+                    {
+                        "name": "product_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "completeRequest": {
+                "name": "completeRequest",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Instantiate Class now that dependencies have been satisfied and finish processing",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 484,
+                "get_end_line": 582,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L484",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L582",
+                "parameters": [
+                    {
+                        "name": "work_object",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "satisfyDependency": {
+                "name": "satisfyDependency",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Update Service for Dependency Value",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 593,
+                "get_end_line": 611,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L593",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L611",
+                "parameters": [
+                    {
+                        "name": "dependency",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "dependency_value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getFactoryMethod": {
+                "name": "getFactoryMethod",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Instantiate DI Adapter, injecting it with the Handler instance",
+                "return": "object  CommonApi\\IoC\\FactoryInterface",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 621,
+                "get_end_line": 632,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L621",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L632",
+                "parameters": [
+                    {
+                        "name": "factory_method_adapter",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "FactoryInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\IoC\\FactoryInterface"
+                        }
+                    }
+                ]
+            },
+            "getFactoryMethodAdapter": {
+                "name": "getFactoryMethodAdapter",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Instantiate Factory Method to inject into the Adapter Constructor",
+                "return": "FactoryInterface",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "since": "1.0",
+                "get_start_line": 644,
+                "get_end_line": 675,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L644",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L675",
+                "parameters": [
+                    {
+                        "name": "request",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "adapter_namespaces",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "options",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "loadClassDependencies": {
+                "name": "loadClassDependencies",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\Schedule",
+                "comment": "Load Class Dependencies and Factory Method Aliases",
+                "since": "1.0",
+                "return": "$this",
+                "get_start_line": 685,
+                "get_end_line": 708,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L685",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/Schedule.php#L708",
+                "parameters": [
+                    {
+                        "name": "filename",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "IoC",
+        "source_repository": "https:\/\/github.com\/Molajo\/IoC",
+        "class_name": "StandardFactoryMethod",
+        "class_namespace": "Molajo\\IoC\\StandardFactoryMethod",
+        "namespace": "Molajo\\IoC",
+        "class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/StandardFactoryMethod.php",
+        "document_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/IoC\/blob\/master\/.dev\/Tests\/StandardFactoryMethodTest.php",
+        "file_path": "Source\/StandardFactoryMethod.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\IoC\\FactoryBatchInterface",
+            "CommonApi\\IoC\\FactoryInterface"
+        ],
+        "comment": "Standard Factory Method\n \n  Executes for those requests which do not require a custom Factory Method.\n \n  $options                                = array();\n  $option['foo']                          = $bar;\n  $this->dependencies['Molajo\/\/Foo\/\/Bar'] = $options;\n \n  1. Request must be made for Product Namespace (ex. Molajo\/\/Foo\/\/Bar)\n       or the $option['product_namespace'] must be provided\n \n  2. One (only) of the following can be provided as an $option array entry (default false for all);\n       $option['static_instance_indicator']   = true;\n       $option['store_instance_indicator']    = true;\n       $option['store_properties_indicator']  = true;\n \n  3. Other Constructor Dependencies can be provided in the $option array\n       $option['fieldhandler'] = $fieldhandler;\n       $option['parameter_name'] = $value;",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\IoC\\FactoryMethodBase",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+        "class_properties": [
+            {
+                "name": "ioc_id",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "IoC ID from Controller",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product_name",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Product Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product_namespace",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Product Namespace",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "static_instance_indicator",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Static Instance Indicator",
+                "data_type": "boolean",
+                "since": "1.0",
+                "static": "",
+                "value": null
+            },
+            {
+                "name": "store_instance_indicator",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Store Instance Indicator",
+                "data_type": "boolean",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "store_properties_indicator",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Store Properties",
+                "data_type": "boolean",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "options",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Options",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "reflection",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Reflection Parameters",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "dependencies",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Dependencies",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "product_result",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Product Result",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "static_product_result",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Static Product Result",
+                "static": "",
+                "data_type": "object  Services",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "remove_container_entries",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Container Entries to remove from IoCC",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "set_container_entries",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Services to update within the IoCC",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "schedule_factory_methods",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "Services to schedule for Product Creation",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "factory_method_adapter_property_array",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "property_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php",
+                "method_modifier": "default",
+                "comment": "List of Property Array",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\IoC\\StandardFactoryMethod",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 49,
+                "get_end_line": 52,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/StandardFactoryMethod.php#L49",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/StandardFactoryMethod.php#L52",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getNamespace": {
+                "name": "getNamespace",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller requests Product Namespace from Factory Method",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 198,
+                "get_end_line": 201,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L198",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L201",
+                "parameters": [
+
+                ]
+            },
+            "getOptions": {
+                "name": "getOptions",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller requests Service Options from Factory Method",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 209,
+                "get_end_line": 212,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L209",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L212",
+                "parameters": [
+
+                ]
+            },
+            "getStoreContainerEntryIndicator": {
+                "name": "getStoreContainerEntryIndicator",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller retrieves \"store instance indicator\" from Factory Method",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 220,
+                "get_end_line": 223,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L220",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L223",
+                "parameters": [
+
+                ]
+            },
+            "setDependencies": {
+                "name": "setDependencies",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method can use this method to define Service Dependencies\n       or use the Service Dependencies automatically defined by Reflection processes",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 234,
+                "get_end_line": 280,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L234",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L280",
+                "parameters": [
+                    {
+                        "name": "reflection",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeInstantiation": {
+                "name": "onBeforeInstantiation",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Logic contained within this method is invoked after Dependencies Instances are available\n       and before the instantiateClass Method is invoked",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 291,
+                "get_end_line": 349,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L291",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L349",
+                "parameters": [
+                    {
+                        "name": "dependency_values",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "instantiateClass": {
+                "name": "instantiateClass",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Service instantiated automatically or within this method by the Factory Method",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 358,
+                "get_end_line": 417,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L358",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L417",
+                "parameters": [
+
+                ]
+            },
+            "instantiateStatic": {
+                "name": "instantiateStatic",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Instantiate Service Class Statically",
+                "static": "",
+                "return": "void",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 430,
+                "get_end_line": 441,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L430",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L441",
+                "parameters": [
+                    {
+                        "name": "product_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onAfterInstantiation": {
+                "name": "onAfterInstantiation",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Logic contained within this method is invoked after the class construction\n       and can be used for setter logic or other post-construction processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 450,
+                "get_end_line": 453,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L450",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L453",
+                "parameters": [
+
+                ]
+            },
+            "getProductValue": {
+                "name": "getProductValue",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Factory Method Controller requests Product Result for just created Class from Factory Method",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 461,
+                "get_end_line": 493,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L461",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L493",
+                "parameters": [
+
+                ]
+            },
+            "removeContainerEntries": {
+                "name": "removeContainerEntries",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Request for array of Products to be removed from the IoC Container",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 501,
+                "get_end_line": 504,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L501",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L504",
+                "parameters": [
+
+                ]
+            },
+            "setContainerEntries": {
+                "name": "setContainerEntries",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Request for array of Products and Values to be saved to the IoC Container",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 512,
+                "get_end_line": 515,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L512",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L515",
+                "parameters": [
+
+                ]
+            },
+            "scheduleFactories": {
+                "name": "scheduleFactories",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Request for array of Factory Methods to be Scheduled",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 523,
+                "get_end_line": 526,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L523",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L526",
+                "parameters": [
+
+                ]
+            },
+            "readFile": {
+                "name": "readFile",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Read File",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 536,
+                "get_end_line": 557,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L536",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L557",
+                "parameters": [
+                    {
+                        "name": "file_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "sortObject": {
+                "name": "sortObject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\IoC\\FactoryMethodBase",
+                "comment": "Sort Object",
+                "return": "object",
+                "since": "1.0",
+                "get_start_line": 567,
+                "get_end_line": 588,
+                "method_url": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L567",
+                "method_url_end": "https:\/\/github.com\/Molajo\/IoC\/tree\/master\/Source\/FactoryMethodBase.php#L588",
+                "parameters": [
+                    {
+                        "name": "input_object",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

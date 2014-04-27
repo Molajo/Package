@@ -1,0 +1,457 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Pagination",
+        "source_repository": "https:\/\/github.com\/Molajo\/Pagination",
+        "class_name": "Pagination",
+        "class_namespace": "Molajo\\Pagination",
+        "namespace": "Molajo",
+        "class_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Pagination\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Pagination\/blob\/master\/.dev\/Tests\/PaginationTest.php",
+        "file_path": "Source\/Pagination.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Render\\PaginationInterface"
+        ],
+        "comment": "Pagination\n \n    <<  <  1  2  3  >  >>",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "display_items_per_page_count",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Configuration setting for the number of items to display per page",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "display_page_link_count",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Configuration setting for the number of page links to show",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "create_sef_url_indicator",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Configuration setting for the whether to create SEF URLs (true or false)",
+                "data_type": "boolean",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "display_index_in_url_indicator",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Configuration setting for whether to use index.php in the URL",
+                "data_type": "boolean",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "visited_page_url",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Base URL",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "total_items",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Count of total items\n      -> ALL, includes previous, current, next",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "current_start_parameter",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Current value for \"start=\" URL parameter",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "other_query_parameters",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "URL Filters",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "last_page",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Last Page",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "start_links_page_number",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Start Page Number",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "stop_links_page_number",
+                "declaring_class": "Molajo\\Pagination",
+                "property_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php",
+                "method_modifier": "default",
+                "comment": "Stop Page Number",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "getPaginationData": {
+                "name": "getPaginationData",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get Pagination Row Object for input data to rendering\n     \n      << < 1 2 3 > >>",
+                "since": "1.0",
+                "return": "null|object",
+                "get_start_line": 132,
+                "get_end_line": 192,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L132",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L192",
+                "parameters": [
+                    {
+                        "name": "display_items_per_page_count",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": 5,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "display_page_link_count",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": 5,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "create_sef_url_indicator",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": false,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "boolean",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "display_index_in_url_indicator",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": true,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "boolean",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "total_items",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "visited_page_url",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "current_start_parameter",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "other_query_parameters",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "calculateStartAndStopLinks": {
+                "name": "calculateStartAndStopLinks",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Calculate start and stop links",
+                "since": "1.0",
+                "return": "object",
+                "get_start_line": 200,
+                "get_end_line": 228,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L200",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L228",
+                "parameters": [
+
+                ]
+            },
+            "createPaginationRow": {
+                "name": "createPaginationRow",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Create Pagination Row Object for rendering",
+                "since": "1.0",
+                "return": "object",
+                "get_start_line": 236,
+                "get_end_line": 262,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L236",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L262",
+                "parameters": [
+
+                ]
+            },
+            "getFirstPage": {
+                "name": "getFirstPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the first page number (always page=1 unless no pages)",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 270,
+                "get_end_line": 277,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L270",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L277",
+                "parameters": [
+
+                ]
+            },
+            "getPrevPage": {
+                "name": "getPrevPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the page number previous to the first displayed page number link",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 285,
+                "get_end_line": 292,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L285",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L292",
+                "parameters": [
+
+                ]
+            },
+            "getCurrentPage": {
+                "name": "getCurrentPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the current page number",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 300,
+                "get_end_line": 303,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L300",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L303",
+                "parameters": [
+
+                ]
+            },
+            "getNextPage": {
+                "name": "getNextPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the page number following the last displayed page number link",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 311,
+                "get_end_line": 318,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L311",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L318",
+                "parameters": [
+
+                ]
+            },
+            "getLastPage": {
+                "name": "getLastPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the final page number",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 326,
+                "get_end_line": 329,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L326",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L329",
+                "parameters": [
+
+                ]
+            },
+            "getStartLinksPage": {
+                "name": "getStartLinksPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the first page number to use when looping through the display page number buttons",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 337,
+                "get_end_line": 340,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L337",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L340",
+                "parameters": [
+
+                ]
+            },
+            "getStopLinksPage": {
+                "name": "getStopLinksPage",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the last page number to use when looping through the display page number buttons",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 348,
+                "get_end_line": 351,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L348",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L351",
+                "parameters": [
+
+                ]
+            },
+            "getTotalItems": {
+                "name": "getTotalItems",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get the total number of items in the recordset (not just those displayed on the page)",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 359,
+                "get_end_line": 362,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L359",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L362",
+                "parameters": [
+
+                ]
+            },
+            "getPageUrl": {
+                "name": "getPageUrl",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Get URL for specified key",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 372,
+                "get_end_line": 401,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L372",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L401",
+                "parameters": [
+                    {
+                        "name": "page_number",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setPageUrlParameters": {
+                "name": "setPageUrlParameters",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Set URL and Parameters for specified key",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 411,
+                "get_end_line": 428,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L411",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L428",
+                "parameters": [
+                    {
+                        "name": "page_number",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setPageUrlSef": {
+                "name": "setPageUrlSef",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Pagination",
+                "comment": "Set the SEF URL for the specified key",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 438,
+                "get_end_line": 455,
+                "method_url": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L438",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Pagination\/tree\/master\/Source\/Pagination.php#L455",
+                "parameters": [
+                    {
+                        "name": "page_number",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

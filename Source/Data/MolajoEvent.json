@@ -1,0 +1,1139 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "class_name": "Dispatcher",
+        "class_namespace": "Molajo\\Event\\Dispatcher",
+        "namespace": "Molajo\\Event",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/DispatcherTest.php",
+        "file_path": "Source\/Dispatcher.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\DispatcherInterface"
+        ],
+        "comment": "Dispatcher",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "event_dispatcher",
+                "declaring_class": "Molajo\\Event\\Dispatcher",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php",
+                "method_modifier": "default",
+                "comment": "Event Dispatcher",
+                "data_type": "object  CommonApi\\Event\\EventDispatcherInterface",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "callback_events",
+                "declaring_class": "Molajo\\Event\\Dispatcher",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php",
+                "method_modifier": "default",
+                "comment": "Registered Listeners by Callback",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Event\\Dispatcher",
+                "comment": "Class Constructor",
+                "since": "1.0",
+                "get_start_line": 48,
+                "get_end_line": 64,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php#L48",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php#L64",
+                "parameters": [
+                    {
+                        "name": "event_dispatcher",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "EventDispatcherInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Event\\EventDispatcherInterface"
+                        }
+                    },
+                    {
+                        "name": "callback_events",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "registerForEvent": {
+                "name": "registerForEvent",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Event\\Dispatcher",
+                "comment": "Listener registers for an Event with the Dispatcher",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 76,
+                "get_end_line": 91,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php#L76",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php#L91",
+                "parameters": [
+                    {
+                        "name": "event_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "callback",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "callable",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "priority",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": 50,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "scheduleEvent": {
+                "name": "scheduleEvent",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Event\\Dispatcher",
+                "comment": "Requester Schedules Event with Dispatcher",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 102,
+                "get_end_line": 110,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php#L102",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Dispatcher.php#L110",
+                "parameters": [
+                    {
+                        "name": "event_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": {
+                            "name": "CommonApi\\Event\\EventInterface"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "class_name": "EventDispatcher",
+        "class_namespace": "Molajo\\Event\\EventDispatcher",
+        "namespace": "Molajo\\Event",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/EventDispatcher.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/EventDispatcherTest.php",
+        "file_path": "Source\/EventDispatcher.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\EventDispatcherInterface"
+        ],
+        "comment": "Event Dispatcher",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+
+        ],
+        "methods": {
+            "triggerListeners": {
+                "name": "triggerListeners",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Event\\EventDispatcher",
+                "comment": "Event Dispatcher triggers Listeners",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 35,
+                "get_end_line": 135,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/EventDispatcher.php#L35",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/EventDispatcher.php#L135",
+                "parameters": [
+                    {
+                        "name": "event",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "EventInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Event\\EventInterface"
+                        }
+                    },
+                    {
+                        "name": "listeners",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getData": {
+                "name": "getData",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Event\\EventDispatcher",
+                "comment": "Get data from event to return to scheduling process",
+                "return": "array",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 145,
+                "get_end_line": 177,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/EventDispatcher.php#L145",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/EventDispatcher.php#L177",
+                "parameters": [
+                    {
+                        "name": "event",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "EventInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Event\\EventInterface"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "class_name": "Scheduled",
+        "class_namespace": "Molajo\\Event\\Scheduled",
+        "namespace": "Molajo\\Event",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/ScheduledTest.php",
+        "file_path": "Source\/Scheduled.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\EventInterface"
+        ],
+        "comment": "Scheduled Event",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Event\\Scheduled",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php",
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "return_items",
+                "declaring_class": "Molajo\\Event\\Scheduled",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php",
+                "method_modifier": "default",
+                "comment": "Return Items\n     \n      List of data items to be returned to the scheduling process",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "data",
+                "declaring_class": "Molajo\\Event\\Scheduled",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php",
+                "method_modifier": "default",
+                "comment": "Data\n     \n      Array of properties",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Event\\Scheduled",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 61,
+                "get_end_line": 69,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php#L61",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php#L69",
+                "parameters": [
+                    {
+                        "name": "event_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "return_items",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Event\\Scheduled",
+                "comment": "Get a property",
+                "return": "mixed",
+                "since": "0.1",
+                "throws": "\\CommonApi\\Exception\\InvalidArgumentException",
+                "get_start_line": 80,
+                "get_end_line": 99,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php#L80",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php#L99",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Event\\Scheduled",
+                "comment": "Set a property value",
+                "return": "$this",
+                "since": "0.1",
+                "throws": "\\CommonApi\\Exception\\InvalidArgumentException",
+                "get_start_line": 111,
+                "get_end_line": 127,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php#L111",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Scheduled.php#L127",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Reflection",
+        "class_name": "Source",
+        "class_namespace": "Molajo\\Reflection\\Source",
+        "namespace": "Molajo\\Reflection",
+        "class_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Reflection\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Reflection\/blob\/master\/.dev\/Tests\/SourceTest.php",
+        "file_path": "e\/\/Source\/Source.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+
+        ],
+        "comment": "Uses PHP Reflection Classes to extract documentation from PHP repository",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "api": true,
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "data_folder",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Output Data Folder",
+                "api": true,
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "base_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Base Path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "classmap",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Classmap",
+                "api": true,
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "primary_project",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Primary Project",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "primary_repository",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Primary Repository",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "source_repository",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Source Repository",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_url_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Source 'path' at root of repo\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $class_url_path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "document_url_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Document 'path' after repository and before individual class document files\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $document_url_path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "unit_tests_url_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Unit Testing 'path' after repository up individual test files\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $unit_tests_url_path",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "relative_path",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Relative Path to install base",
+                "api": true,
+                "data_type": "string",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_url_array",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "All Class URLs",
+                "api": true,
+                "data_type": "array",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_data_object",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Class Data Object",
+                "api": true,
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            },
+            {
+                "name": "class_reflection_object",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
+                "method_modifier": "default",
+                "comment": "Class Reflection Object",
+                "api": true,
+                "data_type": "object",
+                "since": "1.0.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Constructor",
+                "since": "1.0.0",
+                "get_start_line": 158,
+                "get_end_line": 190,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L158",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L190",
+                "parameters": [
+                    {
+                        "name": "source_repository",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_url_path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "document_url_path",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "unit_tests_url_path",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data_folder",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "process": {
+                "name": "process",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Using PHP Reflection and for the associative array of classes and namespaces, extract\n       Class, Interface, Property, Method, and Parameter information",
+                "api": true,
+                "return": "\\CommonApi\\Model\\ValidateResponseInterface",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 220,
+                "get_end_line": 276,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L220",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L276",
+                "parameters": [
+                    {
+                        "name": "base_path",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "classmap",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "primary_project",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "primary_repository",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "preprocessClassLocations": {
+                "name": "preprocessClassLocations",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Preprocess all class locations so that URL's and paths are available for parent classes",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 288,
+                "get_end_line": 322,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L288",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L322",
+                "parameters": [
+                    {
+                        "name": "class_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_path",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "processClass": {
+                "name": "processClass",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Extract information on class",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 334,
+                "get_end_line": 344,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L344",
+                "parameters": [
+                    {
+                        "name": "class_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_namespace",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "reflectClassNamespace": {
+                "name": "reflectClassNamespace",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get Class Reflection Object",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 355,
+                "get_end_line": 365,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L355",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L365",
+                "parameters": [
+                    {
+                        "name": "class_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getClassProject": {
+                "name": "getClassProject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Extract information on class",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 376,
+                "get_end_line": 383,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L376",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L383",
+                "parameters": [
+                    {
+                        "name": "class_namespace",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getClassMeta": {
+                "name": "getClassMeta",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get Class Meta Data",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 395,
+                "get_end_line": 416,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L395",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L416",
+                "parameters": [
+                    {
+                        "name": "class_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "class_namespace",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getParent": {
+                "name": "getParent",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Retrieve Parent Class information",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 425,
+                "get_end_line": 448,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L425",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L448",
+                "parameters": [
+
+                ]
+            },
+            "getProperties": {
+                "name": "getProperties",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Retrieve properties for class",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 457,
+                "get_end_line": 468,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L457",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L468",
+                "parameters": [
+
+                ]
+            },
+            "getProperty": {
+                "name": "getProperty",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get a specific property for the class\n     \n      Appears PHP does not support getStartLine() for class properties?",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 481,
+                "get_end_line": 513,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L481",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L513",
+                "parameters": [
+                    {
+                        "name": "property_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getMethods": {
+                "name": "getMethods",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Retrieve methods for class",
+                "return": "$this",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 522,
+                "get_end_line": 535,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L522",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L535",
+                "parameters": [
+
+                ]
+            },
+            "getMethod": {
+                "name": "getMethod",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get a specific method for the class",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 546,
+                "get_end_line": 585,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L546",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L585",
+                "parameters": [
+                    {
+                        "name": "method",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getParameters": {
+                "name": "getParameters",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get all parameters for specified method",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 597,
+                "get_end_line": 615,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L597",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L615",
+                "parameters": [
+                    {
+                        "name": "method",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "row",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getParameter": {
+                "name": "getParameter",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Get a specific method parameter",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 627,
+                "get_end_line": 668,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L627",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L668",
+                "parameters": [
+                    {
+                        "name": "parameter",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "comment_param_array",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "searchCommentParamArray": {
+                "name": "searchCommentParamArray",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "For those parameters without type hints (array or callable), search the comments\n       for a matching parameter name and use the definition there",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 681,
+                "get_end_line": 708,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L681",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L708",
+                "parameters": [
+                    {
+                        "name": "parameter_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "comment_param_array",
+                        "position": 1,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "processComment": {
+                "name": "processComment",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Split comment into associative array",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 720,
+                "get_end_line": 765,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L720",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L765",
+                "parameters": [
+                    {
+                        "name": "comment",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "source_data_object",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "cleanItem": {
+                "name": "cleanItem",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Reflection\\Source",
+                "comment": "Clean item of non-content data",
+                "return": "object",
+                "since": "1.0.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 776,
+                "get_end_line": 779,
+                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L776",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L779",
+                "parameters": [
+                    {
+                        "name": "item",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

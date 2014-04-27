@@ -1,0 +1,936 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Authorisation",
+        "source_repository": "https:\/\/github.com\/Molajo\/Authorisation",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Authorisation\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Authorisation\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Authorisation\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "instantiable": false,
+        "final": false,
+        "abstract": true,
+        "interface_names": [
+            "CommonApi\\Authorisation\\AuthorisationInterface"
+        ],
+        "comment": "Abstract Authorisation Adapter",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "site_id",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Site ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_id",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "actions",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Actions used to establish authorisation\n     \n       0 => 'none',\n       1 => 'login',\n       2 => 'create',\n       3 => 'read',\n       4 => 'update',\n       5 => 'publish',\n       6 => 'delete',\n       7 => 'administer'",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "action_ids",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Actions used to establish authorisation\n     \n      'none'       => 0,\n      'login'      => 1,\n      'create'     => 2,\n      'read'       => 3,\n      'update'     => 4,\n      'publish'    => 5,\n      'delete'     => 6,\n      'administer' => 7",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "task_to_action_id",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Task to Action Id",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "task_to_action",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Task to Action",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "offline_switch",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Offline Switch",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "permissions",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "User Permissions\n     \n       $this->permissions->id\n       $this->permissions->username\n       $this->permissions->email\n       $this->permissions->administrator\n       $this->permissions->authorised_for_offline_access\n       $this->permissions->public\n       $this->permissions->guest\n       $this->permissions->registered\n       $this->permissions->sites\n       $this->permissions->applications\n       $this->permissions->groups\n       $this->permissions->view_groups\n       $this->permissions->html_filtering",
+                "data_type": "object $permissions",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Construct",
+                "since": "1.0",
+                "get_start_line": 133,
+                "get_end_line": 151,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L133",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L151",
+                "parameters": [
+                    {
+                        "name": "site_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "actions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "action_ids",
+                        "position": 3,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "task_to_action_id",
+                        "position": 4,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "task_to_action",
+                        "position": 5,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "offline_switch",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": 0,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "permissions",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorised": {
+                "name": "isUserAuthorised",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Verify User Authorisation to take Action on Resource",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 161,
+                "get_end_line": 223,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L161",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L223",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorisedSite": {
+                "name": "isUserAuthorisedSite",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised for this Site",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 231,
+                "get_end_line": 238,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L231",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L238",
+                "parameters": [
+
+                ]
+            },
+            "isUserAuthorisedApplication": {
+                "name": "isUserAuthorisedApplication",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised for this Application",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 246,
+                "get_end_line": 253,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L246",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L253",
+                "parameters": [
+
+                ]
+            },
+            "isUserAuthorisedOfflineMode": {
+                "name": "isUserAuthorisedOfflineMode",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Check if Application has been set to \"offline\" and, if so, verify if user has offline access",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 261,
+                "get_end_line": 271,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L261",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L271",
+                "parameters": [
+
+                ]
+            },
+            "isUserAuthorisedViewAccess": {
+                "name": "isUserAuthorisedViewAccess",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised to View this Catalog ID which has this View Group ID",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 281,
+                "get_end_line": 288,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L281",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L288",
+                "parameters": [
+                    {
+                        "name": "group_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorisedAction": {
+                "name": "isUserAuthorisedAction",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised to View this Catalog ID",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 299,
+                "get_end_line": 299,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L299",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L299",
+                "parameters": [
+                    {
+                        "name": "action_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "resource_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorisedTask": {
+                "name": "isUserAuthorisedTask",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised to perform this task",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 310,
+                "get_end_line": 310,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L310",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L310",
+                "parameters": [
+                    {
+                        "name": "task",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "resource_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isHTMLFilteringRequiredForUser": {
+                "name": "isHTMLFilteringRequiredForUser",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised for no HTML Editing",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 318,
+                "get_end_line": 325,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L318",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L325",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Authorisation",
+        "source_repository": "https:\/\/github.com\/Molajo\/Authorisation",
+        "class_name": "Database",
+        "class_namespace": "Molajo\\Authorisation\\Adapter\\Database",
+        "namespace": "Molajo\\Authorisation\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Authorisation\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Authorisation\/blob\/master\/.dev\/Tests\/DatabaseTest.php",
+        "file_path": "Source\/Adapter\/Database.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Authorisation\\AuthorisationInterface"
+        ],
+        "comment": "Database Authorisation Adapter",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "database",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Database Instance",
+                "data_type": "object  CommonApi\\Database\\DatabaseInterface",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "query",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Query Instance",
+                "data_type": "object  CommonApi\\Query\\QueryInterface",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "site_id",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Site ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "application_id",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Application ID",
+                "data_type": "int",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "actions",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Actions used to establish authorisation\n     \n       0 => 'none',\n       1 => 'login',\n       2 => 'create',\n       3 => 'read',\n       4 => 'update',\n       5 => 'publish',\n       6 => 'delete',\n       7 => 'administer'",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "action_ids",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Actions used to establish authorisation\n     \n      'none'       => 0,\n      'login'      => 1,\n      'create'     => 2,\n      'read'       => 3,\n      'update'     => 4,\n      'publish'    => 5,\n      'delete'     => 6,\n      'administer' => 7",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "task_to_action_id",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Task to Action Id",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "task_to_action",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Task to Action",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "offline_switch",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Offline Switch",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "permissions",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "User Permissions\n     \n       $this->permissions->id\n       $this->permissions->username\n       $this->permissions->email\n       $this->permissions->administrator\n       $this->permissions->authorised_for_offline_access\n       $this->permissions->public\n       $this->permissions->guest\n       $this->permissions->registered\n       $this->permissions->sites\n       $this->permissions->applications\n       $this->permissions->groups\n       $this->permissions->view_groups\n       $this->permissions->html_filtering",
+                "data_type": "object $permissions",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\Database",
+                "comment": "Construct",
+                "since": "1.0",
+                "get_start_line": 59,
+                "get_end_line": 84,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L59",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L84",
+                "parameters": [
+                    {
+                        "name": "site_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "application_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "actions",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "action_ids",
+                        "position": 3,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "task_to_action_id",
+                        "position": 4,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "task_to_action",
+                        "position": 5,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "offline_switch",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": 0,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "permissions",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "database",
+                        "position": 8,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "DatabaseInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Database\\DatabaseInterface"
+                        }
+                    },
+                    {
+                        "name": "query",
+                        "position": 9,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": {
+                            "name": "CommonApi\\Query\\QueryInterface"
+                        }
+                    }
+                ]
+            },
+            "isUserAuthorisedTask": {
+                "name": "isUserAuthorisedTask",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\Database",
+                "comment": "Is User Authorised to View this Catalog ID",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 95,
+                "get_end_line": 105,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L95",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L105",
+                "parameters": [
+                    {
+                        "name": "task",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "resource_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorisedViewAction": {
+                "name": "isUserAuthorisedViewAction",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\Database",
+                "comment": "Is User Authorised to View this Catalog ID",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 116,
+                "get_end_line": 153,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L116",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L153",
+                "parameters": [
+                    {
+                        "name": "resource_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorisedAction": {
+                "name": "isUserAuthorisedAction",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\Database",
+                "comment": "Is User Authorised to View this Catalog ID",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 164,
+                "get_end_line": 208,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L164",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/Database.php#L208",
+                "parameters": [
+                    {
+                        "name": "action_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "resource_id",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorised": {
+                "name": "isUserAuthorised",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Verify User Authorisation to take Action on Resource",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 161,
+                "get_end_line": 223,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L161",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L223",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isUserAuthorisedSite": {
+                "name": "isUserAuthorisedSite",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised for this Site",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 231,
+                "get_end_line": 238,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L231",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L238",
+                "parameters": [
+
+                ]
+            },
+            "isUserAuthorisedApplication": {
+                "name": "isUserAuthorisedApplication",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised for this Application",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 246,
+                "get_end_line": 253,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L246",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L253",
+                "parameters": [
+
+                ]
+            },
+            "isUserAuthorisedOfflineMode": {
+                "name": "isUserAuthorisedOfflineMode",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Check if Application has been set to \"offline\" and, if so, verify if user has offline access",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 261,
+                "get_end_line": 271,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L261",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L271",
+                "parameters": [
+
+                ]
+            },
+            "isUserAuthorisedViewAccess": {
+                "name": "isUserAuthorisedViewAccess",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised to View this Catalog ID which has this View Group ID",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 281,
+                "get_end_line": 288,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L281",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L288",
+                "parameters": [
+                    {
+                        "name": "group_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "int",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "isHTMLFilteringRequiredForUser": {
+                "name": "isHTMLFilteringRequiredForUser",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+                "comment": "Is User Authorised for no HTML Editing",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 318,
+                "get_end_line": 325,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L318",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L325",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Authorisation",
+        "source_repository": "https:\/\/github.com\/Molajo\/Authorisation",
+        "class_name": "Driver",
+        "class_namespace": "Molajo\\Authorisation\\Driver",
+        "namespace": "Molajo\\Authorisation",
+        "class_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Driver.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Authorisation\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Authorisation\/blob\/master\/.dev\/Tests\/DriverTest.php",
+        "file_path": "Source\/Driver.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Authorisation\\AuthorisationInterface"
+        ],
+        "comment": "Authorisation Driver",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "authorisation",
+                "declaring_class": "Molajo\\Authorisation\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Authorisation Adapter",
+                "data_type": "object  CommonApi\\Authorisation\\AuthorisationInterface",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Authorisation\\Driver",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 42,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Driver.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Driver.php#L42",
+                "parameters": [
+                    {
+                        "name": "authorisation",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "AuthorisationInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Authorisation\\AuthorisationInterface"
+                        }
+                    }
+                ]
+            },
+            "isUserAuthorised": {
+                "name": "isUserAuthorised",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Authorisation\\Driver",
+                "comment": "Verify User Authorisation to take Action on Resource",
+                "return": "bool",
+                "since": "1.0",
+                "get_start_line": 52,
+                "get_end_line": 55,
+                "method_url": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Driver.php#L52",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Authorisation\/tree\/master\/Source\/Driver.php#L55",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]
