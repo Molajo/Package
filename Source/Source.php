@@ -225,8 +225,7 @@ class Source
     ) {
         $this->base_path = $base_path;
         $this->classmap  = $classmap;
-        echo '<pre>';
-        var_dump($this->classmap);
+
         if ($primary_project === '') {
         } else {
             $this->primary_project = $primary_project;
@@ -242,8 +241,7 @@ class Source
             $this->class_url_array[$class_namespace]
                 = $this->preprocessClassLocations($class_namespace, $class_path);
         }
-        echo '<pre>';
-var_dump($this->class_url_array);
+
         $class_array = array();
         foreach ($this->classmap as $class_namespace => $class_path) {
 
@@ -253,7 +251,7 @@ var_dump($this->class_url_array);
             ) {
                 $class_name = $this->class_url_array[$class_namespace]->class_name;
 
-                echo $class_name . ' ' . $class_namespace . '<br />';
+                //echo $class_name . ' ' . $class_namespace . '<br />';
                 $this->reflectClassNamespace($class_namespace);
 
                 if ($this->class_reflection_object === null) {
@@ -288,24 +286,21 @@ var_dump($this->class_url_array);
      */
     protected function preprocessClassLocations($class_namespace, $class_path)
     {
-        $nodes      = explode('\\', $class_namespace);
-        $project    = $nodes[0];
-        $repository = $nodes[1];
-        $class_name = $nodes[count($nodes) - 1];
+        $nodes             = explode('\\', $class_namespace);
+        $namespace_project = $nodes[0];
+        $namespace_package = $nodes[1];
+        $namespace_class   = $nodes[count($nodes) - 1];
 
         $relative_path = substr($class_path, strlen($this->base_path . '/'), 9999);
 
         $class_location                    = new stdClass();
-        $class_location->project           = $project;
-        $class_location->repository        = $repository;
-        $class_location->source_repository = $this->source_repository . $project . '/' . $repository;
-        $class_location->class_name        = $class_name;
-
-        if ($project == $this->primary_project) {
-            $class_location->primary_project = true;
-        } else {
-            $class_location->primary_project = false;
-        }
+        $class_location->project           = $this->primary_project;
+        $class_location->repository        = $this->primary_repository;
+        $class_location->source_repository = $this->source_repository
+            . $this->primary_project . '/' . $this->primary_repository;
+        $class_location->namespace_project = $namespace_project;
+        $class_location->namespace_package = $namespace_package;
+        $class_location->class_name        = $namespace_class;
 
         if (substr($relative_path, 0, strlen('vendor')) === 'vendor') {
             $class_location->relative_path      = null;
@@ -313,8 +308,9 @@ var_dump($this->class_url_array);
             $class_location->primary_project    = false;
             $class_location->primary_repository = false;
         } else {
-            $class_location->relative_path      = $relative_path;
-            $class_location->class_url          = $class_location->source_repository . $this->class_url_path . $relative_path;
+            $class_location->relative_path = $relative_path;
+            $class_location->class_url
+                                                = $class_location->source_repository . $this->class_url_path . $relative_path;
             $class_location->primary_project    = true;
             $class_location->primary_repository = true;
         }
@@ -379,6 +375,8 @@ var_dump($this->class_url_array);
         $this->class_data_object->project           = $this->primary_project;
         $this->class_data_object->repository        = $this->primary_repository;
         $this->class_data_object->source_repository = $this->class_url_array[$class_namespace]->source_repository;
+        $this->class_data_object->namespace_project = $this->class_url_array[$class_namespace]->namespace_project;
+        $this->class_data_object->namespace_package = $this->class_url_array[$class_namespace]->namespace_package;
 
         return $this;
     }
@@ -572,14 +570,14 @@ var_dump($this->class_url_array);
         $row->get_start_line  = $method->getStartLine();
         $row->get_end_line    = $method->getEndLine();
 
-        if (isset($this->class_url_array[$row->declaring_class])) {  // ex. DateTime
-            $row->method_url      = $this->class_url_array[$row->declaring_class]->class_url
+        if (isset($this->class_url_array[$row->declaring_class])) { // ex. DateTime
+            $row->method_url     = $this->class_url_array[$row->declaring_class]->class_url
                 . '#L' . $row->get_start_line;
-            $row->method_url_end  = $this->class_url_array[$row->declaring_class]->class_url
+            $row->method_url_end = $this->class_url_array[$row->declaring_class]->class_url
                 . '#L' . $row->get_end_line;
         } else {
-            $row->method_url      = null;
-            $row->method_url_end  = null;
+            $row->method_url     = null;
+            $row->method_url_end = null;
         }
 
         return $row;

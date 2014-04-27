@@ -17,7 +17,6 @@ $packages['Event']         = '/Users/amystephen/Sites/Molajo/Event';
 $packages['Fieldhandler']  = '/Users/amystephen/Sites/Molajo/Fieldhandler';
 $packages['Filesystem']    = '/Users/amystephen/Sites/Molajo/Filesystem';
 $packages['Foundation5']   = '/Users/amystephen/Sites/Molajo/Foundation5';
-$packages['Framework']     = '/Users/amystephen/Sites/Molajo/Framework';
 $packages['Http']          = '/Users/amystephen/Sites/Molajo/Http';
 $packages['IoC']           = '/Users/amystephen/Sites/Molajo/IoC';
 $packages['Language']      = '/Users/amystephen/Sites/Molajo/Language';

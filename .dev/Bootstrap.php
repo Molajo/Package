@@ -7,30 +7,15 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 $base = substr(__DIR__, 0, strlen(__DIR__) - 5);
-include_once __DIR__ . '/CreateClassMap.php';
+if (function_exists('CreateClassMap')) {
+} else {
+    include_once __DIR__ . '/CreateClassMap.php';
+}
 include_once $base . '/vendor/autoload.php';
 
-if (! defined('PHP_VERSION_ID')) {
-    $version = explode('.', phpversion());
-    define('PHP_VERSION_ID', ($version[0] * 10000 + $version[1] * 100 + $version[2]));
-}
-
-$classmap = array();
-$results  = createClassMap($base . '/vendor/commonapi/exception/', 'CommonApi\\Exception\\');
-$classmap = array_merge($classmap, $results);
-$classmap = createClassMap($base . '/vendor/commonapi/model/', 'CommonApi\\Model\\');
-$classmap = array_merge($classmap, $results);
-$results  = createClassMap($base . '/Source/Constraint/', 'Molajo\\Fieldhandler\\Constraint\\');
-$classmap = array_merge($classmap, $results);
-$results  = createClassMap($base . '/Source/Escape/', 'Molajo\\Fieldhandler\\Escape\\');
-$classmap = array_merge($classmap, $results);
-$results  = createClassMap($base . '/Reflection/', 'Molajo\\Reflection\\');
-$classmap = array_merge($classmap, $results);
-
-$classmap['Molajo\\Fieldhandler\\HandleResponse']   = $base . '/Source/HandleResponse.php';
-$classmap['Molajo\\Fieldhandler\\ValidateResponse'] = $base . '/Source/ValidateResponse.php';
-$classmap['Molajo\\Fieldhandler\\Message']          = $base . '/Source/Message.php';
-$classmap['Molajo\\Fieldhandler\\Request']          = $base . '/Source/Request.php';
+$classmap                               = array();
+$classmap['Molajito\\Data\\Project']    = $base . '/Data/Project.php';
+$classmap['Molajo\\Reflection\\Source'] = $base . '/Package/Source/Source.php';
 ksort($classmap);
 
 spl_autoload_register(

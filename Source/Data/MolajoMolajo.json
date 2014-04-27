@@ -1,0 +1,3237 @@
+[
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "AuthorPlugin",
+        "class_namespace": "Molajo\\Plugins\\Author\\AuthorPlugin",
+        "namespace": "Molajo\\Plugins\\Author",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/AuthorPluginTest.php",
+        "file_path": "Source\/Plugins\/Author\/AuthorPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\DisplayInterface"
+        ],
+        "comment": "Author Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\DisplayEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onBeforeRenderView": {
+                "name": "onBeforeRenderView",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Author\\AuthorPlugin",
+                "comment": "Before Rendering the Author Template View, retrieve and store Author in plugin_data",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 32,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php#L32",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php#L56",
+                "parameters": [
+
+                ]
+            },
+            "getAuthorProfile": {
+                "name": "getAuthorProfile",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Author\\AuthorPlugin",
+                "comment": "Get Author Profile",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 65,
+                "get_end_line": 92,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php#L65",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php#L92",
+                "parameters": [
+                    {
+                        "name": "author_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "getAuthorProfileURL": {
+                "name": "getAuthorProfileURL",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Author\\AuthorPlugin",
+                "comment": "After-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 101,
+                "get_end_line": 164,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php#L101",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Author\/AuthorPlugin.php#L164",
+                "parameters": [
+                    {
+                        "name": "author_id",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeRender": {
+                "name": "onBeforeRender",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "Before any parsing or rendering, after Execute",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 33,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeParse": {
+                "name": "onBeforeParse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "Before parsing of rendered_page to extract tokens for rendering\n       This is a recursive process - parse - render - parse - render - until no tokens found\n       exclude_tokens contains values that are not processed during this parsing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterParse": {
+                "name": "onAfterParse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "After parsing for tokens (recursive), parameters->tokens contains parsed results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 54,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewHead": {
+                "name": "onBeforeRenderViewHead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering, before the rendering of the Head",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 76,
+                "get_end_line": 79,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewItem": {
+                "name": "onBeforeRenderViewItem",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering for each item",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 87,
+                "get_end_line": 90,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewFooter": {
+                "name": "onBeforeRenderViewFooter",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering, before the rendering of the Footer",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 98,
+                "get_end_line": 101,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterRenderView": {
+                "name": "onAfterRenderView",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "After the View has been rendered but before it has been inserted into the rendered_page",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 109,
+                "get_end_line": 112,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterRender": {
+                "name": "onAfterRender",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "On after rendering the entire document",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 120,
+                "get_end_line": 123,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "BlockquotePlugin",
+        "class_namespace": "Molajo\\Plugins\\Blockquote\\BlockquotePlugin",
+        "namespace": "Molajo\\Plugins\\Blockquote",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Blockquote\/BlockquotePlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/BlockquotePluginTest.php",
+        "file_path": "Source\/Plugins\/Blockquote\/BlockquotePlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Blockquote Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Blockquote\\BlockquotePlugin",
+                "comment": "Blockquote extraction and formatting\n     \n      {blockquote}{cite:xYZ}.{\/blockquote}",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 31,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Blockquote\/BlockquotePlugin.php#L31",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Blockquote\/BlockquotePlugin.php#L56",
+                "parameters": [
+
+                ]
+            },
+            "blockquote": {
+                "name": "blockquote",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Blockquote\\BlockquotePlugin",
+                "comment": "blockquote - searches for and returns blockquote",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 66,
+                "get_end_line": 104,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Blockquote\/BlockquotePlugin.php#L66",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Blockquote\/BlockquotePlugin.php#L104",
+                "parameters": [
+                    {
+                        "name": "text",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "CommentsPlugin",
+        "class_namespace": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+        "namespace": "Molajo\\Plugins\\Comments",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/CommentsPluginTest.php",
+        "file_path": "Source\/Plugins\/Comments\/CommentsPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\DisplayInterface"
+        ],
+        "comment": "Comments Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\DisplayEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onBeforeRenderView": {
+                "name": "onBeforeRenderView",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+                "comment": "Retrieve data for the Comments, Commentform, and Comment Template Views",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 32,
+                "get_end_line": 107,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L32",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L107",
+                "parameters": [
+
+                ]
+            },
+            "getCommentsOpen": {
+                "name": "getCommentsOpen",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+                "comment": "Determine if Comments are still open for Content",
+                "return": "int",
+                "since": "1.0",
+                "get_start_line": 115,
+                "get_end_line": 141,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L115",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L141",
+                "parameters": [
+
+                ]
+            },
+            "getCommentHeading": {
+                "name": "getCommentHeading",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+                "comment": "Retrieve Data for Comment Heading",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 150,
+                "get_end_line": 212,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L212",
+                "parameters": [
+
+                ]
+            },
+            "getComments": {
+                "name": "getComments",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+                "comment": "Get Comments",
+                "returns": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 221,
+                "get_end_line": 260,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L221",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L260",
+                "parameters": [
+
+                ]
+            },
+            "getCommentForm": {
+                "name": "getCommentForm",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+                "comment": "Retrieve Data for Comment Heading",
+                "returns": "stdClass",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 269,
+                "get_end_line": 316,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L269",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L316",
+                "parameters": [
+
+                ]
+            },
+            "onAfterRenderView": {
+                "name": "onAfterRenderView",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+                "comment": "Retrieve data for the Comments, Commentform, and Comment Template Views",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 324,
+                "get_end_line": 344,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L324",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Comments\/CommentsPlugin.php#L344",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRender": {
+                "name": "onBeforeRender",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "Before any parsing or rendering, after Execute",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 33,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeParse": {
+                "name": "onBeforeParse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "Before parsing of rendered_page to extract tokens for rendering\n       This is a recursive process - parse - render - parse - render - until no tokens found\n       exclude_tokens contains values that are not processed during this parsing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterParse": {
+                "name": "onAfterParse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "After parsing for tokens (recursive), parameters->tokens contains parsed results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 54,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewHead": {
+                "name": "onBeforeRenderViewHead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering, before the rendering of the Head",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 76,
+                "get_end_line": 79,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewItem": {
+                "name": "onBeforeRenderViewItem",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering for each item",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 87,
+                "get_end_line": 90,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewFooter": {
+                "name": "onBeforeRenderViewFooter",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering, before the rendering of the Footer",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 98,
+                "get_end_line": 101,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterRender": {
+                "name": "onAfterRender",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "On after rendering the entire document",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 120,
+                "get_end_line": 123,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "CopyrightPlugin",
+        "class_namespace": "Molajo\\Plugins\\Copyright\\CopyrightPlugin",
+        "namespace": "Molajo\\Plugins\\Copyright",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Copyright\/CopyrightPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/CopyrightPluginTest.php",
+        "file_path": "Source\/Plugins\/Copyright\/CopyrightPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\SystemInterface"
+        ],
+        "comment": "Copyright Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\SystemEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Copyright\\CopyrightPlugin",
+                "comment": "Prepares formatted copyright statement with year span",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 62,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Copyright\/CopyrightPlugin.php#L30",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Copyright\/CopyrightPlugin.php#L62",
+                "parameters": [
+
+                ]
+            },
+            "onAfterInitialise": {
+                "name": "onAfterInitialise",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "After Initialise Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 33,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRoute": {
+                "name": "onBeforeRoute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "Before Route Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 41,
+                "get_end_line": 44,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterRoute": {
+                "name": "onAfterRoute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "After Route Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 52,
+                "get_end_line": 55,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeResource": {
+                "name": "onBeforeResource",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "Before Resource Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 63,
+                "get_end_line": 66,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterResource": {
+                "name": "onAfterResource",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "After Resource Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 74,
+                "get_end_line": 77,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeAuthorise": {
+                "name": "onBeforeAuthorise",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "Before Authorise Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 85,
+                "get_end_line": 88,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterAuthorise": {
+                "name": "onAfterAuthorise",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "After Authorise Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 96,
+                "get_end_line": 99,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeExecute": {
+                "name": "onBeforeExecute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "Before Execute Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 107,
+                "get_end_line": 110,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterExecute": {
+                "name": "onAfterExecute",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "After Execute Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 118,
+                "get_end_line": 121,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeResponse": {
+                "name": "onBeforeResponse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "Before Response Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 129,
+                "get_end_line": 132,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterResponse": {
+                "name": "onAfterResponse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\SystemEventPlugin",
+                "comment": "After Response Processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 140,
+                "get_end_line": 143,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "DateformatsPlugin",
+        "class_namespace": "Molajo\\Plugins\\Dateformats\\DateformatsPlugin",
+        "namespace": "Molajo\\Plugins\\Dateformats",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Dateformats\/DateformatsPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/DateformatsPluginTest.php",
+        "file_path": "Source\/Plugins\/Dateformats\/DateformatsPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\CreateInterface",
+            "CommonApi\\Event\\UpdateInterface"
+        ],
+        "comment": "Date Formats",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\CreateEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onBeforeCreate": {
+                "name": "onBeforeCreate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Dateformats\\DateformatsPlugin",
+                "comment": "Pre-create processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 88,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Dateformats\/DateformatsPlugin.php#L30",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Dateformats\/DateformatsPlugin.php#L88",
+                "parameters": [
+
+                ]
+            },
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Dateformats\\DateformatsPlugin",
+                "comment": "After-read processing\n     \n      Adds formatted dates to 'normal' or special fields recordset",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 98,
+                "get_end_line": 214,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Dateformats\/DateformatsPlugin.php#L98",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Dateformats\/DateformatsPlugin.php#L214",
+                "parameters": [
+
+                ]
+            },
+            "onAfterCreate": {
+                "name": "onAfterCreate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\CreateEventPlugin",
+                "comment": "Post-create processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 40,
+                "get_end_line": 43,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeUpdate": {
+                "name": "onBeforeUpdate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\UpdateEventPlugin",
+                "comment": "Before update processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 31,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterUpdate": {
+                "name": "onAfterUpdate",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\UpdateEventPlugin",
+                "comment": "After update processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 39,
+                "get_end_line": 41,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "EmailPlugin",
+        "class_namespace": "Molajo\\Plugins\\Email\\EmailPlugin",
+        "namespace": "Molajo\\Plugins\\Email",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Email\/EmailPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/EmailPluginTest.php",
+        "file_path": "Source\/Plugins\/Email\/EmailPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Email Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Email\\EmailPlugin",
+                "comment": "After-read processing\n     \n      Retrieves Author Information for Item",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 31,
+                "get_end_line": 58,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Email\/EmailPlugin.php#L31",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Email\/EmailPlugin.php#L58",
+                "parameters": [
+
+                ]
+            },
+            "obfuscateEmail": {
+                "name": "obfuscateEmail",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Email\\EmailPlugin",
+                "comment": "Obfuscate Email",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 68,
+                "get_end_line": 77,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Email\/EmailPlugin.php#L68",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Email\/EmailPlugin.php#L77",
+                "parameters": [
+                    {
+                        "name": "email_address",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "FullnamePlugin",
+        "class_namespace": "Molajo\\Plugins\\Fullname\\FullnamePlugin",
+        "namespace": "Molajo\\Plugins\\Fullname",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Fullname\/FullnamePlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/FullnamePluginTest.php",
+        "file_path": "Source\/Plugins\/Fullname\/FullnamePlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Fullname Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Fullname\\FullnamePlugin",
+                "comment": "Adds full_name to recordset containing first_name and last_name",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 45,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Fullname\/FullnamePlugin.php#L29",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Fullname\/FullnamePlugin.php#L45",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "LinebreaksPlugin",
+        "class_namespace": "Molajo\\Plugins\\Linebreaks\\LinebreaksPlugin",
+        "namespace": "Molajo\\Plugins\\Linebreaks",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Linebreaks\/LinebreaksPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/LinebreaksPluginTest.php",
+        "file_path": "Source\/Plugins\/Linebreaks\/LinebreaksPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Linebreaks Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Linebreaks\\LinebreaksPlugin",
+                "comment": "Changes line breaks to break tags",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 56,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Linebreaks\/LinebreaksPlugin.php#L30",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Linebreaks\/LinebreaksPlugin.php#L56",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "LinksPlugin",
+        "class_namespace": "Molajo\\Plugins\\Links\\LinksPlugin",
+        "namespace": "Molajo\\Plugins\\Links",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Links\/LinksPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/LinksPluginTest.php",
+        "file_path": "Source\/Plugins\/Links\/LinksPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Links Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Links\\LinksPlugin",
+                "comment": "After-read processing\n     \n      Retrieves Author Information for Item",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 31,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Links\/LinksPlugin.php#L31",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Links\/LinksPlugin.php#L65",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "MessagesPlugin",
+        "class_namespace": "Molajo\\Plugins\\Messages\\MessagesPlugin",
+        "namespace": "Molajo\\Plugins\\Messages",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Messages\/MessagesPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/MessagesPluginTest.php",
+        "file_path": "Source\/Plugins\/Messages\/MessagesPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\DisplayInterface"
+        ],
+        "comment": "Messages Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\DisplayEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onBeforeParseHead": {
+                "name": "onBeforeParseHead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Messages\\MessagesPlugin",
+                "comment": "Prepares system messages for display",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 69,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Messages\/MessagesPlugin.php#L30",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Messages\/MessagesPlugin.php#L69",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRender": {
+                "name": "onBeforeRender",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "Before any parsing or rendering, after Execute",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 30,
+                "get_end_line": 33,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeParse": {
+                "name": "onBeforeParse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "Before parsing of rendered_page to extract tokens for rendering\n       This is a recursive process - parse - render - parse - render - until no tokens found\n       exclude_tokens contains values that are not processed during this parsing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 43,
+                "get_end_line": 46,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterParse": {
+                "name": "onAfterParse",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "After parsing for tokens (recursive), parameters->tokens contains parsed results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 54,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderView": {
+                "name": "onBeforeRenderView",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "After the Read Query has executed but rendering the view",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 65,
+                "get_end_line": 68,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewHead": {
+                "name": "onBeforeRenderViewHead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering, before the rendering of the Head",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 76,
+                "get_end_line": 79,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewItem": {
+                "name": "onBeforeRenderViewItem",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering for each item",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 87,
+                "get_end_line": 90,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRenderViewFooter": {
+                "name": "onBeforeRenderViewFooter",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "During Template View rendering, before the rendering of the Footer",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 98,
+                "get_end_line": 101,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterRenderView": {
+                "name": "onAfterRenderView",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "After the View has been rendered but before it has been inserted into the rendered_page",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 109,
+                "get_end_line": 112,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterRender": {
+                "name": "onAfterRender",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\DisplayEventPlugin",
+                "comment": "On after rendering the entire document",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 120,
+                "get_end_line": 123,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "ReadmorePlugin",
+        "class_namespace": "Molajo\\Plugins\\Readmore\\ReadmorePlugin",
+        "namespace": "Molajo\\Plugins\\Readmore",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Readmore\/ReadmorePlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/ReadmorePluginTest.php",
+        "file_path": "Source\/Plugins\/Readmore\/ReadmorePlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Read More Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Readmore\\ReadmorePlugin",
+                "comment": "After-read processing\n     \n      splits the content_text field into intro and full text on readmore",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 31,
+                "get_end_line": 64,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Readmore\/ReadmorePlugin.php#L31",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Readmore\/ReadmorePlugin.php#L64",
+                "parameters": [
+
+                ]
+            },
+            "splitReadMoreText": {
+                "name": "splitReadMoreText",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Readmore\\ReadmorePlugin",
+                "comment": "splitReadMoreText - search for the system-readmore break and split the text at that point into two text fields",
+                "return": "array",
+                "since": "1.0",
+                "get_start_line": 74,
+                "get_end_line": 90,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Readmore\/ReadmorePlugin.php#L74",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Readmore\/ReadmorePlugin.php#L90",
+                "parameters": [
+                    {
+                        "name": "text",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "SmiliesPlugin",
+        "class_namespace": "Molajo\\Plugins\\Smilies\\SmiliesPlugin",
+        "namespace": "Molajo\\Plugins\\Smilies",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Smilies\/SmiliesPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/SmiliesPluginTest.php",
+        "file_path": "Source\/Plugins\/Smilies\/SmiliesPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Smilies Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Smilies\\SmiliesPlugin",
+                "comment": "Replaces text with emotion images",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 61,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Smilies\/SmiliesPlugin.php#L29",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Smilies\/SmiliesPlugin.php#L61",
+                "parameters": [
+
+                ]
+            },
+            "smilies": {
+                "name": "smilies",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Plugins\\Smilies\\SmiliesPlugin",
+                "comment": "smilies - change text smiley values into icons",
+                "return": "string",
+                "since": "1.0",
+                "get_start_line": 71,
+                "get_end_line": 135,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Smilies\/SmiliesPlugin.php#L71",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Smilies\/SmiliesPlugin.php#L135",
+                "parameters": [
+                    {
+                        "name": "text",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Molajo",
+        "source_repository": "https:\/\/github.com\/Molajo\/Molajo",
+        "namespace_project": "Molajo",
+        "namespace_package": "Plugins",
+        "class_name": "SnippetPlugin",
+        "class_namespace": "Molajo\\Plugins\\Snippet\\SnippetPlugin",
+        "namespace": "Molajo\\Plugins\\Snippet",
+        "class_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Snippet\/SnippetPlugin.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Molajo\/blob\/master\/.dev\/Tests\/SnippetPluginTest.php",
+        "file_path": "Source\/Plugins\/Snippet\/SnippetPlugin.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Event\\ReadInterface"
+        ],
+        "comment": "Snippet Plugin",
+        "package": "Molajo",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0",
+        "parent_class": "Molajo\\Plugins\\ReadEventPlugin",
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "plugin_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Plugin Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "event_name",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "property_url": null,
+                "method_modifier": "default",
+                "comment": "Event Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "onAfterRead": {
+                "name": "onAfterRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\Snippet\\SnippetPlugin",
+                "comment": "Parses field types of Text into snippets, stripped of HTML tags, forced to a specific length",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 69,
+                "method_url": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Snippet\/SnippetPlugin.php#L29",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Molajo\/tree\/master\/Source\/Plugins\/Snippet\/SnippetPlugin.php#L69",
+                "parameters": [
+
+                ]
+            },
+            "onBeforeRead": {
+                "name": "onBeforeRead",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Pre-read processing",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 29,
+                "get_end_line": 32,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "onAfterReadall": {
+                "name": "onAfterReadall",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\ReadEventPlugin",
+                "comment": "Post-read processing - all rows at one time from query_results",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 51,
+                "get_end_line": 54,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 46,
+                "get_end_line": 57,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "plugin_name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "event_name",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "data",
+                        "position": 2,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Get the current value (or default) of the specified property",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 67,
+                "get_end_line": 74,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Plugins\\AbstractPlugin",
+                "comment": "Set the value of a property\n     \n      Initially, the setter is used by the plugin_event processPluginclass method\n       to establish initial property values sent in by the scheduling method\n     \n      Changes to data will be used collected and used by the Mvc",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 91,
+                "get_end_line": 96,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    }
+]

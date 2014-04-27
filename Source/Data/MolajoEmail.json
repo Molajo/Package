@@ -3,13 +3,15 @@
         "project": "Molajo",
         "repository": "Email",
         "source_repository": "https:\/\/github.com\/Molajo\/Email",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
         "class_name": "AbstractAdapter",
         "class_namespace": "Molajo\\Email\\Adapter\\AbstractAdapter",
         "namespace": "Molajo\\Email\\Adapter",
-        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
         "document_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
-        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "file_path": "Source\/Email\/Adapter\/AbstractAdapter.php",
         "instantiable": false,
         "final": false,
         "abstract": true,
@@ -27,7 +29,7 @@
             {
                 "name": "email_instance",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Email Instance",
                 "data_type": "object",
@@ -37,7 +39,7 @@
             {
                 "name": "mailer_transport",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Mailer Transport - smtp, sendmail, ismail",
                 "data_type": "string",
@@ -47,7 +49,7 @@
             {
                 "name": "site_name",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Site Name",
                 "data_type": "string",
@@ -57,7 +59,7 @@
             {
                 "name": "smtpauth",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Authorisation",
                 "data_type": "string",
@@ -67,7 +69,7 @@
             {
                 "name": "smtphost",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Host",
                 "data_type": "string",
@@ -77,7 +79,7 @@
             {
                 "name": "smtpuser",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP User",
                 "data_type": "string",
@@ -87,7 +89,7 @@
             {
                 "name": "smtppass",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Password",
                 "data_type": "string",
@@ -97,7 +99,7 @@
             {
                 "name": "smtpsecure",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Secure",
                 "data_type": "string",
@@ -107,7 +109,7 @@
             {
                 "name": "smtpport",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Port",
                 "data_type": "string",
@@ -117,7 +119,7 @@
             {
                 "name": "sendmail_path",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Sendmail Path",
                 "data_type": "bool",
@@ -127,7 +129,7 @@
             {
                 "name": "mailer_disable_sending",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Disable Sending",
                 "data_type": "bool",
@@ -137,7 +139,7 @@
             {
                 "name": "mailer_only_deliver_to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Only Deliver To",
                 "data_type": "string",
@@ -147,7 +149,7 @@
             {
                 "name": "to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "To",
                 "data_type": "array",
@@ -157,7 +159,7 @@
             {
                 "name": "from",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "From",
                 "data_type": "array",
@@ -167,7 +169,7 @@
             {
                 "name": "reply_to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Reply To",
                 "data_type": "array",
@@ -177,7 +179,7 @@
             {
                 "name": "cc",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Copy",
                 "data_type": "array",
@@ -187,7 +189,7 @@
             {
                 "name": "bcc",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Blind Copy",
                 "data_type": "array",
@@ -197,7 +199,7 @@
             {
                 "name": "subject",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Subject",
                 "data_type": "string",
@@ -207,7 +209,7 @@
             {
                 "name": "body",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Body",
                 "data_type": "string",
@@ -217,7 +219,7 @@
             {
                 "name": "mailer_html_or_text",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "HTML or Text",
                 "data_type": "string",
@@ -227,7 +229,7 @@
             {
                 "name": "attachment",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Attachment",
                 "data_type": "string",
@@ -237,7 +239,7 @@
             {
                 "name": "property_array",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "List of Properties",
                 "data_type": "object",
@@ -254,8 +256,8 @@
                 "since": "1.0",
                 "get_start_line": 251,
                 "get_end_line": 295,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L251",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L295",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L251",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L295",
                 "parameters": [
                     {
                         "name": "email_instance",
@@ -479,8 +481,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 307,
                 "get_end_line": 322,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L307",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L322",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L307",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L322",
                 "parameters": [
                     {
                         "name": "key",
@@ -514,8 +516,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 334,
                 "get_end_line": 351,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L334",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L351",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L351",
                 "parameters": [
                     {
                         "name": "key",
@@ -548,8 +550,8 @@
                 "since": "1.0",
                 "get_start_line": 359,
                 "get_end_line": 359,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L359",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L359",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L359",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L359",
                 "parameters": [
 
                 ]
@@ -563,8 +565,8 @@
                 "since": "1.0",
                 "get_start_line": 367,
                 "get_end_line": 370,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L367",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L370",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L367",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L370",
                 "parameters": [
 
                 ]
@@ -579,8 +581,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 381,
                 "get_end_line": 390,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L381",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L390",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L390",
                 "parameters": [
                     {
                         "name": "string",
@@ -604,8 +606,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 401,
                 "get_end_line": 410,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L401",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L410",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L401",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L410",
                 "parameters": [
                     {
                         "name": "html",
@@ -629,8 +631,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 421,
                 "get_end_line": 463,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L421",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L463",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L463",
                 "parameters": [
                     {
                         "name": "list",
@@ -654,8 +656,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 474,
                 "get_end_line": 483,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L474",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L483",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L474",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L483",
                 "parameters": [
                     {
                         "name": "email_address",
@@ -678,8 +680,8 @@
                 "since": "1.0",
                 "get_start_line": 491,
                 "get_end_line": 500,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L491",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L500",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L491",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L500",
                 "parameters": [
                     {
                         "name": "email",
@@ -702,8 +704,8 @@
                 "since": "1.0",
                 "get_start_line": 508,
                 "get_end_line": 517,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L508",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L517",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L508",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L517",
                 "parameters": [
                     {
                         "name": "name",
@@ -723,13 +725,15 @@
         "project": "Molajo",
         "repository": "Email",
         "source_repository": "https:\/\/github.com\/Molajo\/Email",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
         "class_name": "PhpMailer",
         "class_namespace": "Molajo\\Email\\Adapter\\PhpMailer",
         "namespace": "Molajo\\Email\\Adapter",
-        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php",
+        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php",
         "document_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Tests\/PhpMailerTest.php",
-        "file_path": "Source\/Adapter\/PhpMailer.php",
+        "file_path": "Source\/Email\/Adapter\/PhpMailer.php",
         "instantiable": true,
         "final": false,
         "abstract": false,
@@ -742,12 +746,12 @@
         "subpackage": "Service",
         "since": "1.0",
         "parent_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-        "parent_class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
                 "name": "email_instance",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Email Instance",
                 "data_type": "object",
@@ -757,7 +761,7 @@
             {
                 "name": "mailer_transport",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Mailer Transport - smtp, sendmail, ismail",
                 "data_type": "string",
@@ -767,7 +771,7 @@
             {
                 "name": "site_name",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Site Name",
                 "data_type": "string",
@@ -777,7 +781,7 @@
             {
                 "name": "smtpauth",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Authorisation",
                 "data_type": "string",
@@ -787,7 +791,7 @@
             {
                 "name": "smtphost",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Host",
                 "data_type": "string",
@@ -797,7 +801,7 @@
             {
                 "name": "smtpuser",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP User",
                 "data_type": "string",
@@ -807,7 +811,7 @@
             {
                 "name": "smtppass",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Password",
                 "data_type": "string",
@@ -817,7 +821,7 @@
             {
                 "name": "smtpsecure",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Secure",
                 "data_type": "string",
@@ -827,7 +831,7 @@
             {
                 "name": "smtpport",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Port",
                 "data_type": "string",
@@ -837,7 +841,7 @@
             {
                 "name": "sendmail_path",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Sendmail Path",
                 "data_type": "bool",
@@ -847,7 +851,7 @@
             {
                 "name": "mailer_disable_sending",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Disable Sending",
                 "data_type": "bool",
@@ -857,7 +861,7 @@
             {
                 "name": "mailer_only_deliver_to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Only Deliver To",
                 "data_type": "string",
@@ -867,7 +871,7 @@
             {
                 "name": "to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "To",
                 "data_type": "array",
@@ -877,7 +881,7 @@
             {
                 "name": "from",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "From",
                 "data_type": "array",
@@ -887,7 +891,7 @@
             {
                 "name": "reply_to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Reply To",
                 "data_type": "array",
@@ -897,7 +901,7 @@
             {
                 "name": "cc",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Copy",
                 "data_type": "array",
@@ -907,7 +911,7 @@
             {
                 "name": "bcc",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Blind Copy",
                 "data_type": "array",
@@ -917,7 +921,7 @@
             {
                 "name": "subject",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Subject",
                 "data_type": "string",
@@ -927,7 +931,7 @@
             {
                 "name": "body",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Body",
                 "data_type": "string",
@@ -937,7 +941,7 @@
             {
                 "name": "mailer_html_or_text",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "HTML or Text",
                 "data_type": "string",
@@ -947,7 +951,7 @@
             {
                 "name": "attachment",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Attachment",
                 "data_type": "string",
@@ -957,7 +961,7 @@
             {
                 "name": "property_array",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "List of Properties",
                 "data_type": "object",
@@ -976,8 +980,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 45,
                 "get_end_line": 91,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L45",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L91",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L45",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L91",
                 "parameters": [
 
                 ]
@@ -992,8 +996,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 100,
                 "get_end_line": 122,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L100",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L122",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L100",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L122",
                 "parameters": [
 
                 ]
@@ -1008,8 +1012,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 131,
                 "get_end_line": 169,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L131",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L169",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L131",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L169",
                 "parameters": [
 
                 ]
@@ -1024,8 +1028,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 178,
                 "get_end_line": 204,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L178",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L204",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L178",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L204",
                 "parameters": [
 
                 ]
@@ -1040,8 +1044,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 213,
                 "get_end_line": 244,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L213",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L244",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L213",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L244",
                 "parameters": [
 
                 ]
@@ -1056,8 +1060,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 253,
                 "get_end_line": 279,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L253",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L279",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L253",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L279",
                 "parameters": [
 
                 ]
@@ -1072,8 +1076,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 288,
                 "get_end_line": 319,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L288",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L319",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L288",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L319",
                 "parameters": [
 
                 ]
@@ -1088,8 +1092,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 328,
                 "get_end_line": 356,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L328",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L356",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L328",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L356",
                 "parameters": [
 
                 ]
@@ -1104,8 +1108,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 365,
                 "get_end_line": 393,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L365",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php#L393",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L365",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L393",
                 "parameters": [
 
                 ]
@@ -1118,8 +1122,8 @@
                 "since": "1.0",
                 "get_start_line": 251,
                 "get_end_line": 295,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L251",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L295",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L251",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L295",
                 "parameters": [
                     {
                         "name": "email_instance",
@@ -1343,8 +1347,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 307,
                 "get_end_line": 322,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L307",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L322",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L307",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L322",
                 "parameters": [
                     {
                         "name": "key",
@@ -1378,8 +1382,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 334,
                 "get_end_line": 351,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L334",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L351",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L351",
                 "parameters": [
                     {
                         "name": "key",
@@ -1412,8 +1416,8 @@
                 "since": "1.0",
                 "get_start_line": 367,
                 "get_end_line": 370,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L367",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L370",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L367",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L370",
                 "parameters": [
 
                 ]
@@ -1428,8 +1432,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 381,
                 "get_end_line": 390,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L381",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L390",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L390",
                 "parameters": [
                     {
                         "name": "string",
@@ -1453,8 +1457,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 401,
                 "get_end_line": 410,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L401",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L410",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L401",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L410",
                 "parameters": [
                     {
                         "name": "html",
@@ -1478,8 +1482,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 421,
                 "get_end_line": 463,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L421",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L463",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L463",
                 "parameters": [
                     {
                         "name": "list",
@@ -1503,8 +1507,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 474,
                 "get_end_line": 483,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L474",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L483",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L474",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L483",
                 "parameters": [
                     {
                         "name": "email_address",
@@ -1527,8 +1531,8 @@
                 "since": "1.0",
                 "get_start_line": 491,
                 "get_end_line": 500,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L491",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L500",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L491",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L500",
                 "parameters": [
                     {
                         "name": "email",
@@ -1551,8 +1555,8 @@
                 "since": "1.0",
                 "get_start_line": 508,
                 "get_end_line": 517,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L508",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L517",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L508",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L517",
                 "parameters": [
                     {
                         "name": "name",
@@ -1572,13 +1576,15 @@
         "project": "Molajo",
         "repository": "Email",
         "source_repository": "https:\/\/github.com\/Molajo\/Email",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
         "class_name": "Swiftmailer",
         "class_namespace": "Molajo\\Email\\Adapter\\Swiftmailer",
         "namespace": "Molajo\\Email\\Adapter",
-        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php",
+        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php",
         "document_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Tests\/SwiftmailerTest.php",
-        "file_path": "Source\/Adapter\/Swiftmailer.php",
+        "file_path": "Source\/Email\/Adapter\/Swiftmailer.php",
         "instantiable": true,
         "final": false,
         "abstract": false,
@@ -1591,12 +1597,12 @@
         "subpackage": "Service",
         "since": "1.0",
         "parent_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-        "parent_class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
                 "name": "message",
                 "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php",
                 "method_modifier": "default",
                 "comment": "Message Instance",
                 "data_type": "object",
@@ -1606,7 +1612,7 @@
             {
                 "name": "email_instance",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Email Instance",
                 "data_type": "object",
@@ -1616,7 +1622,7 @@
             {
                 "name": "mailer_transport",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Mailer Transport - smtp, sendmail, ismail",
                 "data_type": "string",
@@ -1626,7 +1632,7 @@
             {
                 "name": "site_name",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Site Name",
                 "data_type": "string",
@@ -1636,7 +1642,7 @@
             {
                 "name": "smtpauth",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Authorisation",
                 "data_type": "string",
@@ -1646,7 +1652,7 @@
             {
                 "name": "smtphost",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Host",
                 "data_type": "string",
@@ -1656,7 +1662,7 @@
             {
                 "name": "smtpuser",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP User",
                 "data_type": "string",
@@ -1666,7 +1672,7 @@
             {
                 "name": "smtppass",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Password",
                 "data_type": "string",
@@ -1676,7 +1682,7 @@
             {
                 "name": "smtpsecure",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Secure",
                 "data_type": "string",
@@ -1686,7 +1692,7 @@
             {
                 "name": "smtpport",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "SMTP Port",
                 "data_type": "string",
@@ -1696,7 +1702,7 @@
             {
                 "name": "sendmail_path",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Sendmail Path",
                 "data_type": "bool",
@@ -1706,7 +1712,7 @@
             {
                 "name": "mailer_disable_sending",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Disable Sending",
                 "data_type": "bool",
@@ -1716,7 +1722,7 @@
             {
                 "name": "mailer_only_deliver_to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Only Deliver To",
                 "data_type": "string",
@@ -1726,7 +1732,7 @@
             {
                 "name": "to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "To",
                 "data_type": "array",
@@ -1736,7 +1742,7 @@
             {
                 "name": "from",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "From",
                 "data_type": "array",
@@ -1746,7 +1752,7 @@
             {
                 "name": "reply_to",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Reply To",
                 "data_type": "array",
@@ -1756,7 +1762,7 @@
             {
                 "name": "cc",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Copy",
                 "data_type": "array",
@@ -1766,7 +1772,7 @@
             {
                 "name": "bcc",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Blind Copy",
                 "data_type": "array",
@@ -1776,7 +1782,7 @@
             {
                 "name": "subject",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Subject",
                 "data_type": "string",
@@ -1786,7 +1792,7 @@
             {
                 "name": "body",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Body",
                 "data_type": "string",
@@ -1796,7 +1802,7 @@
             {
                 "name": "mailer_html_or_text",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "HTML or Text",
                 "data_type": "string",
@@ -1806,7 +1812,7 @@
             {
                 "name": "attachment",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Attachment",
                 "data_type": "string",
@@ -1816,7 +1822,7 @@
             {
                 "name": "property_array",
                 "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "List of Properties",
                 "data_type": "object",
@@ -1835,8 +1841,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 56,
                 "get_end_line": 102,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L56",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L102",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L102",
                 "parameters": [
 
                 ]
@@ -1851,8 +1857,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 111,
                 "get_end_line": 133,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L111",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L133",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L111",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L133",
                 "parameters": [
 
                 ]
@@ -1867,8 +1873,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 142,
                 "get_end_line": 178,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L142",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L178",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L142",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L178",
                 "parameters": [
 
                 ]
@@ -1883,8 +1889,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 187,
                 "get_end_line": 213,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L187",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L213",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L187",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L213",
                 "parameters": [
 
                 ]
@@ -1899,8 +1905,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 222,
                 "get_end_line": 253,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L222",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L253",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L222",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L253",
                 "parameters": [
 
                 ]
@@ -1915,8 +1921,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 262,
                 "get_end_line": 288,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L262",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L288",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L262",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L288",
                 "parameters": [
 
                 ]
@@ -1931,8 +1937,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 297,
                 "get_end_line": 323,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L297",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L323",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L297",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L323",
                 "parameters": [
 
                 ]
@@ -1947,8 +1953,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 332,
                 "get_end_line": 361,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L332",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L361",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L332",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L361",
                 "parameters": [
 
                 ]
@@ -1963,8 +1969,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 370,
                 "get_end_line": 397,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L370",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php#L397",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L370",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L397",
                 "parameters": [
 
                 ]
@@ -1977,8 +1983,8 @@
                 "since": "1.0",
                 "get_start_line": 251,
                 "get_end_line": 295,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L251",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L295",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L251",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L295",
                 "parameters": [
                     {
                         "name": "email_instance",
@@ -2202,8 +2208,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 307,
                 "get_end_line": 322,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L307",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L322",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L307",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L322",
                 "parameters": [
                     {
                         "name": "key",
@@ -2237,8 +2243,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 334,
                 "get_end_line": 351,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L334",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L351",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L351",
                 "parameters": [
                     {
                         "name": "key",
@@ -2271,8 +2277,8 @@
                 "since": "1.0",
                 "get_start_line": 367,
                 "get_end_line": 370,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L367",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L370",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L367",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L370",
                 "parameters": [
 
                 ]
@@ -2287,8 +2293,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 381,
                 "get_end_line": 390,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L381",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L390",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L390",
                 "parameters": [
                     {
                         "name": "string",
@@ -2312,8 +2318,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 401,
                 "get_end_line": 410,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L401",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L410",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L401",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L410",
                 "parameters": [
                     {
                         "name": "html",
@@ -2337,8 +2343,8 @@
                 "throws": "\\CommonApi\\Exception\\RuntimeException",
                 "get_start_line": 421,
                 "get_end_line": 463,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L421",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L463",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L463",
                 "parameters": [
                     {
                         "name": "list",
@@ -2362,8 +2368,8 @@
                 "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
                 "get_start_line": 474,
                 "get_end_line": 483,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L474",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L483",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L474",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L483",
                 "parameters": [
                     {
                         "name": "email_address",
@@ -2386,8 +2392,8 @@
                 "since": "1.0",
                 "get_start_line": 491,
                 "get_end_line": 500,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L491",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L500",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L491",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L500",
                 "parameters": [
                     {
                         "name": "email",
@@ -2410,8 +2416,8 @@
                 "since": "1.0",
                 "get_start_line": 508,
                 "get_end_line": 517,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L508",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L517",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L508",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L517",
                 "parameters": [
                     {
                         "name": "name",
@@ -2431,13 +2437,15 @@
         "project": "Molajo",
         "repository": "Email",
         "source_repository": "https:\/\/github.com\/Molajo\/Email",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
         "class_name": "Driver",
         "class_namespace": "Molajo\\Email\\Driver",
         "namespace": "Molajo\\Email",
-        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php",
+        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php",
         "document_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Tests\/DriverTest.php",
-        "file_path": "Source\/Driver.php",
+        "file_path": "Source\/Email\/Driver.php",
         "instantiable": true,
         "final": false,
         "abstract": false,
@@ -2455,7 +2463,7 @@
             {
                 "name": "adapter",
                 "declaring_class": "Molajo\\Email\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php",
                 "method_modifier": "default",
                 "comment": "Email Adapter Adapter",
                 "data_type": "object",
@@ -2472,8 +2480,8 @@
                 "since": "1.0",
                 "get_start_line": 38,
                 "get_end_line": 45,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L45",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L45",
                 "parameters": [
                     {
                         "name": "email",
@@ -2498,8 +2506,8 @@
                 "since": "1.0",
                 "get_start_line": 56,
                 "get_end_line": 59,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L56",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L59",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L59",
                 "parameters": [
                     {
                         "name": "key",
@@ -2532,8 +2540,8 @@
                 "since": "1.0",
                 "get_start_line": 70,
                 "get_end_line": 75,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L70",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L75",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L70",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L75",
                 "parameters": [
                     {
                         "name": "key",
@@ -2566,302 +2574,8 @@
                 "since": "1.0",
                 "get_start_line": 83,
                 "get_end_line": 88,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L83",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L88",
-                "parameters": [
-
-                ]
-            }
-        }
-    },
-    {
-        "project": "Molajo",
-        "repository": "Email",
-        "source_repository": "https:\/\/github.com\/Molajo\/Email",
-        "class_name": "PhpMailer",
-        "class_namespace": "Molajo\\Email\\PhpMailer",
-        "namespace": "Molajo\\Email",
-        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/PhpMailer.php",
-        "document_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Doc\/",
-        "unittest_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Tests\/PhpMailerTest.php",
-        "file_path": "Source\/Adapter\/PhpMailer.php",
-        "instantiable": true,
-        "final": false,
-        "abstract": false,
-        "interface_names": [
-            "CommonApi\\Email\\EmailInterface"
-        ],
-        "comment": "Adapter for Email",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
-        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
-        "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
-        "class_properties": [
-            {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php",
-                "method_modifier": "default",
-                "comment": "Email Adapter Adapter",
-                "data_type": "object",
-                "since": "1.0",
-                "value": null
-            }
-        ],
-        "methods": {
-            "__construct": {
-                "name": "__construct",
-                "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Constructor",
-                "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 45,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L45",
-                "parameters": [
-                    {
-                        "name": "email",
-                        "position": 0,
-                        "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "EmailInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Email\\EmailInterface"
-                        }
-                    }
-                ]
-            },
-            "get": {
-                "name": "get",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Return parameter value or default",
-                "return": "mixed",
-                "since": "1.0",
-                "get_start_line": 56,
-                "get_end_line": 59,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L56",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L59",
-                "parameters": [
-                    {
-                        "name": "key",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "default",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "set": {
-                "name": "set",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Set parameter value",
-                "return": "$this",
-                "since": "1.0",
-                "get_start_line": 70,
-                "get_end_line": 75,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L70",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L75",
-                "parameters": [
-                    {
-                        "name": "key",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "value",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "mixed",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "send": {
-                "name": "send",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Send Email",
-                "return": "mixed",
-                "since": "1.0",
-                "get_start_line": 83,
-                "get_end_line": 88,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L83",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L88",
-                "parameters": [
-
-                ]
-            }
-        }
-    },
-    {
-        "project": "Molajo",
-        "repository": "Email",
-        "source_repository": "https:\/\/github.com\/Molajo\/Email",
-        "class_name": "Swiftmailer",
-        "class_namespace": "Molajo\\Email\\Swiftmailer",
-        "namespace": "Molajo\\Email",
-        "class_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Adapter\/Swiftmailer.php",
-        "document_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Doc\/",
-        "unittest_url": "https:\/\/github.com\/Molajo\/Email\/blob\/master\/.dev\/Tests\/SwiftmailerTest.php",
-        "file_path": "Source\/Adapter\/Swiftmailer.php",
-        "instantiable": true,
-        "final": false,
-        "abstract": false,
-        "interface_names": [
-            "CommonApi\\Email\\EmailInterface"
-        ],
-        "comment": "Adapter for Email",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
-        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
-        "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
-        "class_properties": [
-            {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php",
-                "method_modifier": "default",
-                "comment": "Email Adapter Adapter",
-                "data_type": "object",
-                "since": "1.0",
-                "value": null
-            }
-        ],
-        "methods": {
-            "__construct": {
-                "name": "__construct",
-                "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Constructor",
-                "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 45,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L45",
-                "parameters": [
-                    {
-                        "name": "email",
-                        "position": 0,
-                        "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "EmailInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Email\\EmailInterface"
-                        }
-                    }
-                ]
-            },
-            "get": {
-                "name": "get",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Return parameter value or default",
-                "return": "mixed",
-                "since": "1.0",
-                "get_start_line": 56,
-                "get_end_line": 59,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L56",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L59",
-                "parameters": [
-                    {
-                        "name": "key",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "default",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "set": {
-                "name": "set",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Set parameter value",
-                "return": "$this",
-                "since": "1.0",
-                "get_start_line": 70,
-                "get_end_line": 75,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L70",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L75",
-                "parameters": [
-                    {
-                        "name": "key",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "value",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "mixed",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "send": {
-                "name": "send",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Email\\Driver",
-                "comment": "Send Email",
-                "return": "mixed",
-                "since": "1.0",
-                "get_start_line": 83,
-                "get_end_line": 88,
-                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L83",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Driver.php#L88",
+                "method_url": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L83",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Email\/tree\/master\/Source\/Email\/Driver.php#L88",
                 "parameters": [
 
                 ]

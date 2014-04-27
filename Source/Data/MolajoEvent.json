@@ -3,6 +3,2591 @@
         "project": "Molajo",
         "repository": "Event",
         "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Email\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Email\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Email\/Adapter\/AbstractAdapter.php",
+        "instantiable": false,
+        "final": false,
+        "abstract": true,
+        "interface_names": [
+            "CommonApi\\Email\\EmailInterface"
+        ],
+        "comment": "Adapter for Email",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "email_instance",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Email Instance",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_transport",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Mailer Transport - smtp, sendmail, ismail",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "site_name",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Site Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpauth",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Authorisation",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtphost",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Host",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpuser",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP User",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtppass",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Password",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpsecure",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Secure",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpport",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Port",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "sendmail_path",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Sendmail Path",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_disable_sending",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Disable Sending",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_only_deliver_to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Only Deliver To",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "To",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "from",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "From",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "reply_to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Reply To",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cc",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Copy",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "bcc",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Blind Copy",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "subject",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Subject",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "body",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Body",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_html_or_text",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "HTML or Text",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "attachment",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Attachment",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "property_array",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "List of Properties",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Construct",
+                "since": "1.0",
+                "get_start_line": 251,
+                "get_end_line": 295,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L251",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L295",
+                "parameters": [
+                    {
+                        "name": "email_instance",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_transport",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "site_name",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpauth",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtphost",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpuser",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtppass",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpsecure",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpport",
+                        "position": 8,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "sendmail_path",
+                        "position": 9,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_disable_sending",
+                        "position": 10,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_only_deliver_to",
+                        "position": 11,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "to",
+                        "position": 12,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "from",
+                        "position": 13,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "reply_to",
+                        "position": 14,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "cc",
+                        "position": 15,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "bcc",
+                        "position": 16,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "subject",
+                        "position": 17,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "body",
+                        "position": 18,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_html_or_text",
+                        "position": 19,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "attachment",
+                        "position": 20,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Set parameter value",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 307,
+                "get_end_line": 322,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L307",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L322",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Return value for a key",
+                "return": "mixed",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 334,
+                "get_end_line": 351,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L351",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "send": {
+                "name": "send",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Send email",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 359,
+                "get_end_line": 359,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L359",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L359",
+                "parameters": [
+
+                ]
+            },
+            "close": {
+                "name": "close",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Close the Connection",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 367,
+                "get_end_line": 370,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L367",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L370",
+                "parameters": [
+
+                ]
+            },
+            "filterString": {
+                "name": "filterString",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter String",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 381,
+                "get_end_line": 390,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L390",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "filterHtml": {
+                "name": "filterHtml",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter Html",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 401,
+                "get_end_line": 410,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L401",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L410",
+                "parameters": [
+                    {
+                        "name": "html",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setRecipient": {
+                "name": "setRecipient",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter and send to phpMail email address and name values",
+                "return": "array",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 421,
+                "get_end_line": 463,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L463",
+                "parameters": [
+                    {
+                        "name": "list",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "filterEmailAddress": {
+                "name": "filterEmailAddress",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter Email Address",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 474,
+                "get_end_line": 483,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L474",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L483",
+                "parameters": [
+                    {
+                        "name": "email_address",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "extractEmailAddress": {
+                "name": "extractEmailAddress",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Get Email Address",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 491,
+                "get_end_line": 500,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L491",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L500",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "extractName": {
+                "name": "extractName",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Get Email Address",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 508,
+                "get_end_line": 517,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L508",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L517",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
+        "class_name": "PhpMailer",
+        "class_namespace": "Molajo\\Email\\Adapter\\PhpMailer",
+        "namespace": "Molajo\\Email\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/PhpMailerTest.php",
+        "file_path": "Source\/Email\/Adapter\/PhpMailer.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Email\\EmailInterface"
+        ],
+        "comment": "Edits, filters input, and sends email\n \n  Inject via the constructor or use 'set' method, as follows:\n \n  $adapter->set('to', 'person",
+        "example.com,Person": "Name');\n  $adapter->set('subject', 'Welcome to our Site');\n  $adapter->set('body', '<h2>Stuff goes here<\/h2>');\n  $adapter->set('mailer_html_or_text', 'html');\n  $adapter->set('attachment', $path_to_file);\n \n  $adapter->send();",
+        "package": "Molajo",
+        "subpackage": "Service",
+        "since": "1.0",
+        "parent_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "email_instance",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Email Instance",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_transport",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Mailer Transport - smtp, sendmail, ismail",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "site_name",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Site Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpauth",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Authorisation",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtphost",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Host",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpuser",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP User",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtppass",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Password",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpsecure",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Secure",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpport",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Port",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "sendmail_path",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Sendmail Path",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_disable_sending",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Disable Sending",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_only_deliver_to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Only Deliver To",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "To",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "from",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "From",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "reply_to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Reply To",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cc",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Copy",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "bcc",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Blind Copy",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "subject",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Subject",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "body",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Body",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_html_or_text",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "HTML or Text",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "attachment",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Attachment",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "property_array",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "List of Properties",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "send": {
+                "name": "send",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Send email",
+                "return": "bool",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 45,
+                "get_end_line": 91,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L45",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L91",
+                "parameters": [
+
+                ]
+            },
+            "setSubject": {
+                "name": "setSubject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set Subject",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 100,
+                "get_end_line": 122,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L100",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L122",
+                "parameters": [
+
+                ]
+            },
+            "setBody": {
+                "name": "setBody",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set Body",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 131,
+                "get_end_line": 169,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L131",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L169",
+                "parameters": [
+
+                ]
+            },
+            "setAttachment": {
+                "name": "setAttachment",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Process Email Attachment",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 178,
+                "get_end_line": 204,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L178",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L204",
+                "parameters": [
+
+                ]
+            },
+            "setReplyTo": {
+                "name": "setReplyTo",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set Reply To Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 213,
+                "get_end_line": 244,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L213",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L244",
+                "parameters": [
+
+                ]
+            },
+            "from": {
+                "name": "from",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set From Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 253,
+                "get_end_line": 279,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L253",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L279",
+                "parameters": [
+
+                ]
+            },
+            "setTo": {
+                "name": "setTo",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set To Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 288,
+                "get_end_line": 319,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L288",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L319",
+                "parameters": [
+
+                ]
+            },
+            "setCC": {
+                "name": "setCC",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set CC Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 328,
+                "get_end_line": 356,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L328",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L356",
+                "parameters": [
+
+                ]
+            },
+            "setBCC": {
+                "name": "setBCC",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\PhpMailer",
+                "comment": "Set BCC Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 365,
+                "get_end_line": 393,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L365",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/PhpMailer.php#L393",
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Construct",
+                "since": "1.0",
+                "get_start_line": 251,
+                "get_end_line": 295,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L251",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L295",
+                "parameters": [
+                    {
+                        "name": "email_instance",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_transport",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "site_name",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpauth",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtphost",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpuser",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtppass",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpsecure",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpport",
+                        "position": 8,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "sendmail_path",
+                        "position": 9,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_disable_sending",
+                        "position": 10,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_only_deliver_to",
+                        "position": 11,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "to",
+                        "position": 12,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "from",
+                        "position": 13,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "reply_to",
+                        "position": 14,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "cc",
+                        "position": 15,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "bcc",
+                        "position": 16,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "subject",
+                        "position": 17,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "body",
+                        "position": 18,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_html_or_text",
+                        "position": 19,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "attachment",
+                        "position": 20,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Set parameter value",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 307,
+                "get_end_line": 322,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L307",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L322",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Return value for a key",
+                "return": "mixed",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 334,
+                "get_end_line": 351,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L351",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "close": {
+                "name": "close",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Close the Connection",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 367,
+                "get_end_line": 370,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L367",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L370",
+                "parameters": [
+
+                ]
+            },
+            "filterString": {
+                "name": "filterString",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter String",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 381,
+                "get_end_line": 390,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L390",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "filterHtml": {
+                "name": "filterHtml",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter Html",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 401,
+                "get_end_line": 410,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L401",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L410",
+                "parameters": [
+                    {
+                        "name": "html",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setRecipient": {
+                "name": "setRecipient",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter and send to phpMail email address and name values",
+                "return": "array",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 421,
+                "get_end_line": 463,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L463",
+                "parameters": [
+                    {
+                        "name": "list",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "filterEmailAddress": {
+                "name": "filterEmailAddress",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter Email Address",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 474,
+                "get_end_line": 483,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L474",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L483",
+                "parameters": [
+                    {
+                        "name": "email_address",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "extractEmailAddress": {
+                "name": "extractEmailAddress",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Get Email Address",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 491,
+                "get_end_line": 500,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L491",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L500",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "extractName": {
+                "name": "extractName",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Get Email Address",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 508,
+                "get_end_line": 517,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L508",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L517",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
+        "class_name": "Swiftmailer",
+        "class_namespace": "Molajo\\Email\\Adapter\\Swiftmailer",
+        "namespace": "Molajo\\Email\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/SwiftmailerTest.php",
+        "file_path": "Source\/Email\/Adapter\/Swiftmailer.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Email\\EmailInterface"
+        ],
+        "comment": "Edits, filters input, and sends email\n \n  Inject via the constructor or use 'set' method, as follows:\n \n  $adapter->set('to', 'person",
+        "example.com,Person": "Name');\n  $adapter->set('subject', 'Welcome to our Site');\n  $adapter->set('body', '<h2>Stuff goes here<\/h2>');\n  $adapter->set('mailer_html_or_text', 'html');\n  $adapter->set('attachment', $path_to_file);\n \n  $adapter->send();",
+        "package": "Molajo",
+        "subpackage": "Service",
+        "since": "1.0",
+        "parent_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "message",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php",
+                "method_modifier": "default",
+                "comment": "Message Instance",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "email_instance",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Email Instance",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_transport",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Mailer Transport - smtp, sendmail, ismail",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "site_name",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Site Name",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpauth",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Authorisation",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtphost",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Host",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpuser",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP User",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtppass",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Password",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpsecure",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Secure",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "smtpport",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "SMTP Port",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "sendmail_path",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Sendmail Path",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_disable_sending",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Disable Sending",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_only_deliver_to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Only Deliver To",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "To",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "from",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "From",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "reply_to",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Reply To",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cc",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Copy",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "bcc",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Blind Copy",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "subject",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Subject",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "body",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Body",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "mailer_html_or_text",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "HTML or Text",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "attachment",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Attachment",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "property_array",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "List of Properties",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "send": {
+                "name": "send",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Send email",
+                "return": "bool",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 56,
+                "get_end_line": 102,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L102",
+                "parameters": [
+
+                ]
+            },
+            "setSubject": {
+                "name": "setSubject",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set Subject",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 111,
+                "get_end_line": 133,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L111",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L133",
+                "parameters": [
+
+                ]
+            },
+            "setBody": {
+                "name": "setBody",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set Body",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 142,
+                "get_end_line": 178,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L142",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L178",
+                "parameters": [
+
+                ]
+            },
+            "setAttachment": {
+                "name": "setAttachment",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Process Email Attachment",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 187,
+                "get_end_line": 213,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L187",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L213",
+                "parameters": [
+
+                ]
+            },
+            "setReplyTo": {
+                "name": "setReplyTo",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set Reply To Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 222,
+                "get_end_line": 253,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L222",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L253",
+                "parameters": [
+
+                ]
+            },
+            "from": {
+                "name": "from",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set From Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 262,
+                "get_end_line": 288,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L262",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L288",
+                "parameters": [
+
+                ]
+            },
+            "setTo": {
+                "name": "setTo",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set To Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 297,
+                "get_end_line": 323,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L297",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L323",
+                "parameters": [
+
+                ]
+            },
+            "setCC": {
+                "name": "setCC",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set CC Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 332,
+                "get_end_line": 361,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L332",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L361",
+                "parameters": [
+
+                ]
+            },
+            "setBCC": {
+                "name": "setBCC",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\Swiftmailer",
+                "comment": "Set BCC Recipient",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 370,
+                "get_end_line": 397,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L370",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/Swiftmailer.php#L397",
+                "parameters": [
+
+                ]
+            },
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Construct",
+                "since": "1.0",
+                "get_start_line": 251,
+                "get_end_line": 295,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L251",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L295",
+                "parameters": [
+                    {
+                        "name": "email_instance",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "object",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_transport",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "site_name",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpauth",
+                        "position": 3,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtphost",
+                        "position": 4,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpuser",
+                        "position": 5,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtppass",
+                        "position": 6,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpsecure",
+                        "position": 7,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "smtpport",
+                        "position": 8,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "sendmail_path",
+                        "position": 9,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_disable_sending",
+                        "position": 10,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_only_deliver_to",
+                        "position": 11,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "to",
+                        "position": 12,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "from",
+                        "position": 13,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "reply_to",
+                        "position": 14,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "cc",
+                        "position": 15,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "bcc",
+                        "position": 16,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "subject",
+                        "position": 17,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "body",
+                        "position": 18,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "mailer_html_or_text",
+                        "position": 19,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "attachment",
+                        "position": 20,
+                        "allows_null": 1,
+                        "default_value": "",
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Set parameter value",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 307,
+                "get_end_line": 322,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L307",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L322",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Return value for a key",
+                "return": "mixed",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 334,
+                "get_end_line": 351,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L334",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L351",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "null|string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "close": {
+                "name": "close",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Close the Connection",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 367,
+                "get_end_line": 370,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L367",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L370",
+                "parameters": [
+
+                ]
+            },
+            "filterString": {
+                "name": "filterString",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter String",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 381,
+                "get_end_line": 390,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L381",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L390",
+                "parameters": [
+                    {
+                        "name": "string",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "filterHtml": {
+                "name": "filterHtml",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter Html",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 401,
+                "get_end_line": 410,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L401",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L410",
+                "parameters": [
+                    {
+                        "name": "html",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "setRecipient": {
+                "name": "setRecipient",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter and send to phpMail email address and name values",
+                "return": "array",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 421,
+                "get_end_line": 463,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L421",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L463",
+                "parameters": [
+                    {
+                        "name": "list",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "filterEmailAddress": {
+                "name": "filterEmailAddress",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Filter Email Address",
+                "return": "string",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
+                "get_start_line": 474,
+                "get_end_line": 483,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L474",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L483",
+                "parameters": [
+                    {
+                        "name": "email_address",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "extractEmailAddress": {
+                "name": "extractEmailAddress",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Get Email Address",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 491,
+                "get_end_line": 500,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L491",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L500",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            },
+            "extractName": {
+                "name": "extractName",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Email\\Adapter\\AbstractAdapter",
+                "comment": "Get Email Address",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 508,
+                "get_end_line": 517,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L508",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Adapter\/AbstractAdapter.php#L517",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": null,
+                        "method_modifier": null,
+                        "type_hint": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Email",
+        "class_name": "Driver",
+        "class_namespace": "Molajo\\Email\\Driver",
+        "namespace": "Molajo\\Email",
+        "class_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Event\/blob\/master\/.dev\/Tests\/DriverTest.php",
+        "file_path": "Source\/Email\/Driver.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Email\\EmailInterface"
+        ],
+        "comment": "Adapter for Email",
+        "package": "Molajo",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "adapter",
+                "declaring_class": "Molajo\\Email\\Driver",
+                "property_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php",
+                "method_modifier": "default",
+                "comment": "Email Adapter Adapter",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Email\\Driver",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 38,
+                "get_end_line": 45,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L45",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "EmailInterface",
+                        "type_hint": {
+                            "name": "CommonApi\\Email\\EmailInterface"
+                        }
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Driver",
+                "comment": "Return parameter value or default",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 59,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L59",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "default",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Driver",
+                "comment": "Set parameter value",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 70,
+                "get_end_line": 75,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L70",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L75",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "send": {
+                "name": "send",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Email\\Driver",
+                "comment": "Send Email",
+                "return": "mixed",
+                "since": "1.0",
+                "get_start_line": 83,
+                "get_end_line": 88,
+                "method_url": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L83",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Event\/tree\/master\/Source\/Email\/Driver.php#L88",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Event",
+        "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Event",
         "class_name": "Dispatcher",
         "class_namespace": "Molajo\\Event\\Dispatcher",
         "namespace": "Molajo\\Event",
@@ -169,6 +2754,8 @@
         "project": "Molajo",
         "repository": "Event",
         "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Event",
         "class_name": "EventDispatcher",
         "class_namespace": "Molajo\\Event\\EventDispatcher",
         "namespace": "Molajo\\Event",
@@ -263,6 +2850,8 @@
         "project": "Molajo",
         "repository": "Event",
         "source_repository": "https:\/\/github.com\/Molajo\/Event",
+        "namespace_project": "Molajo",
+        "namespace_package": "Event",
         "class_name": "Scheduled",
         "class_namespace": "Molajo\\Event\\Scheduled",
         "namespace": "Molajo\\Event",
@@ -419,717 +3008,6 @@
                         "is_optional": false,
                         "comment": "",
                         "method_modifier": "mixed",
-                        "type_hint": null
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "project": "Molajo",
-        "repository": "Event",
-        "source_repository": "https:\/\/github.com\/Molajo\/Reflection",
-        "class_name": "Source",
-        "class_namespace": "Molajo\\Reflection\\Source",
-        "namespace": "Molajo\\Reflection",
-        "class_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-        "document_url": "https:\/\/github.com\/Molajo\/Reflection\/blob\/master\/.dev\/Doc\/",
-        "unittest_url": "https:\/\/github.com\/Molajo\/Reflection\/blob\/master\/.dev\/Tests\/SourceTest.php",
-        "file_path": "e\/\/Source\/Source.php",
-        "instantiable": true,
-        "final": false,
-        "abstract": false,
-        "interface_names": [
-
-        ],
-        "comment": "Uses PHP Reflection Classes to extract documentation from PHP repository",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
-        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
-        "api": true,
-        "parent_class": null,
-        "parent_class_url": null,
-        "class_properties": [
-            {
-                "name": "data_folder",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Output Data Folder",
-                "api": true,
-                "data_type": "object",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "base_path",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Base Path",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "classmap",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Classmap",
-                "api": true,
-                "data_type": "array",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "primary_project",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Primary Project",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "primary_repository",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Primary Repository",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "source_repository",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Source Repository",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "class_url_path",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Source 'path' at root of repo\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $class_url_path",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "document_url_path",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Document 'path' after repository and before individual class document files\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $document_url_path",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "unit_tests_url_path",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Unit Testing 'path' after repository up individual test files\n     \n      'https:\/\/github.com\/' . 'project-name\/' . 'repo-name\/' . $unit_tests_url_path",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "relative_path",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Relative Path to install base",
-                "api": true,
-                "data_type": "string",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "class_url_array",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "All Class URLs",
-                "api": true,
-                "data_type": "array",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "class_data_object",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Class Data Object",
-                "api": true,
-                "data_type": "object",
-                "since": "1.0.0",
-                "value": null
-            },
-            {
-                "name": "class_reflection_object",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "property_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php",
-                "method_modifier": "default",
-                "comment": "Class Reflection Object",
-                "api": true,
-                "data_type": "object",
-                "since": "1.0.0",
-                "value": null
-            }
-        ],
-        "methods": {
-            "__construct": {
-                "name": "__construct",
-                "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Constructor",
-                "since": "1.0.0",
-                "get_start_line": 158,
-                "get_end_line": 190,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L158",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L190",
-                "parameters": [
-                    {
-                        "name": "source_repository",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": "",
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "class_url_path",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": "",
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "document_url_path",
-                        "position": 2,
-                        "allows_null": 1,
-                        "default_value": "",
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "unit_tests_url_path",
-                        "position": 3,
-                        "allows_null": 1,
-                        "default_value": "",
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "data_folder",
-                        "position": 4,
-                        "allows_null": 1,
-                        "default_value": "",
-                        "is_optional": true,
-                        "comment": null,
-                        "method_modifier": null,
-                        "type_hint": null
-                    }
-                ]
-            },
-            "process": {
-                "name": "process",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Using PHP Reflection and for the associative array of classes and namespaces, extract\n       Class, Interface, Property, Method, and Parameter information",
-                "api": true,
-                "return": "\\CommonApi\\Model\\ValidateResponseInterface",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 220,
-                "get_end_line": 276,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L220",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L276",
-                "parameters": [
-                    {
-                        "name": "base_path",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "classmap",
-                        "position": 1,
-                        "allows_null": 0,
-                        "default_value": [
-
-                        ],
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "array",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "primary_project",
-                        "position": 2,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "primary_repository",
-                        "position": 3,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "preprocessClassLocations": {
-                "name": "preprocessClassLocations",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Preprocess all class locations so that URL's and paths are available for parent classes",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 288,
-                "get_end_line": 322,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L288",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L322",
-                "parameters": [
-                    {
-                        "name": "class_namespace",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "class_path",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "processClass": {
-                "name": "processClass",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Extract information on class",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 334,
-                "get_end_line": 344,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L334",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L344",
-                "parameters": [
-                    {
-                        "name": "class_name",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "class_namespace",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "reflectClassNamespace": {
-                "name": "reflectClassNamespace",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Get Class Reflection Object",
-                "return": "$this",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 355,
-                "get_end_line": 365,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L355",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L365",
-                "parameters": [
-                    {
-                        "name": "class_namespace",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getClassProject": {
-                "name": "getClassProject",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Extract information on class",
-                "return": "$this",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 376,
-                "get_end_line": 383,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L376",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L383",
-                "parameters": [
-                    {
-                        "name": "class_namespace",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getClassMeta": {
-                "name": "getClassMeta",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Get Class Meta Data",
-                "return": "$this",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 395,
-                "get_end_line": 416,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L395",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L416",
-                "parameters": [
-                    {
-                        "name": "class_name",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "class_namespace",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getParent": {
-                "name": "getParent",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Retrieve Parent Class information",
-                "return": "$this",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 425,
-                "get_end_line": 448,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L425",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L448",
-                "parameters": [
-
-                ]
-            },
-            "getProperties": {
-                "name": "getProperties",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Retrieve properties for class",
-                "return": "$this",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 457,
-                "get_end_line": 468,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L457",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L468",
-                "parameters": [
-
-                ]
-            },
-            "getProperty": {
-                "name": "getProperty",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Get a specific property for the class\n     \n      Appears PHP does not support getStartLine() for class properties?",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 481,
-                "get_end_line": 513,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L481",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L513",
-                "parameters": [
-                    {
-                        "name": "property_name",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getMethods": {
-                "name": "getMethods",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Retrieve methods for class",
-                "return": "$this",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 522,
-                "get_end_line": 535,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L522",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L535",
-                "parameters": [
-
-                ]
-            },
-            "getMethod": {
-                "name": "getMethod",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Get a specific method for the class",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 546,
-                "get_end_line": 585,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L546",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L585",
-                "parameters": [
-                    {
-                        "name": "method",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "object",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getParameters": {
-                "name": "getParameters",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Get all parameters for specified method",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 597,
-                "get_end_line": 615,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L597",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L615",
-                "parameters": [
-                    {
-                        "name": "method",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "object",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "row",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "object",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getParameter": {
-                "name": "getParameter",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Get a specific method parameter",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 627,
-                "get_end_line": 668,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L627",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L668",
-                "parameters": [
-                    {
-                        "name": "parameter",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "object",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "comment_param_array",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "array",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "searchCommentParamArray": {
-                "name": "searchCommentParamArray",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "For those parameters without type hints (array or callable), search the comments\n       for a matching parameter name and use the definition there",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 681,
-                "get_end_line": 708,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L681",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L708",
-                "parameters": [
-                    {
-                        "name": "parameter_name",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "comment_param_array",
-                        "position": 1,
-                        "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "array",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "processComment": {
-                "name": "processComment",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Split comment into associative array",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 720,
-                "get_end_line": 765,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L720",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L765",
-                "parameters": [
-                    {
-                        "name": "comment",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "source_data_object",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "object",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "cleanItem": {
-                "name": "cleanItem",
-                "method_modifier": "protected",
-                "declaring_class": "Molajo\\Reflection\\Source",
-                "comment": "Clean item of non-content data",
-                "return": "object",
-                "since": "1.0.0",
-                "throws": "\\CommonApi\\Exception\\UnexpectedValueException",
-                "get_start_line": 776,
-                "get_end_line": 779,
-                "method_url": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L776",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Reflection\/tree\/master\/e\/\/Source\/Source.php#L779",
-                "parameters": [
-                    {
-                        "name": "item",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
                         "type_hint": null
                     }
                 ]

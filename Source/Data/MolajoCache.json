@@ -3,13 +3,15 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "CacheItem",
         "class_namespace": "Molajo\\Cache\\CacheItem",
         "namespace": "Molajo\\Cache",
-        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
+        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/CacheItemTest.php",
-        "file_path": "Source\/CacheItem.php",
+        "file_path": "Source\/Cache\/CacheItem.php",
         "instantiable": true,
         "final": false,
         "abstract": false,
@@ -27,7 +29,7 @@
             {
                 "name": "key",
                 "declaring_class": "Molajo\\Cache\\CacheItem",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php",
                 "method_modifier": "default",
                 "comment": "Cache Key",
                 "data_type": "string",
@@ -37,7 +39,7 @@
             {
                 "name": "is_hit",
                 "declaring_class": "Molajo\\Cache\\CacheItem",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php",
                 "method_modifier": "default",
                 "comment": "Cache Hit",
                 "data_type": "bool",
@@ -47,7 +49,7 @@
             {
                 "name": "value",
                 "declaring_class": "Molajo\\Cache\\CacheItem",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php",
                 "method_modifier": "default",
                 "comment": "Cache Value",
                 "data_type": "mixed",
@@ -64,8 +66,8 @@
                 "since": "1.0",
                 "get_start_line": 56,
                 "get_end_line": 61,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L56",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L61",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L61",
                 "parameters": [
                     {
                         "name": "key",
@@ -108,8 +110,8 @@
                 "since": "1.0",
                 "get_start_line": 69,
                 "get_end_line": 72,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L69",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L72",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L69",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L72",
                 "parameters": [
 
                 ]
@@ -123,8 +125,8 @@
                 "since": "1.0",
                 "get_start_line": 80,
                 "get_end_line": 83,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L80",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L83",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L80",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L83",
                 "parameters": [
 
                 ]
@@ -138,8 +140,8 @@
                 "since": "1.0",
                 "get_start_line": 93,
                 "get_end_line": 98,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L93",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L98",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L93",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L98",
                 "parameters": [
                     {
                         "name": "value",
@@ -162,8 +164,8 @@
                 "since": "1.0",
                 "get_start_line": 106,
                 "get_end_line": 109,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L106",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L109",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L106",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/CacheItem.php#L109",
                 "parameters": [
 
                 ]
@@ -174,184 +176,15 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
-        "class_name": "Database",
-        "class_namespace": "Molajo\\Cache\\Database",
-        "namespace": "Molajo\\Cache",
-        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php",
-        "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
-        "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/DatabaseTest.php",
-        "file_path": "Source\/Adapter\/Database.php",
-        "instantiable": true,
-        "final": false,
-        "abstract": false,
-        "interface_names": [
-            "CommonApi\\Cache\\CacheItemInterface"
-        ],
-        "comment": "Cache Item Interface",
-        "package": "Molajo",
-        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
-        "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
-        "class_properties": [
-            {
-                "name": "key",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
-                "method_modifier": "default",
-                "comment": "Cache Key",
-                "data_type": "string",
-                "since": "1.0",
-                "value": null
-            },
-            {
-                "name": "is_hit",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
-                "method_modifier": "default",
-                "comment": "Cache Hit",
-                "data_type": "bool",
-                "since": "1.0",
-                "value": null
-            },
-            {
-                "name": "value",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php",
-                "method_modifier": "default",
-                "comment": "Cache Value",
-                "data_type": "mixed",
-                "since": "1.0",
-                "value": null
-            }
-        ],
-        "methods": {
-            "__construct": {
-                "name": "__construct",
-                "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "comment": "Constructor",
-                "since": "1.0",
-                "get_start_line": 56,
-                "get_end_line": 61,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L56",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L61",
-                "parameters": [
-                    {
-                        "name": "key",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": false,
-                        "comment": "",
-                        "method_modifier": "string",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "value",
-                        "position": 1,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "null",
-                        "type_hint": null
-                    },
-                    {
-                        "name": "is_hit",
-                        "position": 2,
-                        "allows_null": 1,
-                        "default_value": true,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "bool",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "getKey": {
-                "name": "getKey",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "comment": "Get the Key associated with this Cache Item",
-                "return": "string  $key",
-                "since": "1.0",
-                "get_start_line": 69,
-                "get_end_line": 72,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L69",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L72",
-                "parameters": [
-
-                ]
-            },
-            "getValue": {
-                "name": "getValue",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "comment": "Get the Value associated with this Cache Item",
-                "return": "mixed",
-                "since": "1.0",
-                "get_start_line": 80,
-                "get_end_line": 83,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L80",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L83",
-                "parameters": [
-
-                ]
-            },
-            "setValue": {
-                "name": "setValue",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "comment": "Get the Value associated with this Cache Item",
-                "return": "$this",
-                "since": "1.0",
-                "get_start_line": 93,
-                "get_end_line": 98,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L93",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L98",
-                "parameters": [
-                    {
-                        "name": "value",
-                        "position": 0,
-                        "allows_null": 1,
-                        "default_value": null,
-                        "is_optional": true,
-                        "comment": "",
-                        "method_modifier": "null|mixed",
-                        "type_hint": null
-                    }
-                ]
-            },
-            "isHit": {
-                "name": "isHit",
-                "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\CacheItem",
-                "comment": "True or false value as to whether or not the item exists in current cache",
-                "return": "bool",
-                "since": "1.0",
-                "get_start_line": 106,
-                "get_end_line": 109,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L106",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/CacheItem.php#L109",
-                "parameters": [
-
-                ]
-            }
-        }
-    },
-    {
-        "project": "Molajo",
-        "repository": "Cache",
-        "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "Driver",
         "class_namespace": "Molajo\\Cache\\Driver",
         "namespace": "Molajo\\Cache",
-        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/DriverTest.php",
-        "file_path": "Source\/Driver.php",
+        "file_path": "Source\/Cache\/Driver.php",
         "instantiable": true,
         "final": false,
         "abstract": false,
@@ -369,7 +202,7 @@
             {
                 "name": "adapter",
                 "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
                 "data_type": "object",
@@ -386,8 +219,8 @@
                 "since": "1.0",
                 "get_start_line": 38,
                 "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L38",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L41",
                 "parameters": [
                     {
                         "name": "cache",
@@ -412,8 +245,8 @@
                 "since": "1.0",
                 "get_start_line": 51,
                 "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L51",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L54",
                 "parameters": [
                     {
                         "name": "key",
@@ -436,8 +269,8 @@
                 "since": "1.0",
                 "get_start_line": 66,
                 "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L66",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L69",
                 "parameters": [
                     {
                         "name": "key",
@@ -480,8 +313,8 @@
                 "since": "1.0",
                 "get_start_line": 79,
                 "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L79",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L82",
                 "parameters": [
                     {
                         "name": "key",
@@ -504,8 +337,8 @@
                 "since": "1.0",
                 "get_start_line": 90,
                 "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L90",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Cache\/Driver.php#L93",
                 "parameters": [
 
                 ]
@@ -516,9 +349,695 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
+        "class_name": "AbstractAdapter",
+        "class_namespace": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "namespace": "Molajo\\Cache\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/AbstractAdapterTest.php",
+        "file_path": "Source\/Adapter\/AbstractAdapter.php",
+        "instantiable": false,
+        "final": false,
+        "abstract": true,
+        "interface_names": [
+            "CommonApi\\Cache\\CacheInterface"
+        ],
+        "comment": "Abstract Adapter Cache",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": null,
+        "parent_class_url": null,
+        "class_properties": [
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Adapter",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 56,
+                "get_end_line": 59,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L56",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L59",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 69,
+                "get_end_line": 84,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L69",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L84",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "comment": "Return cached value",
+                "return": "CacheItem",
+                "since": "1.0",
+                "get_start_line": 94,
+                "get_end_line": 97,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L94",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L97",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "comment": "Create a cache entry",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 109,
+                "get_end_line": 112,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L109",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L112",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "mixed",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "ttl",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": 0,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "integer",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "remove": {
+                "name": "remove",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "comment": "Remove cache for specified $key value",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 122,
+                "get_end_line": 125,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L122",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L125",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "clear": {
+                "name": "clear",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "comment": "Clear all cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 133,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L133",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php#L136",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Cache",
+        "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
+        "class_name": "Apc",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Apc",
+        "namespace": "Molajo\\Cache\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/ApcTest.php",
+        "file_path": "Source\/Adapter\/Apc.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Cache\\CacheInterface"
+        ],
+        "comment": "Apc Cache Adapter",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Adapter",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Apc",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 33,
+                "get_end_line": 38,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L33",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L38",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Apc",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 49,
+                "get_end_line": 61,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L49",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L61",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Apc",
+                "comment": "Return cached value",
+                "return": "bool|CacheItem",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 72,
+                "get_end_line": 86,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L72",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L86",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Apc",
+                "comment": "Create a cache entry",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 99,
+                "get_end_line": 121,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L99",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L121",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "ttl",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": 0,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "integer",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "remove": {
+                "name": "remove",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Apc",
+                "comment": "Remove cache for specified $key value",
+                "return": "object",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 132,
+                "get_end_line": 142,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L132",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L142",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "clear": {
+                "name": "clear",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Apc",
+                "comment": "Clear all cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 150,
+                "get_end_line": 153,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L150",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Apc.php#L153",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Cache",
+        "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
+        "class_name": "Database",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Database",
+        "namespace": "Molajo\\Cache\\Adapter",
+        "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php",
+        "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
+        "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/DatabaseTest.php",
+        "file_path": "Source\/Adapter\/Database.php",
+        "instantiable": true,
+        "final": false,
+        "abstract": false,
+        "interface_names": [
+            "CommonApi\\Cache\\CacheInterface"
+        ],
+        "comment": "Database Cache",
+        "author": "Amy Stephen",
+        "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "since": "1.0.0",
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+        "class_properties": [
+            {
+                "name": "db_adapter",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Database Connection",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "database_table",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php",
+                "method_modifier": "default",
+                "comment": "Database Table",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Adapter",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
+                "since": "1.0",
+                "value": null
+            }
+        ],
+        "methods": {
+            "__construct": {
+                "name": "__construct",
+                "method_modifier": "constructor",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "comment": "Constructor",
+                "since": "1.0",
+                "get_start_line": 49,
+                "get_end_line": 54,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L49",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L54",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 0,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 64,
+                "get_end_line": 79,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L64",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L79",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "get": {
+                "name": "get",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "comment": "Return cached value",
+                "return": "bool|CacheItem",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 90,
+                "get_end_line": 124,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L90",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L124",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": false,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "set": {
+                "name": "set",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "comment": "Create a cache entry",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 137,
+                "get_end_line": 192,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L137",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L192",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "value",
+                        "position": 1,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "null",
+                        "type_hint": null
+                    },
+                    {
+                        "name": "ttl",
+                        "position": 2,
+                        "allows_null": 1,
+                        "default_value": 0,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "integer",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "remove": {
+                "name": "remove",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "comment": "Remove cache for specified $key value",
+                "return": "object",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 203,
+                "get_end_line": 222,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L203",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L222",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": null,
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "string",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "clear": {
+                "name": "clear",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Database",
+                "comment": "Clear all cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 230,
+                "get_end_line": 238,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L230",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Database.php#L238",
+                "parameters": [
+
+                ]
+            }
+        }
+    },
+    {
+        "project": "Molajo",
+        "repository": "Cache",
+        "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "Dummy",
-        "class_namespace": "Molajo\\Cache\\Dummy",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Dummy",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/DummyTest.php",
@@ -529,21 +1048,41 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "Dummy Cache",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -552,39 +1091,65 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Dummy",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 32,
+                "get_end_line": 37,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L32",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L37",
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Dummy",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 47,
+                "get_end_line": 52,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L47",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L52",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Dummy",
+                "comment": "Return cached value",
+                "return": "bool|CacheItem",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "get_start_line": 62,
+                "get_end_line": 65,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L62",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L65",
                 "parameters": [
                     {
                         "name": "key",
@@ -601,23 +1166,23 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Dummy",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "get_start_line": 77,
+                "get_end_line": 80,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L77",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L80",
                 "parameters": [
                     {
                         "name": "key",
                         "position": 0,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "string",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -625,9 +1190,9 @@
                         "position": 1,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "mixed",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -645,14 +1210,14 @@
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Dummy",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "object",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "get_start_line": 90,
+                "get_end_line": 93,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L90",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L93",
                 "parameters": [
                     {
                         "name": "key",
@@ -669,14 +1234,14 @@
             "clear": {
                 "name": "clear",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Dummy",
                 "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "get_start_line": 101,
+                "get_end_line": 104,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L101",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Dummy.php#L104",
                 "parameters": [
 
                 ]
@@ -687,9 +1252,11 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "File",
-        "class_namespace": "Molajo\\Cache\\File",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\File",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/FileTest.php",
@@ -700,21 +1267,51 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "File Adapter for Cache",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "cache_folder",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php",
+                "method_modifier": "default",
+                "comment": "Cache Path from Root",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -723,39 +1320,67 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 43,
+                "get_end_line": 48,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L43",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L48",
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "comment": "Connect to the Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 59,
+                "get_end_line": 80,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L59",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L80",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": "",
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "comment": "Return cached value",
+                "return": "bool|CacheItem",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 91,
+                "get_end_line": 112,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L91",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L112",
                 "parameters": [
                     {
                         "name": "key",
@@ -772,14 +1397,15 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 125,
+                "get_end_line": 159,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L125",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L159",
                 "parameters": [
                     {
                         "name": "key",
@@ -808,22 +1434,53 @@
                         "default_value": 0,
                         "is_optional": true,
                         "comment": "",
-                        "method_modifier": "integer",
+                        "method_modifier": "null|integer",
                         "type_hint": null
                     }
+                ]
+            },
+            "removeExpired": {
+                "name": "removeExpired",
+                "method_modifier": "protected",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "comment": "Remove cache if it has expired",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 167,
+                "get_end_line": 190,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L167",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L190",
+                "parameters": [
+
+                ]
+            },
+            "clear": {
+                "name": "clear",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "comment": "Clear all cache",
+                "return": "$this",
+                "since": "1.0",
+                "get_start_line": 198,
+                "get_end_line": 208,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L198",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L208",
+                "parameters": [
+
                 ]
             },
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 219,
+                "get_end_line": 231,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L219",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L231",
                 "parameters": [
                     {
                         "name": "key",
@@ -837,17 +1494,17 @@
                     }
                 ]
             },
-            "clear": {
-                "name": "clear",
+            "close": {
+                "name": "close",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "declaring_class": "Molajo\\Cache\\Adapter\\File",
+                "comment": "Close the Connection",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "get_start_line": 239,
+                "get_end_line": 242,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L239",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/File.php#L242",
                 "parameters": [
 
                 ]
@@ -858,9 +1515,11 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "Memcached",
-        "class_namespace": "Molajo\\Cache\\Memcached",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Memcached",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/MemcachedTest.php",
@@ -871,21 +1530,51 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "Memcached Cache",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "memcached",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php",
+                "method_modifier": "default",
+                "comment": "Memcached Instance",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -894,39 +1583,67 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 42,
+                "get_end_line": 47,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L42",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L47",
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 58,
+                "get_end_line": 97,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L58",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L97",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
+                "comment": "Return cached value",
+                "return": "null|mixed cached value",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 108,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L108",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L136",
                 "parameters": [
                     {
                         "name": "key",
@@ -943,23 +1660,24 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 149,
+                "get_end_line": 172,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L149",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L172",
                 "parameters": [
                     {
                         "name": "key",
                         "position": 0,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "string",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -967,9 +1685,9 @@
                         "position": 1,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "mixed",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -987,14 +1705,15 @@
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "object",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 183,
+                "get_end_line": 206,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L183",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L206",
                 "parameters": [
                     {
                         "name": "key",
@@ -1011,14 +1730,15 @@
             "clear": {
                 "name": "clear",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memcached",
                 "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 215,
+                "get_end_line": 231,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L215",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memcached.php#L231",
                 "parameters": [
 
                 ]
@@ -1029,9 +1749,11 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "Memory",
-        "class_namespace": "Molajo\\Cache\\Memory",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Memory",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/MemoryTest.php",
@@ -1042,21 +1764,51 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "Memory Cache",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "cache_container",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php",
+                "method_modifier": "default",
+                "comment": "Cache Container",
+                "data_type": "array",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -1065,39 +1817,67 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 41,
+                "get_end_line": 46,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L41",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L46",
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 57,
+                "get_end_line": 64,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L57",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L64",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
+                "comment": "Return cached value",
+                "return": "CacheItem",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 75,
+                "get_end_line": 97,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L75",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L97",
                 "parameters": [
                     {
                         "name": "key",
@@ -1114,23 +1894,24 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 110,
+                "get_end_line": 136,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L110",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L136",
                 "parameters": [
                     {
                         "name": "key",
                         "position": 0,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "string",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -1138,9 +1919,9 @@
                         "position": 1,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "mixed",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -1158,14 +1939,15 @@
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "object",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 147,
+                "get_end_line": 158,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L147",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L158",
                 "parameters": [
                     {
                         "name": "key",
@@ -1182,14 +1964,14 @@
             "clear": {
                 "name": "clear",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Memory",
                 "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "get_start_line": 166,
+                "get_end_line": 169,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L166",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Memory.php#L169",
                 "parameters": [
 
                 ]
@@ -1200,9 +1982,11 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "Redis",
-        "class_namespace": "Molajo\\Cache\\Redis",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Redis",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/RedisTest.php",
@@ -1213,21 +1997,51 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "Redis Adapter",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "redis",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php",
+                "method_modifier": "default",
+                "comment": "Redis Database Connection",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -1236,39 +2050,67 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 42,
+                "get_end_line": 47,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L42",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L47",
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 58,
+                "get_end_line": 70,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L58",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L70",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
+                "comment": "Return cached value",
+                "return": "bool|CacheItem",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 81,
+                "get_end_line": 97,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L81",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L97",
                 "parameters": [
                     {
                         "name": "key",
@@ -1285,23 +2127,24 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 110,
+                "get_end_line": 133,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L110",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L133",
                 "parameters": [
                     {
                         "name": "key",
                         "position": 0,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "string",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -1309,9 +2152,9 @@
                         "position": 1,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "mixed",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -1329,14 +2172,15 @@
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "object",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 144,
+                "get_end_line": 154,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L144",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L154",
                 "parameters": [
                     {
                         "name": "key",
@@ -1353,14 +2197,14 @@
             "clear": {
                 "name": "clear",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Redis",
                 "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "get_start_line": 162,
+                "get_end_line": 167,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L162",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Redis.php#L167",
                 "parameters": [
 
                 ]
@@ -1371,9 +2215,11 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "Wincache",
-        "class_namespace": "Molajo\\Cache\\Wincache",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\Wincache",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/WincacheTest.php",
@@ -1384,21 +2230,51 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "Wincache Cache",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "wincache",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php",
+                "method_modifier": "default",
+                "comment": "Wincache Instance",
+                "data_type": "object",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -1407,39 +2283,67 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 42,
+                "get_end_line": 47,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L42",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L47",
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 58,
+                "get_end_line": 69,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L58",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L69",
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
+                "comment": "Return cached value",
+                "return": "null|mixed cached value",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 80,
+                "get_end_line": 98,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L80",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L98",
                 "parameters": [
                     {
                         "name": "key",
@@ -1456,21 +2360,22 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 111,
+                "get_end_line": 134,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L111",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L134",
                 "parameters": [
                     {
                         "name": "key",
                         "position": 0,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
                         "method_modifier": "string",
                         "type_hint": null
@@ -1480,7 +2385,7 @@
                         "position": 1,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
                         "method_modifier": "mixed",
                         "type_hint": null
@@ -1500,14 +2405,15 @@
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "object",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 145,
+                "get_end_line": 161,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L145",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L161",
                 "parameters": [
                     {
                         "name": "key",
@@ -1524,14 +2430,15 @@
             "clear": {
                 "name": "clear",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Wincache",
                 "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 170,
+                "get_end_line": 183,
+                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L170",
+                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/Wincache.php#L183",
                 "parameters": [
 
                 ]
@@ -1542,9 +2449,11 @@
         "project": "Molajo",
         "repository": "Cache",
         "source_repository": "https:\/\/github.com\/Molajo\/Cache",
+        "namespace_project": "Molajo",
+        "namespace_package": "Cache",
         "class_name": "XCache",
-        "class_namespace": "Molajo\\Cache\\XCache",
-        "namespace": "Molajo\\Cache",
+        "class_namespace": "Molajo\\Cache\\Adapter\\XCache",
+        "namespace": "Molajo\\Cache\\Adapter",
         "class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/XCache.php",
         "document_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Doc\/",
         "unittest_url": "https:\/\/github.com\/Molajo\/Cache\/blob\/master\/.dev\/Tests\/XCacheTest.php",
@@ -1555,21 +2464,41 @@
         "interface_names": [
             "CommonApi\\Cache\\CacheInterface"
         ],
-        "comment": "Cache Driver",
-        "package": "Molajo",
-        "copyright": "2014 Amy Stephen. All rights reserved.",
+        "comment": "Xcache Cache",
+        "author": "Amy Stephen",
         "license": "http:\/\/www.opensource.org\/licenses\/mit-license.html MIT License",
+        "copyright": "2014 Amy Stephen. All rights reserved.",
         "since": "1.0.0",
-        "parent_class": null,
-        "parent_class_url": null,
+        "parent_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "parent_class_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
         "class_properties": [
             {
-                "name": "adapter",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php",
+                "name": "cache_handler",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
                 "method_modifier": "default",
                 "comment": "Cache Adapter",
-                "data_type": "object",
+                "data_type": "string",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_enabled",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache",
+                "data_type": "bool",
+                "since": "1.0",
+                "value": null
+            },
+            {
+                "name": "cache_time",
+                "declaring_class": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+                "property_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Adapter\/AbstractAdapter.php",
+                "method_modifier": "default",
+                "comment": "Cache Time in seconds",
+                "data_type": "Integer",
                 "since": "1.0",
                 "value": null
             }
@@ -1578,39 +2507,67 @@
             "__construct": {
                 "name": "__construct",
                 "method_modifier": "constructor",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Xcache",
                 "comment": "Constructor",
                 "since": "1.0",
-                "get_start_line": 38,
-                "get_end_line": 41,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L38",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L41",
+                "get_start_line": 32,
+                "get_end_line": 37,
+                "method_url": null,
+                "method_url_end": null,
                 "parameters": [
                     {
-                        "name": "cache",
+                        "name": "options",
                         "position": 0,
                         "allows_null": 0,
-                        "default_value": null,
-                        "is_optional": false,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
+                        "comment": null,
+                        "method_modifier": "array",
+                        "type_hint": null
+                    }
+                ]
+            },
+            "connect": {
+                "name": "connect",
+                "method_modifier": "public",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Xcache",
+                "comment": "Connect to Cache",
+                "return": "$this",
+                "since": "1.0",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 48,
+                "get_end_line": 86,
+                "method_url": null,
+                "method_url_end": null,
+                "parameters": [
+                    {
+                        "name": "options",
+                        "position": 0,
+                        "allows_null": 1,
+                        "default_value": [
+
+                        ],
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "CacheInterface",
-                        "type_hint": {
-                            "name": "CommonApi\\Cache\\CacheInterface"
-                        }
+                        "method_modifier": "array",
+                        "type_hint": null
                     }
                 ]
             },
             "get": {
                 "name": "get",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Return cached or parameter value",
-                "return": "bool|CacheItem cache for this key that has not been serialized",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Xcache",
+                "comment": "Return cached value",
+                "return": "null|mixed cached value",
                 "since": "1.0",
-                "get_start_line": 51,
-                "get_end_line": 54,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L51",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L54",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 97,
+                "get_end_line": 127,
+                "method_url": null,
+                "method_url_end": null,
                 "parameters": [
                     {
                         "name": "key",
@@ -1627,23 +2584,24 @@
             "set": {
                 "name": "set",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
-                "comment": "Persist data in cache",
-                "return": "bool",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Xcache",
+                "comment": "Create a cache entry",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 66,
-                "get_end_line": 69,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L66",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L69",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 140,
+                "get_end_line": 167,
+                "method_url": null,
+                "method_url_end": null,
                 "parameters": [
                     {
                         "name": "key",
                         "position": 0,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "string",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -1651,9 +2609,9 @@
                         "position": 1,
                         "allows_null": 1,
                         "default_value": null,
-                        "is_optional": false,
+                        "is_optional": true,
                         "comment": "",
-                        "method_modifier": "mixed",
+                        "method_modifier": "null",
                         "type_hint": null
                     },
                     {
@@ -1671,14 +2629,15 @@
             "remove": {
                 "name": "remove",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Xcache",
                 "comment": "Remove cache for specified $key value",
-                "return": "object CacheInterface",
+                "return": "object",
                 "since": "1.0",
-                "get_start_line": 79,
-                "get_end_line": 82,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L79",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L82",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 178,
+                "get_end_line": 201,
+                "method_url": null,
+                "method_url_end": null,
                 "parameters": [
                     {
                         "name": "key",
@@ -1695,14 +2654,15 @@
             "clear": {
                 "name": "clear",
                 "method_modifier": "public",
-                "declaring_class": "Molajo\\Cache\\Driver",
+                "declaring_class": "Molajo\\Cache\\Adapter\\Xcache",
                 "comment": "Clear all cache",
-                "return": "object CacheInterface",
+                "return": "$this",
                 "since": "1.0",
-                "get_start_line": 90,
-                "get_end_line": 93,
-                "method_url": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L90",
-                "method_url_end": "https:\/\/github.com\/Molajo\/Cache\/tree\/master\/Source\/Driver.php#L93",
+                "throws": "\\CommonApi\\Exception\\RuntimeException",
+                "get_start_line": 210,
+                "get_end_line": 226,
+                "method_url": null,
+                "method_url_end": null,
                 "parameters": [
 
                 ]
