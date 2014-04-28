@@ -29,7 +29,7 @@ class Source
      * @var    object
      * @since  1.0.0
      */
-    protected $data_folder = null;
+    protected $data_folder = NULL;
 
     /**
      * Base Path
@@ -116,7 +116,7 @@ class Source
      * @var    string
      * @since  1.0.0
      */
-    protected $relative_path = null;
+    protected $relative_path = NULL;
 
     /**
      * All Class URLs
@@ -134,7 +134,7 @@ class Source
      * @var    object
      * @since  1.0.0
      */
-    protected $class_data_object = null;
+    protected $class_data_object = NULL;
 
     /**
      * Class Reflection Object
@@ -143,7 +143,7 @@ class Source
      * @var    object
      * @since  1.0.0
      */
-    protected $class_reflection_object = null;
+    protected $class_reflection_object = NULL;
 
     /**
      * Constructor
@@ -246,15 +246,15 @@ class Source
         foreach ($this->classmap as $class_namespace => $class_path) {
 
             if (isset($this->class_url_array[$class_namespace])
-                && $this->class_url_array[$class_namespace]->primary_project === true
-                && $this->class_url_array[$class_namespace]->primary_repository === true
+                && $this->class_url_array[$class_namespace]->primary_project === TRUE
+                && $this->class_url_array[$class_namespace]->primary_repository === TRUE
             ) {
                 $class_name = $this->class_url_array[$class_namespace]->class_name;
 
                 //echo $class_name . ' ' . $class_namespace . '<br />';
                 $this->reflectClassNamespace($class_namespace);
 
-                if ($this->class_reflection_object === null) {
+                if ($this->class_reflection_object === NULL) {
                     echo 'FAILED TO CREATE CLASS REFLECTION ' . $class_name . ' ' . $class_namespace . '<br />';
                 } else {
                     $this->class_data_object = new stdClass();
@@ -303,16 +303,16 @@ class Source
         $class_location->class_name        = $namespace_class;
 
         if (substr($relative_path, 0, strlen('vendor')) === 'vendor') {
-            $class_location->relative_path      = null;
-            $class_location->class_url          = null;
-            $class_location->primary_project    = false;
-            $class_location->primary_repository = false;
+            $class_location->relative_path      = NULL;
+            $class_location->class_url          = NULL;
+            $class_location->primary_project    = FALSE;
+            $class_location->primary_repository = FALSE;
         } else {
             $class_location->relative_path = $relative_path;
             $class_location->class_url
                                                 = $class_location->source_repository . $this->class_url_path . $relative_path;
-            $class_location->primary_project    = true;
-            $class_location->primary_repository = true;
+            $class_location->primary_project    = TRUE;
+            $class_location->primary_repository = TRUE;
         }
 
         return $class_location;
@@ -355,7 +355,7 @@ class Source
             $this->class_reflection_object = new ReflectionClass($class_namespace);
 
         } catch (Exception $e) {
-            return false;
+            return FALSE;
         }
 
         return $this;
@@ -427,8 +427,8 @@ class Source
 
         if (is_object($temp)) {
         } else {
-            $this->class_data_object->parent_class     = null;
-            $this->class_data_object->parent_class_url = null;
+            $this->class_data_object->parent_class     = NULL;
+            $this->class_data_object->parent_class_url = NULL;
 
             return $this;
         }
@@ -440,7 +440,7 @@ class Source
             $this->class_data_object->parent_class_url
                 = $this->class_url_array[$this->class_data_object->parent_class]->class_url;
         } else {
-            $this->class_data_object->parent_class_url = null; // ex. DateTime
+            $this->class_data_object->parent_class_url = NULL; // ex. DateTime
         }
 
         return $this;
@@ -480,7 +480,7 @@ class Source
     protected function getProperty($property_name)
     {
         $reflectorProperty = $this->class_reflection_object->getProperty($property_name);
-        $reflectorProperty->setAccessible(true);
+        $reflectorProperty->setAccessible(TRUE);
 
         $row = new stdClass();
 
@@ -490,16 +490,16 @@ class Source
         if (isset($this->class_url_array[$row->declaring_class])) { // ex. DateTime
             $row->property_url = $this->class_url_array[$row->declaring_class]->class_url;
         } else {
-            $row->property_url = null;
+            $row->property_url = NULL;
         }
 
-        if ($reflectorProperty->isDefault() === true) {
+        if ($reflectorProperty->isDefault() === TRUE) {
             $row->method_modifier = 'default';
-        } elseif ($reflectorProperty->isPrivate() === true) {
+        } elseif ($reflectorProperty->isPrivate() === TRUE) {
             $row->method_modifier = 'private';
-        } elseif ($reflectorProperty->isProtected() === true) {
+        } elseif ($reflectorProperty->isProtected() === TRUE) {
             $row->method_modifier = 'protected';
-        } elseif ($reflectorProperty->isPublic() === true) {
+        } elseif ($reflectorProperty->isPublic() === TRUE) {
             $row->$reflectorProperty = 'public';
         } else {
             $row->$reflectorProperty = 'static';
@@ -547,19 +547,19 @@ class Source
         $row       = new stdClass();
         $row->name = $method->name;
 
-        if ($method->isConstructor() === true) {
+        if ($method->isConstructor() === TRUE) {
             $row->method_modifier = 'constructor';
-        } elseif ($method->isDestructor() === true) {
+        } elseif ($method->isDestructor() === TRUE) {
             $row->method_modifier = 'destructor';
-        } elseif ($method->isFinal() === true) {
+        } elseif ($method->isFinal() === TRUE) {
             $row->method_modifier = 'final';
-        } elseif ($method->isPrivate() === true) {
+        } elseif ($method->isPrivate() === TRUE) {
             $row->method_modifier = 'private';
-        } elseif ($method->isProtected() === true) {
+        } elseif ($method->isProtected() === TRUE) {
             $row->method_modifier = 'protected';
-        } elseif ($method->isPublic() === true) {
+        } elseif ($method->isPublic() === TRUE) {
             $row->method_modifier = 'public';
-        } elseif ($method->isStatic() === true) {
+        } elseif ($method->isStatic() === TRUE) {
             $row->method_modifier = 'static';
         } else {
             $row->method_modifier = 'abstract';
@@ -576,8 +576,8 @@ class Source
             $row->method_url_end = $this->class_url_array[$row->declaring_class]->class_url
                 . '#L' . $row->get_end_line;
         } else {
-            $row->method_url     = null;
-            $row->method_url_end = null;
+            $row->method_url     = NULL;
+            $row->method_url_end = NULL;
         }
 
         return $row;
@@ -638,23 +638,23 @@ class Source
         if ($parameter->isDefaultValueAvailable()) {
             $param_class->default_value = $parameter->getDefaultValue();
         } else {
-            $param_class->default_value = null;
+            $param_class->default_value = NULL;
         }
 
         if ($parameter->isOptional()) {
-            $param_class->is_optional = true;
+            $param_class->is_optional = TRUE;
         } else {
-            $param_class->is_optional = false;
+            $param_class->is_optional = FALSE;
         }
 
         $results              = $this->searchCommentParamArray($param_class->name, $comment_param_array);
         $data_type            = $results[0];
         $param_class->comment = $results[1];
 
-        if ($parameter->isArray() === true) {
+        if ($parameter->isArray() === TRUE) {
             $param_class->method_modifier = 'array';
 
-        } elseif ($parameter->isCallable() === true) {
+        } elseif ($parameter->isCallable() === TRUE) {
             $param_class->method_modifier = 'callable';
 
         } else {
@@ -681,8 +681,8 @@ class Source
     {
         $needle = '$' . $parameter_name;
 
-        $data_type  = null;
-        $definition = null;
+        $data_type  = NULL;
+        $definition = NULL;
 
         if (count($comment_param_array) > 0) {
         } else {
@@ -696,8 +696,8 @@ class Source
                 $data_type  = trim(substr($item, 0, strpos($item, $needle)));
                 $definition = trim(substr($item, strpos($item, $needle) + 1 + strlen($item), 9999));
 
-                if ($definition === false) {
-                    $definition = null;
+                if ($definition === FALSE) {
+                    $definition = NULL;
                 }
                 break;
             }
@@ -747,13 +747,13 @@ class Source
                 } else {
                     if ($name === 'api') {
                         $name  = 'api';
-                        $value = true;
+                        $value = TRUE;
                     }
 
                     $source_data_object->$name = $value;
                 }
             }
-            $i ++;
+            $i++;
         }
 
         if (is_array($params) && count($params) > 0) {
