@@ -10,6 +10,7 @@ $processing_base = substr(__DIR__, 0, strlen(__DIR__) - 17);
 
 $processing_classmap = array();
 $processing_classmap['Molajo\\Reflection\\Source'] = $processing_base . '/Source/Source.php';
+$processing_classmap['Molajo\\Reflection\\Categorize'] = $processing_base . '/Source/Categorize.php';
 
 spl_autoload_register(
     function ($class) use ($processing_classmap) {

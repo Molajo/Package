@@ -148,12 +148,13 @@ class Source
     /**
      * Constructor
      *
-     * @param   string $source_repository
-     * @param   string $class_url_path
-     * @param   string $document_url_path
-     * @param   string $unit_tests_url_path
+     * @param  string $source_repository
+     * @param  string $class_url_path
+     * @param  string $document_url_path
+     * @param  string $unit_tests_url_path
+     * @param  string $data_folder
      *
-     * @since   1.0.0
+     * @since  1.0.0
      */
     public function __construct(
         $source_repository = '',
@@ -299,7 +300,7 @@ class Source
         $class_location->source_repository = $this->source_repository
             . $this->primary_project . '/' . $this->primary_repository;
         $class_location->namespace_project = $namespace_project;
-        $class_location->namespace_package = $namespace_package;
+        $class_location->namespace_package = $namespace_project . '/' . $namespace_package;
         $class_location->class_name        = $namespace_class;
 
         if (substr($relative_path, 0, strlen('vendor')) === 'vendor') {

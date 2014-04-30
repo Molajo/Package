@@ -1,0 +1,522 @@
+{
+    "CommonApi\\Authorisation\\AuthorisationInterface": {
+        "Molajo\\Authorisation\\Adapter\\AbstractAdapter": "Molajo\\Authorisation\\Adapter\\AbstractAdapter",
+        "Molajo\\Authorisation\\Adapter\\Database": "Molajo\\Authorisation\\Adapter\\Database",
+        "Molajo\\Authorisation\\Driver": "Molajo\\Authorisation\\Driver"
+    },
+    "CommonApi\\Cache\\CacheInterface": {
+        "Molajo\\Cache\\Adapter\\AbstractAdapter": "Molajo\\Cache\\Adapter\\AbstractAdapter",
+        "Molajo\\Cache\\Adapter\\Apc": "Molajo\\Cache\\Adapter\\Apc",
+        "Molajo\\Cache\\Adapter\\Database": "Molajo\\Cache\\Adapter\\Database",
+        "Molajo\\Cache\\Adapter\\Dummy": "Molajo\\Cache\\Adapter\\Dummy",
+        "Molajo\\Cache\\Adapter\\File": "Molajo\\Cache\\Adapter\\File",
+        "Molajo\\Cache\\Adapter\\Memcached": "Molajo\\Cache\\Adapter\\Memcached",
+        "Molajo\\Cache\\Adapter\\Memory": "Molajo\\Cache\\Adapter\\Memory",
+        "Molajo\\Cache\\Adapter\\Redis": "Molajo\\Cache\\Adapter\\Redis",
+        "Molajo\\Cache\\Adapter\\Wincache": "Molajo\\Cache\\Adapter\\Wincache",
+        "Molajo\\Cache\\Adapter\\XCache": "Molajo\\Cache\\Adapter\\XCache",
+        "Molajo\\Cache\\Driver": "Molajo\\Cache\\Driver"
+    },
+    "CommonApi\\Cache\\CacheItemInterface": {
+        "Molajo\\Cache\\CacheItem": "Molajo\\Cache\\CacheItem"
+    },
+    "CommonApi\\Controller\\ApplicationInterface": {
+        "Molajo\\Controller\\Application": "Molajo\\Controller\\Application"
+    },
+    "CommonApi\\Controller\\ControllerInterface": {
+        "Molajo\\Controller\\Controller": "Molajo\\Controller\\Controller",
+        "Molajo\\Controller\\CreateController": "Molajo\\Controller\\CreateController",
+        "Molajo\\Controller\\DeleteController": "Molajo\\Controller\\DeleteController",
+        "Molajo\\Controller\\HOLDupdate": "Molajo\\Controller\\HOLDupdate",
+        "Molajo\\Controller\\QueryController": "Molajo\\Controller\\QueryController",
+        "Molajo\\Controller\\ReadController": "Molajo\\Controller\\ReadController",
+        "Molajo\\Controller\\UpdateController": "Molajo\\Controller\\UpdateController"
+    },
+    "CommonApi\\Controller\\CreateControllerInterface": {
+        "Molajo\\Controller\\CreateController": "Molajo\\Controller\\CreateController"
+    },
+    "CommonApi\\Controller\\DatalistInterface": {
+        "Molajo\\Controller\\Datalist": "Molajo\\Controller\\Datalist"
+    },
+    "CommonApi\\Controller\\DateInterface": {
+        "Molajo\\Controller\\DateController": "Molajo\\Controller\\DateController"
+    },
+    "CommonApi\\Controller\\DeleteControllerInterface": {
+        "Molajo\\Controller\\DeleteController": "Molajo\\Controller\\DeleteController"
+    },
+    "CommonApi\\Controller\\ErrorHandlingInterface": {
+        "Molajo\\Controller\\ErrorHandling": "Molajo\\Controller\\ErrorHandling"
+    },
+    "CommonApi\\Controller\\FrontControllerInterface": {
+        "Molajo\\Controller\\FrontController": "Molajo\\Controller\\FrontController"
+    },
+    "CommonApi\\Controller\\ImageInterface": {
+        "Molajo\\Controller\\ImageController": "Molajo\\Controller\\ImageController"
+    },
+    "CommonApi\\Controller\\NumberToTextInterface": {
+        "Molajo\\Controller\\NumberToText": "Molajo\\Controller\\NumberToText"
+    },
+    "CommonApi\\Controller\\RandomStringInterface": {
+        "Molajo\\Controller\\RandomString": "Molajo\\Controller\\RandomString"
+    },
+    "CommonApi\\Controller\\ReadControllerInterface": {
+        "Molajo\\Controller\\CreateController": "Molajo\\Controller\\CreateController",
+        "Molajo\\Controller\\DeleteController": "Molajo\\Controller\\DeleteController",
+        "Molajo\\Controller\\ReadController": "Molajo\\Controller\\ReadController",
+        "Molajo\\Controller\\UpdateController": "Molajo\\Controller\\UpdateController"
+    },
+    "CommonApi\\Controller\\ResourceInterface": {
+        "Molajo\\Controller\\ResourceController": "Molajo\\Controller\\ResourceController"
+    },
+    "CommonApi\\Controller\\SiteInterface": {
+        "Molajo\\Controller\\Site": "Molajo\\Controller\\Site"
+    },
+    "CommonApi\\Controller\\TextInterface": {
+        "Molajo\\Controller\\TextController": "Molajo\\Controller\\TextController",
+        "Molajo\\Controller\\Translate": "Molajo\\Controller\\Translate"
+    },
+    "CommonApi\\Controller\\TranslateInterface": {
+        "Molajo\\Controller\\Translations\\Translate": "Molajo\\Controller\\Translations\\Translate"
+    },
+    "CommonApi\\Controller\\UpdateControllerInterface": {
+        "Molajo\\Controller\\UpdateController": "Molajo\\Controller\\UpdateController"
+    },
+    "CommonApi\\Controller\\UrlInterface": {
+        "Molajo\\Controller\\UrlController": "Molajo\\Controller\\UrlController",
+        "Molajo\\Controller\\enGB": "Molajo\\Controller\\enGB",
+        "Molajo\\Factories\\ApplicationFactoryMethod": "Molajo\\Factories\\ApplicationFactoryMethod",
+        "Molajo\\Factories\\DateFactoryMethod": "Molajo\\Factories\\DateFactoryMethod",
+        "Molajo\\Factories\\ErrorhandlingFactoryMethod": "Molajo\\Factories\\ErrorhandlingFactoryMethod",
+        "Molajo\\Factories\\ExceptionhandlingFactoryMethod": "Molajo\\Factories\\ExceptionhandlingFactoryMethod",
+        "Molajo\\Factories\\ExtensionsFactoryMethod": "Molajo\\Factories\\ExtensionsFactoryMethod",
+        "Molajo\\Factories\\ImageFactoryMethod": "Molajo\\Factories\\ImageFactoryMethod",
+        "Molajo\\Factories\\PlugindataFactoryMethod": "Molajo\\Factories\\PlugindataFactoryMethod",
+        "Molajo\\Factories\\ResourcecontrollerFactoryMethod": "Molajo\\Factories\\ResourcecontrollerFactoryMethod",
+        "Molajo\\Factories\\ResourcerenderingFactoryMethod": "Molajo\\Factories\\ResourcerenderingFactoryMethod",
+        "Molajo\\Factories\\RuntimedataFactoryMethod": "Molajo\\Factories\\RuntimedataFactoryMethod",
+        "Molajo\\Factories\\SiteFactoryMethod": "Molajo\\Factories\\SiteFactoryMethod",
+        "Molajo\\Factories\\TextFactoryMethod": "Molajo\\Factories\\TextFactoryMethod",
+        "Molajo\\Factories\\UrlFactoryMethod": "Molajo\\Factories\\UrlFactoryMethod"
+    },
+    "CommonApi\\Database\\ConnectionInterface": {
+        "Molajo\\Database\\Adapter\\AbstractAdapter": "Molajo\\Database\\Adapter\\AbstractAdapter",
+        "Molajo\\Database\\Adapter\\Joomla": "Molajo\\Database\\Adapter\\Joomla"
+    },
+    "CommonApi\\Database\\DatabaseInterface": {
+        "Molajo\\Database\\Adapter\\AbstractAdapter": "Molajo\\Database\\Adapter\\AbstractAdapter",
+        "Molajo\\Database\\Adapter\\Joomla": "Molajo\\Database\\Adapter\\Joomla",
+        "Molajo\\Database\\Driver": "Molajo\\Database\\Driver"
+    },
+    "CommonApi\\Email\\EmailInterface": {
+        "Molajo\\Email\\Adapter\\AbstractAdapter": "Molajo\\Email\\Adapter\\AbstractAdapter",
+        "Molajo\\Email\\Adapter\\PhpMailer": "Molajo\\Email\\Adapter\\PhpMailer",
+        "Molajo\\Email\\Adapter\\Swiftmailer": "Molajo\\Email\\Adapter\\Swiftmailer",
+        "Molajo\\Email\\Driver": "Molajo\\Email\\Driver"
+    },
+    "CommonApi\\Event\\AuthenticateInterface": {
+        "Molajo\\Plugins\\Login\\LoginPlugin": "Molajo\\Plugins\\Login\\LoginPlugin",
+        "Molajo\\Plugins\\Logout\\LogoutPlugin": "Molajo\\Plugins\\Logout\\LogoutPlugin"
+    },
+    "CommonApi\\Event\\CreateInterface": {
+        "Molajo\\Plugins\\Alias\\AliasPlugin": "Molajo\\Plugins\\Alias\\AliasPlugin",
+        "Molajo\\Plugins\\Dateformats\\DateformatsPlugin": "Molajo\\Plugins\\Dateformats\\DateformatsPlugin"
+    },
+    "CommonApi\\Event\\DispatcherInterface": {
+        "Molajo\\Event\\Dispatcher": "Molajo\\Event\\Dispatcher"
+    },
+    "CommonApi\\Event\\DisplayInterface": {
+        "Molajo\\Plugins\\Author\\AuthorPlugin": "Molajo\\Plugins\\Author\\AuthorPlugin",
+        "Molajo\\Plugins\\Comments\\CommentsPlugin": "Molajo\\Plugins\\Comments\\CommentsPlugin",
+        "Molajo\\Plugins\\Fields\\FieldsPlugin": "Molajo\\Plugins\\Fields\\FieldsPlugin",
+        "Molajo\\Plugins\\Messages\\MessagesPlugin": "Molajo\\Plugins\\Messages\\MessagesPlugin",
+        "Molajo\\Plugins\\Pagetypeapplication\\PagetypeapplicationPlugin": "Molajo\\Plugins\\Pagetypeapplication\\PagetypeapplicationPlugin",
+        "Molajo\\Plugins\\Pagetypeconfiguration\\PagetypeconfigurationPlugin": "Molajo\\Plugins\\Pagetypeconfiguration\\PagetypeconfigurationPlugin",
+        "Molajo\\Plugins\\Pagetypedashboard\\PagetypedashboardPlugin": "Molajo\\Plugins\\Pagetypedashboard\\PagetypedashboardPlugin",
+        "Molajo\\Plugins\\Pagetypeedit\\PagetypeeditPlugin": "Molajo\\Plugins\\Pagetypeedit\\PagetypeeditPlugin",
+        "Molajo\\Plugins\\Pagetypegrid\\PagetypegridPlugin": "Molajo\\Plugins\\Pagetypegrid\\PagetypegridPlugin",
+        "Molajo\\Plugins\\Pagetypeitem\\PagetypeitemPlugin": "Molajo\\Plugins\\Pagetypeitem\\PagetypeitemPlugin",
+        "Molajo\\Plugins\\Pagetypelist\\PagetypelistPlugin": "Molajo\\Plugins\\Pagetypelist\\PagetypelistPlugin",
+        "Molajo\\Plugins\\Pagetypenew\\PagetypenewPlugin": "Molajo\\Plugins\\Pagetypenew\\PagetypenewPlugin",
+        "Molajo\\Plugins\\Translate\\TranslatePlugin": "Molajo\\Plugins\\Translate\\TranslatePlugin"
+    },
+    "CommonApi\\Event\\EventDispatcherInterface": {
+        "Molajo\\Event\\EventDispatcher": "Molajo\\Event\\EventDispatcher"
+    },
+    "CommonApi\\Event\\EventInterface": {
+        "Molajo\\Event\\Scheduled": "Molajo\\Event\\Scheduled"
+    },
+    "CommonApi\\Event\\ReadInterface": {
+        "Molajo\\Plugins\\Blockquote\\BlockquotePlugin": "Molajo\\Plugins\\Blockquote\\BlockquotePlugin",
+        "Molajo\\Plugins\\Customfields\\CustomfieldsPlugin": "Molajo\\Plugins\\Customfields\\CustomfieldsPlugin",
+        "Molajo\\Plugins\\Email\\EmailPlugin": "Molajo\\Plugins\\Email\\EmailPlugin",
+        "Molajo\\Plugins\\Fullname\\FullnamePlugin": "Molajo\\Plugins\\Fullname\\FullnamePlugin",
+        "Molajo\\Plugins\\Linebreaks\\LinebreaksPlugin": "Molajo\\Plugins\\Linebreaks\\LinebreaksPlugin",
+        "Molajo\\Plugins\\Links\\LinksPlugin": "Molajo\\Plugins\\Links\\LinksPlugin",
+        "Molajo\\Plugins\\Pagination\\PaginationPlugin": "Molajo\\Plugins\\Pagination\\PaginationPlugin",
+        "Molajo\\Plugins\\Queryauthorisation\\QueryauthorisationPlugin": "Molajo\\Plugins\\Queryauthorisation\\QueryauthorisationPlugin",
+        "Molajo\\Plugins\\Readmore\\ReadmorePlugin": "Molajo\\Plugins\\Readmore\\ReadmorePlugin",
+        "Molajo\\Plugins\\Smilies\\SmiliesPlugin": "Molajo\\Plugins\\Smilies\\SmiliesPlugin",
+        "Molajo\\Plugins\\Snippet\\SnippetPlugin": "Molajo\\Plugins\\Snippet\\SnippetPlugin",
+        "Molajo\\Plugins\\Status\\StatusPlugin": "Molajo\\Plugins\\Status\\StatusPlugin"
+    },
+    "CommonApi\\Event\\SystemInterface": {
+        "Molajo\\Plugins\\Application\\ApplicationPlugin": "Molajo\\Plugins\\Application\\ApplicationPlugin",
+        "Molajo\\Plugins\\Copyright\\CopyrightPlugin": "Molajo\\Plugins\\Copyright\\CopyrightPlugin",
+        "Molajo\\Plugins\\Events\\EventsPlugin": "Molajo\\Plugins\\Events\\EventsPlugin",
+        "Molajo\\Plugins\\Menuitems\\MenuitemsPlugin": "Molajo\\Plugins\\Menuitems\\MenuitemsPlugin"
+    },
+    "CommonApi\\Event\\UpdateInterface": {
+        "Molajo\\Plugins\\Alias\\AliasPlugin": "Molajo\\Plugins\\Alias\\AliasPlugin",
+        "Molajo\\Plugins\\Dateformats\\DateformatsPlugin": "Molajo\\Plugins\\Dateformats\\DateformatsPlugin"
+    },
+    "CommonApi\\Exception\\ExceptionInterface": {
+        "CommonApi\\Exception\\BadFunctionCallException": "CommonApi\\Exception\\BadFunctionCallException",
+        "CommonApi\\Exception\\BadMethodCallException": "CommonApi\\Exception\\BadMethodCallException",
+        "CommonApi\\Exception\\DomainException": "CommonApi\\Exception\\DomainException",
+        "CommonApi\\Exception\\ErrorThrownAsException": "CommonApi\\Exception\\ErrorThrownAsException",
+        "CommonApi\\Exception\\InvalidArgumentException": "CommonApi\\Exception\\InvalidArgumentException",
+        "CommonApi\\Exception\\LengthException": "CommonApi\\Exception\\LengthException",
+        "CommonApi\\Exception\\LogicException": "CommonApi\\Exception\\LogicException",
+        "CommonApi\\Exception\\OutOfBoundsException": "CommonApi\\Exception\\OutOfBoundsException",
+        "CommonApi\\Exception\\OutOfRangeException": "CommonApi\\Exception\\OutOfRangeException",
+        "CommonApi\\Exception\\OverflowException": "CommonApi\\Exception\\OverflowException",
+        "CommonApi\\Exception\\RangeException": "CommonApi\\Exception\\RangeException",
+        "CommonApi\\Exception\\RuntimeException": "CommonApi\\Exception\\RuntimeException",
+        "CommonApi\\Exception\\UnderflowException": "CommonApi\\Exception\\UnderflowException",
+        "CommonApi\\Exception\\UnexpectedValueException": "CommonApi\\Exception\\UnexpectedValueException"
+    },
+    "CommonApi\\Http\\ClientInterface": {
+        "Molajo\\Http\\Client": "Molajo\\Http\\Client"
+    },
+    "CommonApi\\Http\\RequestInterface": {
+        "Molajo\\Http\\Request": "Molajo\\Http\\Request"
+    },
+    "CommonApi\\Http\\ResponseInterface": {
+        "Molajo\\Http\\Response": "Molajo\\Http\\Response"
+    },
+    "CommonApi\\Http\\ServerInterface": {
+        "Molajo\\Http\\Server": "Molajo\\Http\\Server"
+    },
+    "CommonApi\\Http\\UploadInterface": {
+        "Molajo\\Http\\Upload": "Molajo\\Http\\Upload"
+    },
+    "CommonApi\\IoC\\ContainerInterface": {
+        "Molajo\\IoC\\Container": "Molajo\\IoC\\Container"
+    },
+    "CommonApi\\IoC\\FactoryBatchInterface": {
+        "Molajo\\IoC\\FactoryMethodBase": "Molajo\\IoC\\FactoryMethodBase",
+        "Molajo\\IoC\\FactoryMethodController": "Molajo\\IoC\\FactoryMethodController",
+        "Molajo\\IoC\\StandardFactoryMethod": "Molajo\\IoC\\StandardFactoryMethod"
+    },
+    "CommonApi\\IoC\\FactoryInterface": {
+        "Molajo\\IoC\\FactoryMethodBase": "Molajo\\IoC\\FactoryMethodBase",
+        "Molajo\\IoC\\FactoryMethodController": "Molajo\\IoC\\FactoryMethodController",
+        "Molajo\\IoC\\StandardFactoryMethod": "Molajo\\IoC\\StandardFactoryMethod"
+    },
+    "CommonApi\\IoC\\ScheduleInterface": {
+        "Molajo\\Controller\\FrontController": "Molajo\\Controller\\FrontController",
+        "Molajo\\IoC\\Schedule": "Molajo\\IoC\\Schedule"
+    },
+    "CommonApi\\Language\\CaptureUntranslatedStringInterface": {
+        "Molajo\\Language\\Adapter\\AbstractAdapter": "Molajo\\Language\\Adapter\\AbstractAdapter",
+        "Molajo\\Language\\Adapter\\Database": "Molajo\\Language\\Adapter\\Database",
+        "Molajo\\Language\\Adapter\\DatabaseModel": "Molajo\\Language\\Adapter\\DatabaseModel",
+        "Molajo\\Language\\Driver": "Molajo\\Language\\Driver"
+    },
+    "CommonApi\\Language\\LanguageInterface": {
+        "Molajo\\Language\\Adapter\\AbstractAdapter": "Molajo\\Language\\Adapter\\AbstractAdapter",
+        "Molajo\\Language\\Adapter\\Database": "Molajo\\Language\\Adapter\\Database",
+        "Molajo\\Language\\Driver": "Molajo\\Language\\Driver"
+    },
+    "CommonApi\\Language\\TranslateInterface": {
+        "Molajito\\Filesystem": "Molajito\\Filesystem",
+        "Molajito\\Translate": "Molajito\\Translate",
+        "Molajito\\Translate\\AbstractAdapter": "Molajito\\Translate\\AbstractAdapter",
+        "Molajito\\Translate\\MolajoLanguageAdapter": "Molajito\\Translate\\MolajoLanguageAdapter",
+        "Molajito\\Translate\\StringArrayAdapter": "Molajito\\Translate\\StringArrayAdapter",
+        "Molajo\\Language\\Adapter\\AbstractAdapter": "Molajo\\Language\\Adapter\\AbstractAdapter",
+        "Molajo\\Language\\Adapter\\Database": "Molajo\\Language\\Adapter\\Database",
+        "Molajo\\Language\\Driver": "Molajo\\Language\\Driver"
+    },
+    "CommonApi\\Model\\ConstraintInterface": {
+        "Molajo\\Fieldhandler\\Constraint\\AbstractConstraint": "Molajo\\Fieldhandler\\Constraint\\AbstractConstraint",
+        "Molajo\\Fieldhandler\\Constraint\\AbstractCtype": "Molajo\\Fieldhandler\\Constraint\\AbstractCtype",
+        "Molajo\\Fieldhandler\\Constraint\\AbstractDatabase": "Molajo\\Fieldhandler\\Constraint\\AbstractDatabase",
+        "Molajo\\Fieldhandler\\Constraint\\AbstractFiltervar": "Molajo\\Fieldhandler\\Constraint\\AbstractFiltervar",
+        "Molajo\\Fieldhandler\\Constraint\\AbstractHtml": "Molajo\\Fieldhandler\\Constraint\\AbstractHtml",
+        "Molajo\\Fieldhandler\\Constraint\\AbstractString": "Molajo\\Fieldhandler\\Constraint\\AbstractString",
+        "Molajo\\Fieldhandler\\Constraint\\Alias": "Molajo\\Fieldhandler\\Constraint\\Alias",
+        "Molajo\\Fieldhandler\\Constraint\\Alpha": "Molajo\\Fieldhandler\\Constraint\\Alpha",
+        "Molajo\\Fieldhandler\\Constraint\\Alphanumeric": "Molajo\\Fieldhandler\\Constraint\\Alphanumeric",
+        "Molajo\\Fieldhandler\\Constraint\\Arrays": "Molajo\\Fieldhandler\\Constraint\\Arrays",
+        "Molajo\\Fieldhandler\\Constraint\\Boolean": "Molajo\\Fieldhandler\\Constraint\\Boolean",
+        "Molajo\\Fieldhandler\\Constraint\\Callback": "Molajo\\Fieldhandler\\Constraint\\Callback",
+        "Molajo\\Fieldhandler\\Constraint\\Contains": "Molajo\\Fieldhandler\\Constraint\\Contains",
+        "Molajo\\Fieldhandler\\Constraint\\Controlcharacters": "Molajo\\Fieldhandler\\Constraint\\Controlcharacters",
+        "Molajo\\Fieldhandler\\Constraint\\Css": "Molajo\\Fieldhandler\\Constraint\\Css",
+        "Molajo\\Fieldhandler\\Constraint\\Date": "Molajo\\Fieldhandler\\Constraint\\Date",
+        "Molajo\\Fieldhandler\\Constraint\\Defaults": "Molajo\\Fieldhandler\\Constraint\\Defaults",
+        "Molajo\\Fieldhandler\\Constraint\\Digit": "Molajo\\Fieldhandler\\Constraint\\Digit",
+        "Molajo\\Fieldhandler\\Constraint\\Email": "Molajo\\Fieldhandler\\Constraint\\Email",
+        "Molajo\\Fieldhandler\\Constraint\\Encoded": "Molajo\\Fieldhandler\\Constraint\\Encoded",
+        "Molajo\\Fieldhandler\\Constraint\\Equal": "Molajo\\Fieldhandler\\Constraint\\Equal",
+        "Molajo\\Fieldhandler\\Constraint\\False": "Molajo\\Fieldhandler\\Constraint\\False",
+        "Molajo\\Fieldhandler\\Constraint\\Fileextension": "Molajo\\Fieldhandler\\Constraint\\Fileextension",
+        "Molajo\\Fieldhandler\\Constraint\\Float": "Molajo\\Fieldhandler\\Constraint\\Float",
+        "Molajo\\Fieldhandler\\Constraint\\Foreignkey": "Molajo\\Fieldhandler\\Constraint\\Foreignkey",
+        "Molajo\\Fieldhandler\\Constraint\\Fromto": "Molajo\\Fieldhandler\\Constraint\\Fromto",
+        "Molajo\\Fieldhandler\\Constraint\\Fullspecialchars": "Molajo\\Fieldhandler\\Constraint\\Fullspecialchars",
+        "Molajo\\Fieldhandler\\Constraint\\Hexidecimal": "Molajo\\Fieldhandler\\Constraint\\Hexidecimal",
+        "Molajo\\Fieldhandler\\Constraint\\Html": "Molajo\\Fieldhandler\\Constraint\\Html",
+        "Molajo\\Fieldhandler\\Constraint\\HtmlAttribute": "Molajo\\Fieldhandler\\Constraint\\HtmlAttribute",
+        "Molajo\\Fieldhandler\\Constraint\\Image": "Molajo\\Fieldhandler\\Constraint\\Image",
+        "Molajo\\Fieldhandler\\Constraint\\Integer": "Molajo\\Fieldhandler\\Constraint\\Integer",
+        "Molajo\\Fieldhandler\\Constraint\\Ip": "Molajo\\Fieldhandler\\Constraint\\Ip",
+        "Molajo\\Fieldhandler\\Constraint\\Js": "Molajo\\Fieldhandler\\Constraint\\Js",
+        "Molajo\\Fieldhandler\\Constraint\\Length": "Molajo\\Fieldhandler\\Constraint\\Length",
+        "Molajo\\Fieldhandler\\Constraint\\Lower": "Molajo\\Fieldhandler\\Constraint\\Lower",
+        "Molajo\\Fieldhandler\\Constraint\\Maximum": "Molajo\\Fieldhandler\\Constraint\\Maximum",
+        "Molajo\\Fieldhandler\\Constraint\\Mimetypes": "Molajo\\Fieldhandler\\Constraint\\Mimetypes",
+        "Molajo\\Fieldhandler\\Constraint\\Minimum": "Molajo\\Fieldhandler\\Constraint\\Minimum",
+        "Molajo\\Fieldhandler\\Constraint\\Notequal": "Molajo\\Fieldhandler\\Constraint\\Notequal",
+        "Molajo\\Fieldhandler\\Constraint\\Nothing": "Molajo\\Fieldhandler\\Constraint\\Nothing",
+        "Molajo\\Fieldhandler\\Constraint\\Notnull": "Molajo\\Fieldhandler\\Constraint\\Notnull",
+        "Molajo\\Fieldhandler\\Constraint\\Null": "Molajo\\Fieldhandler\\Constraint\\Null",
+        "Molajo\\Fieldhandler\\Constraint\\Numeric": "Molajo\\Fieldhandler\\Constraint\\Numeric",
+        "Molajo\\Fieldhandler\\Constraint\\Object": "Molajo\\Fieldhandler\\Constraint\\Object",
+        "Molajo\\Fieldhandler\\Constraint\\Password": "Molajo\\Fieldhandler\\Constraint\\Password",
+        "Molajo\\Fieldhandler\\Constraint\\Primarykey": "Molajo\\Fieldhandler\\Constraint\\Primarykey",
+        "Molajo\\Fieldhandler\\Constraint\\Printable": "Molajo\\Fieldhandler\\Constraint\\Printable",
+        "Molajo\\Fieldhandler\\Constraint\\Punctuation": "Molajo\\Fieldhandler\\Constraint\\Punctuation",
+        "Molajo\\Fieldhandler\\Constraint\\Raw": "Molajo\\Fieldhandler\\Constraint\\Raw",
+        "Molajo\\Fieldhandler\\Constraint\\Regex": "Molajo\\Fieldhandler\\Constraint\\Regex",
+        "Molajo\\Fieldhandler\\Constraint\\Required": "Molajo\\Fieldhandler\\Constraint\\Required",
+        "Molajo\\Fieldhandler\\Constraint\\Resource": "Molajo\\Fieldhandler\\Constraint\\Resource",
+        "Molajo\\Fieldhandler\\Constraint\\Scalar": "Molajo\\Fieldhandler\\Constraint\\Scalar",
+        "Molajo\\Fieldhandler\\Constraint\\Something": "Molajo\\Fieldhandler\\Constraint\\Something",
+        "Molajo\\Fieldhandler\\Constraint\\Space": "Molajo\\Fieldhandler\\Constraint\\Space",
+        "Molajo\\Fieldhandler\\Constraint\\String": "Molajo\\Fieldhandler\\Constraint\\String",
+        "Molajo\\Fieldhandler\\Constraint\\Tel": "Molajo\\Fieldhandler\\Constraint\\Tel",
+        "Molajo\\Fieldhandler\\Constraint\\Time": "Molajo\\Fieldhandler\\Constraint\\Time",
+        "Molajo\\Fieldhandler\\Constraint\\Trim": "Molajo\\Fieldhandler\\Constraint\\Trim",
+        "Molajo\\Fieldhandler\\Constraint\\True": "Molajo\\Fieldhandler\\Constraint\\True",
+        "Molajo\\Fieldhandler\\Constraint\\Unique": "Molajo\\Fieldhandler\\Constraint\\Unique",
+        "Molajo\\Fieldhandler\\Constraint\\Upper": "Molajo\\Fieldhandler\\Constraint\\Upper",
+        "Molajo\\Fieldhandler\\Constraint\\Url": "Molajo\\Fieldhandler\\Constraint\\Url",
+        "Molajo\\Fieldhandler\\Constraint\\Values": "Molajo\\Fieldhandler\\Constraint\\Values",
+        "Molajo\\Fieldhandler\\Constraint\\kses": "Molajo\\Fieldhandler\\Constraint\\kses"
+    },
+    "CommonApi\\Model\\CreateModelInterface": {
+        "Molajo\\Model\\CreateModel": "Molajo\\Model\\CreateModel"
+    },
+    "CommonApi\\Model\\DeleteModelInterface": {
+        "Molajo\\Model\\DeleteModel": "Molajo\\Model\\DeleteModel"
+    },
+    "CommonApi\\Model\\EscapeInterface": {
+        "Molajo\\Fieldhandler\\Escape": "Molajo\\Fieldhandler\\Escape",
+        "Molajo\\Fieldhandler\\Escape\\AbstractEscape": "Molajo\\Fieldhandler\\Escape\\AbstractEscape",
+        "Molajo\\Fieldhandler\\Escape\\Zend": "Molajo\\Fieldhandler\\Escape\\Zend"
+    },
+    "CommonApi\\Model\\FieldhandlerInterface": {
+        "Molajo\\User\\Fieldhandler": "Molajo\\User\\Fieldhandler"
+    },
+    "CommonApi\\Model\\FormatInterface": {
+        "Molajo\\Fieldhandler\\Request": "Molajo\\Fieldhandler\\Request",
+        "Molajo\\User\\Fieldhandler": "Molajo\\User\\Fieldhandler"
+    },
+    "CommonApi\\Model\\HandleResponseInterface": {
+        "Molajo\\Fieldhandler\\HandleResponse": "Molajo\\Fieldhandler\\HandleResponse"
+    },
+    "CommonApi\\Model\\MessageInterface": {
+        "Molajo\\Fieldhandler\\Message": "Molajo\\Fieldhandler\\Message"
+    },
+    "CommonApi\\Model\\ModelInterface": {
+        "Molajo\\Model\\CreateModel": "Molajo\\Model\\CreateModel",
+        "Molajo\\Model\\DeleteModel": "Molajo\\Model\\DeleteModel",
+        "Molajo\\Model\\Model": "Molajo\\Model\\Model",
+        "Molajo\\Model\\ReadModel": "Molajo\\Model\\ReadModel",
+        "Molajo\\Model\\UpdateModel": "Molajo\\Model\\UpdateModel"
+    },
+    "CommonApi\\Model\\ReadModelInterface": {
+        "Molajo\\Model\\ReadModel": "Molajo\\Model\\ReadModel"
+    },
+    "CommonApi\\Model\\SanitizeInterface": {
+        "Molajo\\Fieldhandler\\Request": "Molajo\\Fieldhandler\\Request",
+        "Molajo\\User\\Fieldhandler": "Molajo\\User\\Fieldhandler"
+    },
+    "CommonApi\\Model\\UpdateModelInterface": {
+        "Molajo\\Model\\UpdateModel": "Molajo\\Model\\UpdateModel"
+    },
+    "CommonApi\\Model\\ValidateInterface": {
+        "Molajo\\Fieldhandler\\Request": "Molajo\\Fieldhandler\\Request",
+        "Molajo\\User\\Fieldhandler": "Molajo\\User\\Fieldhandler"
+    },
+    "CommonApi\\Model\\ValidateResponseInterface": {
+        "Molajo\\Fieldhandler\\ValidateResponse": "Molajo\\Fieldhandler\\ValidateResponse"
+    },
+    "CommonApi\\Query\\QueryInterface": {
+        "Molajo\\Controller\\CreateController": "Molajo\\Controller\\CreateController",
+        "Molajo\\Controller\\DeleteController": "Molajo\\Controller\\DeleteController",
+        "Molajo\\Controller\\QueryController": "Molajo\\Controller\\QueryController",
+        "Molajo\\Controller\\ReadController": "Molajo\\Controller\\ReadController",
+        "Molajo\\Controller\\UpdateController": "Molajo\\Controller\\UpdateController",
+        "Molajo\\Query\\Adapter\\AbstractAdapter": "Molajo\\Query\\Adapter\\AbstractAdapter",
+        "Molajo\\Query\\Adapter\\Mysql": "Molajo\\Query\\Adapter\\Mysql",
+        "Molajo\\Query\\Adapter\\Postgresql": "Molajo\\Query\\Adapter\\Postgresql",
+        "Molajo\\Query\\Adapter\\Sqllite": "Molajo\\Query\\Adapter\\Sqllite",
+        "Molajo\\Query\\Adapter\\Sqlserver": "Molajo\\Query\\Adapter\\Sqlserver",
+        "Molajo\\Query\\Driver": "Molajo\\Query\\Driver"
+    },
+    "CommonApi\\Render\\DataInterface": {
+        "Molajito\\Data": "Molajito\\Data",
+        "Molajito\\Data\\AbstractAdapter": "Molajito\\Data\\AbstractAdapter",
+        "Molajito\\Data\\Molajo": "Molajito\\Data\\Molajo"
+    },
+    "CommonApi\\Render\\EscapeInterface": {
+        "Molajito\\Dummy": "Molajito\\Dummy",
+        "Molajito\\Escape": "Molajito\\Escape",
+        "Molajito\\Escape\\AbstractAdapter": "Molajito\\Escape\\AbstractAdapter",
+        "Molajito\\Escape\\Molajo": "Molajito\\Escape\\Molajo",
+        "Molajito\\Escape\\Simple": "Molajito\\Escape\\Simple"
+    },
+    "CommonApi\\Render\\EventInterface": {
+        "Molajito\\Event": "Molajito\\Event",
+        "Molajito\\Event\\AbstractAdapter": "Molajito\\Event\\AbstractAdapter",
+        "Molajito\\Event\\Dummy": "Molajito\\Event\\Dummy",
+        "Molajito\\Event\\Molajo": "Molajito\\Event\\Molajo"
+    },
+    "CommonApi\\Render\\PaginationInterface": {
+        "Molajo\\Pagination": "Molajo\\Pagination"
+    },
+    "CommonApi\\Render\\ParseInterface": {
+        "Molajito\\Parse": "Molajito\\Parse"
+    },
+    "CommonApi\\Render\\PositionInterface": {
+        "Molajito\\Position": "Molajito\\Position"
+    },
+    "CommonApi\\Render\\RenderInterface": {
+        "Molajito\\Engine": "Molajito\\Engine",
+        "Molajito\\MolajoLanguageAdapter": "Molajito\\MolajoLanguageAdapter",
+        "Molajito\\PageView": "Molajito\\PageView",
+        "Molajito\\Render": "Molajito\\Render",
+        "Molajito\\Simple": "Molajito\\Simple",
+        "Molajito\\StringArrayAdapter": "Molajito\\StringArrayAdapter",
+        "Molajito\\TemplateView": "Molajito\\TemplateView",
+        "Molajito\\Theme": "Molajito\\Theme",
+        "Molajito\\WrapView": "Molajito\\WrapView",
+        "Molajo\\Render\\Adapter\\AbstractAdapter": "Molajo\\Render\\Adapter\\AbstractAdapter",
+        "Molajo\\Render\\Adapter\\Asset": "Molajo\\Render\\Adapter\\Asset",
+        "Molajo\\Render\\Adapter\\ClassLoader": "Molajo\\Render\\Adapter\\ClassLoader",
+        "Molajo\\Render\\Adapter\\Css": "Molajo\\Render\\Adapter\\Css",
+        "Molajo\\Render\\Adapter\\Cssdeclarations": "Molajo\\Render\\Adapter\\Cssdeclarations",
+        "Molajo\\Render\\Adapter\\File": "Molajo\\Render\\Adapter\\File",
+        "Molajo\\Render\\Adapter\\Folder": "Molajo\\Render\\Adapter\\Folder",
+        "Molajo\\Render\\Adapter\\Head": "Molajo\\Render\\Adapter\\Head",
+        "Molajo\\Render\\Adapter\\Js": "Molajo\\Render\\Adapter\\Js",
+        "Molajo\\Render\\Adapter\\Jsdeclarations": "Molajo\\Render\\Adapter\\Jsdeclarations",
+        "Molajo\\Render\\Adapter\\Molajito": "Molajo\\Render\\Adapter\\Molajito",
+        "Molajo\\Render\\Adapter\\Mustache": "Molajo\\Render\\Adapter\\Mustache",
+        "Molajo\\Render\\Adapter\\Twig": "Molajo\\Render\\Adapter\\Twig",
+        "Molajo\\Render\\Driver": "Molajo\\Render\\Driver"
+    },
+    "CommonApi\\Render\\ViewInterface": {
+        "Molajito\\AbstractAdapter": "Molajito\\AbstractAdapter",
+        "Molajito\\Molajo": "Molajito\\Molajo",
+        "Molajito\\View": "Molajito\\View",
+        "Molajito\\View\\AbstractAdapter": "Molajito\\View\\AbstractAdapter",
+        "Molajito\\View\\Filesystem": "Molajito\\View\\Filesystem",
+        "Molajito\\View\\Molajo": "Molajito\\View\\Molajo"
+    },
+    "CommonApi\\Resource\\AdapterInterface": {
+        "Molajo\\Resource\\Adapter\\Menuitem": "Molajo\\Resource\\Adapter\\Menuitem",
+        "Molajo\\Resource\\Adapter\\Page": "Molajo\\Resource\\Adapter\\Page",
+        "Molajo\\Resource\\Adapter\\Query": "Molajo\\Resource\\Adapter\\Query",
+        "Molajo\\Resource\\Adapter\\Template": "Molajo\\Resource\\Adapter\\Template",
+        "Molajo\\Resource\\Adapter\\Theme": "Molajo\\Resource\\Adapter\\Theme",
+        "Molajo\\Resource\\Adapter\\Wrap": "Molajo\\Resource\\Adapter\\Wrap",
+        "Molajo\\Resource\\Adapter\\Xml": "Molajo\\Resource\\Adapter\\Xml"
+    },
+    "CommonApi\\Resource\\ClassLoaderInterface": {
+        "CommonApi\\Resource\\ResourceInterface": "CommonApi\\Resource\\ResourceInterface",
+        "Molajo\\Resource\\Driver": "Molajo\\Resource\\Driver"
+    },
+    "CommonApi\\Resource\\ExtensionsInterface": {
+        "Molajo\\Resource\\ExtensionMap": "Molajo\\Resource\\ExtensionMap"
+    },
+    "CommonApi\\Resource\\LocatorInterface": {
+        "CommonApi\\Resource\\ResourceInterface": "CommonApi\\Resource\\ResourceInterface",
+        "Molajo\\Resource\\Driver": "Molajo\\Resource\\Driver"
+    },
+    "CommonApi\\Resource\\MapInterface": {
+        "Molajo\\IoC\\MapFactories": "Molajo\\IoC\\MapFactories",
+        "Molajo\\Resource\\ClassMap": "Molajo\\Resource\\ClassMap",
+        "Molajo\\Resource\\ResourceMap": "Molajo\\Resource\\ResourceMap"
+    },
+    "CommonApi\\Resource\\NamespaceInterface": {
+        "CommonApi\\Resource\\ResourceInterface": "CommonApi\\Resource\\ResourceInterface",
+        "Molajo\\Resource\\Driver": "Molajo\\Resource\\Driver"
+    },
+    "CommonApi\\Resource\\ResourceInterface": {
+        "Molajo\\Resource\\Driver": "Molajo\\Resource\\Driver"
+    },
+    "CommonApi\\Resource\\SchemeInterface": {
+        "CommonApi\\Resource\\ResourceInterface": "CommonApi\\Resource\\ResourceInterface",
+        "Molajo\\Resource\\Driver": "Molajo\\Resource\\Driver",
+        "Molajo\\Resource\\Scheme": "Molajo\\Resource\\Scheme"
+    },
+    "CommonApi\\Route\\RouteInterface": {
+        "Molajo\\Route\\Adapter\\AbstractAdapter": "Molajo\\Route\\Adapter\\AbstractAdapter",
+        "Molajo\\Route\\Adapter\\Database": "Molajo\\Route\\Adapter\\Database",
+        "Molajo\\Route\\Driver": "Molajo\\Route\\Driver"
+    },
+    "CommonApi\\User\\ActivityInterface": {
+        "Molajo\\User\\Activity": "Molajo\\User\\Activity"
+    },
+    "CommonApi\\User\\AuthenticationInterface": {
+        "Molajo\\User\\Authentication": "Molajo\\User\\Authentication"
+    },
+    "CommonApi\\User\\CookieInterface": {
+        "Molajo\\User\\Cookie": "Molajo\\User\\Cookie"
+    },
+    "CommonApi\\User\\EncryptInterface": {
+        "Molajo\\User\\Encrypt": "Molajo\\User\\Encrypt"
+    },
+    "CommonApi\\User\\FlashMessageInterface": {
+        "Molajo\\User\\FlashMessage": "Molajo\\User\\FlashMessage"
+    },
+    "CommonApi\\User\\MailerInterface": {
+        "Molajo\\User\\Mailer": "Molajo\\User\\Mailer"
+    },
+    "CommonApi\\User\\MessagesInterface": {
+        "Molajo\\User\\Messages": "Molajo\\User\\Messages"
+    },
+    "CommonApi\\User\\RegistrationInterface": {
+        "Molajo\\User\\Registration": "Molajo\\User\\Registration"
+    },
+    "CommonApi\\User\\SessionInterface": {
+        "Molajo\\User\\Session": "Molajo\\User\\Session"
+    },
+    "CommonApi\\User\\TemplateInterface": {
+        "Molajo\\User\\TextTemplate": "Molajo\\User\\TextTemplate"
+    },
+    "CommonApi\\User\\UserDataInterface": {
+        "Molajo\\User\\UserData": "Molajo\\User\\UserData"
+    },
+    "CommonApi\\User\\UserInterface": {
+        "Molajo\\User\\Facade": "Molajo\\User\\Facade"
+    },
+    "Molajo\\Resource\\Api\\ConfigurationDataInterface": {
+        "Molajo\\Resource\\Configuration\\Data": "Molajo\\Resource\\Configuration\\Data"
+    },
+    "Molajo\\Resource\\Api\\ConfigurationInterface": {
+        "Molajo\\Resource\\Configuration\\AbstractAdapter": "Molajo\\Resource\\Configuration\\AbstractAdapter",
+        "Molajo\\Resource\\Configuration\\Dataobject": "Molajo\\Resource\\Configuration\\Dataobject",
+        "Molajo\\Resource\\Configuration\\Model": "Molajo\\Resource\\Configuration\\Model"
+    },
+    "Molajo\\Resource\\Api\\FactoryInterface": {
+        "Molajo\\Resource\\Factory\\ReadControllerFactory": "Molajo\\Resource\\Factory\\ReadControllerFactory"
+    },
+    "Molajo\\Resource\\Api\\RegistryInterface": {
+        "Molajo\\Resource\\Configuration\\Registry": "Molajo\\Resource\\Configuration\\Registry"
+    }
+}
